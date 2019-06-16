@@ -1,4 +1,6 @@
 //折半插入排序
+
+//算法介绍
 //1.查找到L(i)所在数组中的位置，
 //2.将该位置以后的所有元素后移
 //3.将L(i)复制到该位置
@@ -12,8 +14,8 @@ void InsertSort(int Arr[], int length) {
 	for (i = 1; i < length; i++)
 	{
 		temp = Arr[i];
-		low = 0;//折半查找的范围
-		high = i - 1;
+		low = 0;//折半查找的范围最低
+		high = i - 1;//最高
 		while (low <= high)
 		{
 			mid = (low + high) / 2;
