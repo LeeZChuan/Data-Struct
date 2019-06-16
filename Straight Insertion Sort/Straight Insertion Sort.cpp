@@ -33,7 +33,7 @@ void InserSort(int Arr[], int length)
 void OutputArr(int Arr[], int length) {
 	for (int i = 0; i < length; i++)
 	{
-		cout << Arr[i] << ", ";
+		cout << Arr[i] << ",";
 
 	}
 	cout << endl;
