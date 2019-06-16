@@ -6,6 +6,9 @@
 //3.针对所有的元素重复以上的步骤，除了最后一个。
 //4.持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
 
+//Notes:每次冒泡排序过后，总会有一个元素被放在最终位置上。
+//最终位置：就是该此排序每个元素的最终结果情况
+
 #include<iostream>
 using namespace std;
 
@@ -13,10 +16,12 @@ void BubbleSort(int Arr[], int length) {
 	int temp;
 	int flag;
 	for (int i = 0; i < length - 1; i++)
+		//每次遍历一遍数组总会把一个元素放置于正确的位置，
 	{
 		flag = 1;
 		for (int j = 0; j < length - i - 1; j++)
 		{
+			//在次遍历中，会把错误的元素放置于正确的位置上
 			if (Arr[j] > Arr[j + 1])
 			{
 				temp = Arr[j];
