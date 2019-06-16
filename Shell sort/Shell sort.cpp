@@ -11,7 +11,7 @@ void ShellSort(int Array[], int length) {
 	int temp;
 	int k, j;
 	//进行希尔排序，按照数组长度的一半来进行划分
-	for (int gap = int(length / 2); gap > 0; gap = gap / 2)
+	for (int gap = int(length / 2); gap > 0; gap = int(gap / 2))
 	{
 		for (int i = gap; i < length; i++)
 		{
