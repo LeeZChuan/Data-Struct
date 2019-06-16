@@ -1,13 +1,49 @@
-//Ï£¶ûÅÅĞò
+ï»¿//å¸Œå°”æ’åº
 
-//Ëã·¨½éÉÜ
-//ÏÈ½«ÅÅĞò±í·Ö¸î³ÉÈô¸ÉĞÎÈçL[i,i+d,....,i+nd]µÄÌØÊâ×Ó±í£¬·Ö±ğ½øĞĞÖ±½Ó²åÈëÅÅĞò£¬
+//ç®—æ³•ä»‹ç»
+//å…ˆå°†æ’åºè¡¨åˆ†å‰²æˆè‹¥å¹²å½¢å¦‚L[i,i+d,....,i+nd]çš„ç‰¹æ®Šå­è¡¨ï¼Œåˆ†åˆ«è¿›è¡Œç›´æ¥æ’å…¥æ’åºï¼Œ
 
 
 #include <iostream>;
 using namespace std;
 
-void Shellsort(int Arr, int length)
-{
+void ShellSort(int Array[], int length) {
+	int temp;
+	int k, j;
+	//è¿›è¡Œå¸Œå°”æ’åºï¼ŒæŒ‰ç…§æ•°ç»„é•¿åº¦çš„ä¸€åŠæ¥è¿›è¡Œåˆ’åˆ†
+	for (int gap = int(length / 2); gap > 0; gap = gap / 2)
+	{
+		for (int i = gap; i < length; i++)
+		{
+			for (j = i - gap; j >= 0; j -= gap)
+			{
+				if (Array[j] > Array[i])
+				{
+					temp = Array[j];
+					Array[j] = Array[i];
+					Array[i] = temp;
+				}
+				else {
 
+				}
+			}
+		}
+	}
+
+}
+
+void OutputArray(int Array[], int length)
+{
+	for (int i = 0; i < length; i++)
+	{
+		cout << Array[i] << ",";
+	}
+	cout << endl;
+}
+
+void main()
+{
+	int Array[] = { 45,57,12,31,1,60,92,71,87,89,25,48,47,12 };
+	ShellSort(Array, 14);
+	OutputArray(Array, 14);
 }
