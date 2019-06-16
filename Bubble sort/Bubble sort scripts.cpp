@@ -14,7 +14,7 @@ using namespace std;
 
 void BubbleSort(int Arr[], int length) {
 	int temp;
-	int flag;
+	int flag;//表示本趟冒泡是否发生了交换的标志
 	for (int i = 0; i < length - 1; i++)
 		//每次遍历一遍数组总会把一个元素放置于正确的位置，
 	{
@@ -31,7 +31,7 @@ void BubbleSort(int Arr[], int length) {
 			}
 		}
 		if (flag)
-			return;
+			return;//本趟遍历后没有发生交换，说明该表已经有序，无需再次进行遍历
 	}
 }
 
