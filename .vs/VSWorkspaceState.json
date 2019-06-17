@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\2-Merge sort",
-    "\\Bubble sort"
+    "\\Bubble sort",
+    "\\Fast sort"
   ],
-  "SelectedNode": "\\Bubble sort\\Bubble sort scripys.vcxproj",
+  "SelectedNode": "\\Fast sort\\Fast sort.vcxproj",
   "PreviewInSolutionExplorer": false
 }
