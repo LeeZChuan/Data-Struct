@@ -21,7 +21,8 @@ void BubbleSort(int Arr[], int length) {
 		flag = 1;
 		for (int j = 0; j < length - i - 1; j++)
 		{
-			//在次遍历中，会把错误的元素放置于正确的位置上
+			//在每次遍历中，会把错误的元素放置于正确的位置上
+			//当如果判断前面的数字大于后面的数字，需要进行交换，然后并且把交换信息置于0
 			if (Arr[j] > Arr[j + 1])
 			{
 				temp = Arr[j];
