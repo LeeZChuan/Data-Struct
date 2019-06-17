@@ -11,7 +11,7 @@
 #include<iostream>
 using namespace std;
 
-int circle = 0;
+int circle = 0;//遍历次数变量
 void QuickSort(int* pdata, int low, int high)
 {
 	if (low < high)
@@ -43,16 +43,17 @@ void QuickSort(int* pdata, int low, int high)
 //很好理解（巡视的数组元素，不是比基准大的，就是比基准小的）
 void quickSort(int* pdata, int left, int right)
 {
-	if (left >= right)
+	if (left >= right)//排序元素为0
 	{
 		return;
 	}
 	if (left < right)//如果需要排序的元素大于1个
 	{
-		int temp = 0;
+		int temp = 0;//暂存变量
 		int key = pdata[left];
 		int i = left, j = right;
 		while (i != j)
+			//排序中数据目前不考虑有相同数字的情况
 		{
 			while (pdata[j] >= key && i < j) //右边的哨兵开始向左巡逻
 				j--;
