@@ -40,7 +40,7 @@ void ShellSort(int Array[], int length) {
 //{
 //	int i, j;
 //	int temp;
-//	for (int i = gap; i < length - 1; i += gap)
+//	for (int i = gap; i < length; i += gap)
 //	{
 //		for (int j = i; j >= gap; j -= gap)
 //		{
