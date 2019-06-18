@@ -8,30 +8,47 @@
 using namespace std;
 
 void ShellSort(int Array[], int length) {
+	int j;
+	int gap;
 	int temp;
-	int k, j;
 	//进行希尔排序，按照数组长度的一半来进行划分
-	for (int gap = int(length / 2); gap > 0; gap = int(gap / 2))
+	for (gap = int(length / 2); gap > 0; gap = int(gap / 2))
 	{
-		for (int i = gap; i < length; i++)
+		for (int i = 0; i < gap; i++)
 		{
-			for (j = i - gap; j >= 0; j -= gap)
+			for (int i = gap; i < length-1; i += gap)
 			{
-				
-				if (Array[j] > Array[i])
+				for (int j = i; j >= gap; j -= gap)
 				{
-					temp = Array[j];
-					Array[j] = Array[i];
-					Array[i] = temp;
+					if (Array[j] < Array[j - gap])
+					{
+						temp = Array[j];
+						Array[j] = Array[j - gap];
+						Array[j - gap] = temp;
+					}
 				}
-				else {
+			}
+			//ModInsSort(Array[i], length, gap);
+		}
+	}
+}
 
-				}
-				
+void ModInsSort(Array[], int length, int gap)
+{
+	int i, j;
+	int temp;
+	for (int i = gap; i < length - 1; i += gap)
+	{
+		for (int j = i; j >= gap; j -= gap)
+		{
+			if (Array[j] < Array[j - gap])
+			{
+				temp = Array[j];
+				Array[j] = Array[j - gap];
+				Array[j - gap] = temp;
 			}
 		}
 	}
-
 }
 
 void OutputArray(int Array[], int length)

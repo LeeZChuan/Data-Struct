@@ -15,13 +15,12 @@ using namespace std;
 
 void Heapsort(int Arr, int length)
 {
-	
 
 	//数组排序为升序排列，则创建大根堆
 	//1.构建大顶堆
 	for (int i = int(length / 2) - 1; i >= 0; i--) {
 		//从第一个非叶子结点从下至上，从右至左调整结构
-		adjustHeap(Arr, i, length);
+	     adjustHeap(Arr, i, length);
 	}
 	//2.调整堆结构+交换堆顶元素与末尾元素
 	for (int j = length - 1; j > 0; j--) {
@@ -34,10 +33,14 @@ void Heapsort(int Arr, int length)
 
 }
 
+class MyClass
+{
+public:
+	adjustHeap();
+	swap();
+};
 
-class function {
-
-void adjustHeap(int Arr[], int i, int length)
+void MyClass::adjustHeap(int Arr,int length)
 {
 	//将数据放入树状结构
 	//从第一个非叶子结点从下至上，从右至左调整结构
@@ -56,16 +59,48 @@ void adjustHeap(int Arr[], int i, int length)
 		}
 	}
 	Arr[i] = temp;//将temp值放到最终的位置
-
 }
 
-void swap(int Arr[], int a, int b) {
+void MyClass::swap()
+{
 	//交换元素
 	int temp = Arr[a];
 	Arr[a] = Arr[b];
 	Arr[b] = temp;
 }
 
+
+
+
+//void adjustHeap(int Arr[], int i, int length)
+//{
+//	//将数据放入树状结构
+//	//从第一个非叶子结点从下至上，从右至左调整结构
+//
+//	int temp = Arr[i];
+//	for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {//从i结点的左子结点开始，也就是2i+1处开始
+//		if (k + 1 < length && Arr[k] < Arr[k + 1]) {//如果左子结点小于右子结点，k指向右子结点
+//			k++;
+//		}
+//		if (Arr[k] > temp) {//如果子节点大于父节点，将子节点值赋给父节点（不用进行交换）
+//			Arr[i] = Arr[k];
+//			i = k;
+//		}
+//		else {
+//			break;
+//		}
+//	}
+//	Arr[i] = temp;//将temp值放到最终的位置
+//
+//}
+//
+//void swap(int Arr[], int a, int b) {
+//	//交换元素
+//	int temp = Arr[a];
+//	Arr[a] = Arr[b];
+//	Arr[b] = temp;
+//}
+//
 void OutputArr(int Arr, int length)
 {
 	for (int i = 0; i < length; i++)
@@ -75,7 +110,6 @@ void OutputArr(int Arr, int length)
 	}
 	cout << endl;
 }
-};
 
 void main()
 {

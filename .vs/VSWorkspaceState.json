@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Heap sort",
-    "\\Parity sort"
+    "\\Heap sort\\demo",
+    "\\Shell sort"
   ],
-  "SelectedNode": "\\Heap sort\\Heap sort.cpp",
+  "SelectedNode": "\\Heap sort\\demo\\Heap sort1.cpp",
   "PreviewInSolutionExplorer": false
 }
