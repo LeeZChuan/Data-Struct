@@ -17,6 +17,7 @@ void ShellSort(int Array[], int length) {
 		{
 			for (j = i - gap; j >= 0; j -= gap)
 			{
+				
 				if (Array[j] > Array[i])
 				{
 					temp = Array[j];
@@ -26,6 +27,7 @@ void ShellSort(int Array[], int length) {
 				else {
 
 				}
+				
 			}
 		}
 	}
