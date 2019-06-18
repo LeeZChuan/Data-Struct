@@ -8,19 +8,22 @@
 using namespace std;
 
 void ShellSort(int Array[], int length) {
-	int j;
-	int gap;
-	int temp;
+	int gap;//序列个数
+	int temp;//暂存变量
 	//进行希尔排序，按照数组长度的一半来进行划分
-	for (gap = int(length / 2); gap > 0; gap = int(gap / 2))
+	for (gap = length / 2; gap > 0; gap = gap / 2)
+		//“增量每次除以2递减”的Shell 排序  
 	{
 		for (int i = 0; i < gap; i++)
+			//开始对每个小序列进行比对
 		{
-			for (int i = gap; i < length-1; i += gap)
+			for (int i = gap; i < length; i += gap)
+				//对序列进行倍数的增加遍历
 			{
 				for (int j = i; j >= gap; j -= gap)
 				{
 					if (Array[j] < Array[j - gap])
+						//小序列的头尾比较，如果序列头部大于尾部，进行交换，否则不交换
 					{
 						temp = Array[j];
 						Array[j] = Array[j - gap];
@@ -33,23 +36,23 @@ void ShellSort(int Array[], int length) {
 	}
 }
 
-void ModInsSort(Array[], int length, int gap)
-{
-	int i, j;
-	int temp;
-	for (int i = gap; i < length - 1; i += gap)
-	{
-		for (int j = i; j >= gap; j -= gap)
-		{
-			if (Array[j] < Array[j - gap])
-			{
-				temp = Array[j];
-				Array[j] = Array[j - gap];
-				Array[j - gap] = temp;
-			}
-		}
-	}
-}
+//void ModInsSort(Array[], int length, int gap)
+//{
+//	int i, j;
+//	int temp;
+//	for (int i = gap; i < length - 1; i += gap)
+//	{
+//		for (int j = i; j >= gap; j -= gap)
+//		{
+//			if (Array[j] < Array[j - gap])
+//			{
+//				temp = Array[j];
+//				Array[j] = Array[j - gap];
+//				Array[j - gap] = temp;
+//			}
+//		}
+//	}
+//}
 
 void OutputArray(int Array[], int length)
 {
@@ -62,7 +65,7 @@ void OutputArray(int Array[], int length)
 
 void main()
 {
-	int Array[] = { 45,57,12,31,1,60,92,71,87,89,25,48,47,12 };
+	int Array[] = { 45,57,12,31,1,60,92,71,87,89,25,48,47,15 };
 	ShellSort(Array, 14);
 	OutputArray(Array, 14);
 }
