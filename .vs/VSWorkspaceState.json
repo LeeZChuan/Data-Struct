@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Bubble sort",
-    "\\Heap sort\\demo\\Debug"
+    "\\2-Merge sort",
+    "\\Heap sort"
   ],
-  "SelectedNode": "\\Bubble sort\\Bubble sort scripts.cpp",
+  "SelectedNode": "\\2-Merge sort\\2-Merge sort.cpp",
   "PreviewInSolutionExplorer": false
 }
