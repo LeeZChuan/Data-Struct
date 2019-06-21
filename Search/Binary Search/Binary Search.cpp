@@ -22,15 +22,13 @@ using namespace std;
 
 
 
-struct Arr                 //在结构里面包含数组
-{
+           //在结构里面包含数组
 int numData[9] = { 31,15,85,95,74,16,88,95,10 };
 int length = sizeof(numData) / sizeof(int);
 
-};
 
 
-Arr BubbleSort()
+int BubbleSort()
 {
 	int temp;
 	int flag;//表示本趟冒泡是否发生了交换的标志
@@ -52,12 +50,10 @@ Arr BubbleSort()
 		if (flag)
 			continue;//本趟遍历后没有发生交换，说明该表已经有序，无需再次进行遍历
 	}
-	return arr;
 }
 
 int BinarySearch(int numData[], int searchElem)
 {
-	Arr arr;
 	int small = 0;
 	int middle;
 	int large=arr.length-1;
@@ -83,19 +79,19 @@ int BinarySearch(int numData[], int searchElem)
 
 void main()
 {
-	cout <<  << result.numData;
+	/*cout <<  << result.numData;
 	Arr BubbleSort();
 	Arr result = BubbleSort();
-	cout << result.length << result.numData;
-	//int se;
-	//cout << "Please input the data that you want to inquire : ";
-	//cin >> se;
-	//int k;
-	////k = SequentialSearch(arr.numData, se);
-	//k = BinarySearch(result.numData, se);
-	//if (k == -1)
-	//	cout << "There is no data that you want to query in this array. " << endl;
-	//else
-	//	cout << "The number of the data that you inquiring is : " << k << endl;
+	cout << result.length << result.numData;*/
+	int se;
+	cout << "Please input the data that you want to inquire : ";
+	cin >> se;
+	int k;
+	//k = SequentialSearch(arr.numData, se);
+	k = BinarySearch(result.numData, se);
+	if (k == -1)
+		cout << "There is no data that you want to query in this array. " << endl;
+	else
+		cout << "The number of the data that you inquiring is : " << k << endl;
 
 }

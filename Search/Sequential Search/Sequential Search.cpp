@@ -25,7 +25,6 @@ int SequentialSearch(int numData[], int searchElem) {
 	{
 		if (numData[i] == searchElem)
 			return i;
-
 	}
 	return -1;
 }
