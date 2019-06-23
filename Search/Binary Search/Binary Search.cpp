@@ -18,15 +18,9 @@
 using namespace std;
 
 
-
-
-
-
            //在结构里面包含数组
 int numData[9] = { 31,15,85,95,74,16,88,95,10 };
 int length = sizeof(numData) / sizeof(int);
-
-
 
 int BubbleSort()
 {

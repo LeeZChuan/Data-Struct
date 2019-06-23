@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Search",
+    "\\Search\\Binary Search",
+    "\\Search\\Sequential Search",
+    "\\Search\\Sequential Search\\Debug"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Search\\Binary Search\\Binary Search.cpp",
   "PreviewInSolutionExplorer": false
 }
