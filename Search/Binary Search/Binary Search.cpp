@@ -22,36 +22,13 @@ using namespace std;
 int numData[9] = { 31,15,85,95,74,16,88,95,10 };
 int length = sizeof(numData) / sizeof(int);
 
-int BubbleSort()
-{
-	int temp;
-	int flag;//表示本趟冒泡是否发生了交换的标志
-	struct Arr arr;
-	for (int i = 0; i < arr.length - 1; i++)
-		//每次遍历一遍数组总会把一个元素放置于正确的位置，
-	{
-		flag = 1;
-		for (int j = 0; j < arr.length - i - 1; j++)
-		{
-			if (arr.numData[j] > arr.numData[j + 1])
-			{
-				temp = arr.numData[j];
-				arr.numData[j] = arr.numData[j + 1];
-				arr.numData[j + 1] = temp;
-				flag = 0;
-			}
-		}
-		if (flag)
-			continue;//本趟遍历后没有发生交换，说明该表已经有序，无需再次进行遍历
-	}
-}
 
 int BinarySearch(int numData[], int searchElem)
 {
 	int small = 0;
 	int middle;
-	int large=arr.length-1;
-	if (searchElem > arr.numData[large] || searchElem < arr.numData[small])
+	int large=length-1;
+	if (searchElem > numData[large] || searchElem < numData[small])
 	{
 		return -1;
 	}
@@ -59,9 +36,9 @@ int BinarySearch(int numData[], int searchElem)
 	if (small < large)
 	{
 		middle = (small + large) / 2;
-		if (searchElem == arr.numData[middle])
+		if (searchElem == numData[middle])
 			return middle;
-		else if (searchElem > arr.numData[middle])
+		else if (searchElem > numData[middle])
 			small = middle + 1;
 		else
 			large = middle - 1;
@@ -82,7 +59,7 @@ void main()
 	cin >> se;
 	int k;
 	//k = SequentialSearch(arr.numData, se);
-	k = BinarySearch(result.numData, se);
+	k = BinarySearch(numData, se);
 	if (k == -1)
 		cout << "There is no data that you want to query in this array. " << endl;
 	else
