@@ -50,15 +50,12 @@ int BinarySearch(int numData[], int searchElem)
 
 void main()
 {
-	/*cout <<  << result.numData;
-	Arr BubbleSort();
-	Arr result = BubbleSort();
-	cout << result.length << result.numData;*/
+
 	int se;
 	cout << "Please input the data that you want to inquire : ";
 	cin >> se;
 	int k;
-	//k = SequentialSearch(arr.numData, se);
+
 	k = BinarySearch(numData, se);
 	if (k == -1)
 		cout << "There is no data that you want to query in this array. " << endl;
