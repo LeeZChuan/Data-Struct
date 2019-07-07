@@ -35,7 +35,7 @@ int BinarySearch(int numData[], int searchElem)
 
 	if (small < large)
 	{
-		middle = (small + large) / 2;
+		middle = int((small + large) / 2);
 		if (searchElem == numData[middle])
 			return middle;
 		else if (searchElem > numData[middle])
