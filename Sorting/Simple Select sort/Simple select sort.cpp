@@ -1,7 +1,6 @@
 //简单选择排序
 //遍历、对比、挑选、替换
 
-
 #include<iostream>
 using namespace std;
 

@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Search",
-    "\\Search\\Binary Search",
-    "\\Search\\Sequential Search",
-    "\\Search\\Sequential Search\\Debug"
+    "\\Search\\Bubble Search",
+    "\\Search\\Sequential Search"
   ],
-  "SelectedNode": "\\Search\\Binary Search\\Binary Search.vcxproj",
+  "SelectedNode": "\\Search\\Sequential Search\\Sequential Search.cpp",
   "PreviewInSolutionExplorer": false
 }
