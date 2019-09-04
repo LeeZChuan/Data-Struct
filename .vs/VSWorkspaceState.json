@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Search",
-    "\\Search\\Bubble Search",
-    "\\Search\\Sequential Search"
+    "\\EverySearch",
+    "\\Search"
   ],
-  "SelectedNode": "\\Search\\Sequential Search\\Sequential Search.cpp",
+  "SelectedNode": "\\EverySearch",
   "PreviewInSolutionExplorer": false
 }
