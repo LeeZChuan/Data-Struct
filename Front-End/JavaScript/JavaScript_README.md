@@ -16,7 +16,7 @@
 * 对于ECMAScript面试常常叫做ES他有很多版本（ES5/ES6/ES7/ES8/ES9/ES10）
 
 
-![ES6](/Picture/JavaScript/ES6.jpeg)
+![ES6](/img/JavaScript/ES6.jpeg)
 
 
 * 在书中曾这样写道“。Web浏览器只是ECMAScript实现可能存在的一种宿主环境（host environment）。宿主环境提供ECMAScript的基准实现和与环境自身交
@@ -43,7 +43,7 @@
 > ECMA-262第10版，也称为ES10、ES2019，发布于2019年6月。这次修订增加了
 Array.prototype.flat() / flatMap() 、String.prototype.trimStart() / trimEnd() 、Object.fromEntries() 方法，以及Symbol.prototype.description 属性，明确定义了Function.prototype.toString() 的返回值并固定了Array.prototype.sort() 的顺序。另外，这次修订解决了与JSON字符串兼容的问题，并定义了 catch 子句的可选绑定。
 
-![ES6](/Picture/JavaScript/ES6Deleopment.png)
+![ES6](/img/JavaScript/ES6Deleopment.png)
 
 ### DOM
 
