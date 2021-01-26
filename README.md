@@ -1,4 +1,4 @@
-#  :cat: :octocat: 代码学习笔记
+# :octocat: 代码学习笔记
   
 ![intro](/img/intro.png)
 
