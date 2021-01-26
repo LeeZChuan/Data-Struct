@@ -30,6 +30,20 @@ console.log("Hi!");
 }
 </script>
 ```
+    注意：
+    另外，使用了 src 属性的 <script> 元素不应该再在<script> 和 </script> 标签中再包含其他JavaScript代码。如果两者都提供的话，则浏览器只会下载并执行脚本文件，从而忽略行内代码。
+
+要包含外部文件中的JavaScript，就必须使用 src 属性。这个属性的值是一个URL，指向包含JavaScript代码的文件，比如：
+```javascript
+1.<script src="example.js"></script>
+2.<script src="http://www.somewhere.com/afile.js"></script>
+
+```
+    💣前端安全问题：
+    对于2，=>要注意来自外部域的代码会被当成加载它的页面的一部分来加载和解释。这个能力可以让我们通过不同的域分发JavaScript。不过，引用了
+    放在别人服务器上的JavaScript文件时要格外小心，因为恶意的程序员随时可能替换这个文件。在包含外部域的JavaScript文件时，要确保该
+    域是自己所有的，或者该域是一个可信的来源。 <script> 标签的integrity 属性是防范这种问题的一个武器，但这个属性也不是所有浏览器都支持。
+
 
 
 
