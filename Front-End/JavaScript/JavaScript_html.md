@@ -116,6 +116,15 @@ script.src = 'gibberish.js';
 document.head.appendChild(script);
 ```
 
+## 1.6 行内代码与外部文件
+
+## 1.7 文档模式
+
+最初的文档模式有两种：混杂模式（quirks mode）和标准模式（standards mode）。
+
+IE初次支持文档模式切换以后，其他浏览器也跟着实现了。随着浏览器的普遍实现，又出现了第三种文档模式：准标准模式（almost
+standards mode）。这种模式下的浏览器支持很多标准的特性，但是没有标准规定得那么严格。主要区别在于如何对待图片元素周围的空白（在表格中使用图片时最明显）。
+
 
 
 
