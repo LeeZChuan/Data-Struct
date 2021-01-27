@@ -30,8 +30,7 @@ console.log("Hi!");
 }
 </script>
 ```
-    注意：
-    另外，使用了 src 属性的 <script> 元素不应该再在<script> 和 </script> 标签中再包含其他JavaScript代码。如果两者都提供的话，则浏览器只会下载并执行脚本文件，从而忽略行内代码。
+>注意：另外，使用了 src 属性的 <script> 元素不应该再在<script> 和 </script> 标签中再包含其他JavaScript代码。如果两者都提供的话，则浏览器只会下载并执行脚本文件，从而忽略行内代码。
 
 要包含外部文件中的JavaScript，就必须使用 src 属性。这个属性的值是一个URL，指向包含JavaScript代码的文件，比如：
 ```javascript
@@ -43,6 +42,84 @@ console.log("Hi!");
     对于2，=>要注意来自外部域的代码会被当成加载它的页面的一部分来加载和解释。这个能力可以让我们通过不同的域分发JavaScript。不过，引用了
     放在别人服务器上的JavaScript文件时要格外小心，因为恶意的程序员随时可能替换这个文件。在包含外部域的JavaScript文件时，要确保该
     域是自己所有的，或者该域是一个可信的来源。 <script> 标签的integrity 属性是防范这种问题的一个武器，但这个属性也不是所有浏览器都支持。
+
+## 1.2 标签占位符
+
+过去，所有 <script> 元素都被放在页面的 <head> 标签内，
+
+这种做法的主要目的是把外部的CSS和JavaScript文件都集中放到一起。不过，把所有JavaScript文件都放在 <head> 里，也就意味着
+必须把所有JavaScript代码都下载、解析和解释完成后，才能开始渲染页面（页面在浏览器解析到 <body> 的起始标签时开始渲染）。
+对于需要很多JavaScript的页面，这会导致页面渲染的明显延迟，在此期间浏览器窗口完全空白。为解决这个问题，现代Web应用程序通常将所
+有JavaScript引用放在 <body> 元素中的页面内容后面，如下面的例子所示：
+
+```javascript
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example HTML Page</title>
+</head>
+<body>
+<!-- 这里是页面内容 -->
+<script src="example1.js"></script>
+<script src="example2.js"></script>
+</body>
+</html>
+```
+
+这样一来，页面会在处理JavaScript代码之前完全渲染页面。用户会感觉页面加载更快了，因为浏览器显示空白页面的时间短了。
+
+## 1.3 推迟执行脚本（可以加快/优化运行效率）
+
+* HTML 4.01为 <script> 元素定义了一个叫 defer 的属性。这个属性表示脚本在执行的时候不会改变页面的结构。因此，这个脚本
+完全可以在整个页面解析完之后再运行。在 <script> 元素上设置defer 属性，会告诉浏览器应该立即开始下载，但执行应该推迟：
+
+
+```javascript
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example HTML Page</title>
+<script defer src="example1.js"></script>
+<script defer src="example2.js"></script>
+</head>
+<body>
+<!-- 这里是页面内容 -->
+</body>
+</html>
+```
+
+* 虽然这个例子中的 <script> 元素包含在页面的 <head> 中，但它们会在浏览器解析到结束的 </html> 标签后才会执行。HTML5
+规范要求脚本应该按照它们出现的顺序执行，因此第一个推迟的脚本会在第二个推迟的脚本之前执行，而且两者都会在
+DOMContentLoaded 事件之前执行（关于事件，请参考第17章）。不过在实际当中，推迟执行的脚本不一定总会按顺序执行或者在
+DOMContentLoaded 事件之前执行，因此最好只包含一个这样的脚本。
+
+* 对 defer 属性的支持是从IE4、Firefox 3.5、Safari 5和Chrome 7开始的。其他所有浏览器则会忽略这个属性，按照通常的做法来处理
+脚本。考虑到这一点，还是把要推迟执行的脚本放在页面底部比较好。
+
+
+
+      注意 对于XHTML文档，指定 defer 属性时应该写成defer="defer" 。  
+
+## 1.4 异步执行脚本
+
+HTML5为 <script> 元素定义了 async 属性。 async 属性与 defer 类似。当然，它们两者也都只适用于外部脚本，都会告诉浏览器立即开始下载。不过，与 defer不同的是，标记为 async 的脚本并不保证能按照它们出现的次序执行
+
+      注意 对于XHTML文档，指定 async 属性时应该写成async="async" 。
+
+## 1.5 动态加载脚本
+
+除了 <script> 标签，还有其他方式可以加载脚本。因为JavaScript可以使用DOM API，所以通过向DOM中动态添加 script元素同样可以加载指定的脚本。只要创建一个 script 元素并将其添加到DOM即可。
+
+```javascript
+let script = document.createElement('script');
+script.src = 'gibberish.js';
+document.head.appendChild(script);
+```
+
+
+
+
+
 
 
 
