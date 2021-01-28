@@ -33,5 +33,30 @@ var message = "hi"; // 局部变量
 test();
 console.log(message); // 出错！
 ```
+2. var 声明提升
+
+      使用 var 时，下面的代码不会报错。这是因为使用这个关键字声明的变量会自动提升到函数作用域顶部：
+
+```javascript
+function foo() {
+console.log(age);
+var age = 26;
+}
+foo(); // undefined
+```
+
+     这就是所谓的“提升”（hoist），也就是把所有变量声明都拉到函数作用域的顶部。此外，反复多次使用 var 声明同一个变量也没有问题：
+
+## 1.6 let 声明
+
+let 跟 var 的作用差不多，但有着非常重要的区别。最明显的区别是， **let 声明的范围是块作用域，而 var 声明的范围是函数作用域。**
+
+
+
+
+
+
+
+
 
 
