@@ -106,6 +106,25 @@ setTimeout(() => console.log(i), 0)
 
 const 的行为与 let 基本相同，唯一一个重要的区别是用它声明变量时必须同时初始化变量，且尝试修改 const 声明的变量会导致运行时错误。
 
+      不过，如果你只想用 const 声明一个不会被修改的 for 循环变量，那也是可以的。也就是说，每次迭代只是创建一个新变量。这对for-of 和 for-in 循环特别有意义：
+
+```javascript
+let i = 0;
+for (const j = 7; i < 5; ++i) {
+console.log(j);
+}
+// 7, 7, 7, 7, 7
+for (const key in {a: 1, b: 2}) {
+console.log(key);
+}
+// a, b
+for (const value of [1,2,3,4,5]) {
+console.log(value);
+}
+// 1, 2, 3, 4, 5
+
+```
+
 
 
 
