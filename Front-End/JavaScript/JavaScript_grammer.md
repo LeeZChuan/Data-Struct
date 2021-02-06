@@ -125,6 +125,27 @@ console.log(value);
 
 ```
 
+### 1.8 Undefined 类型
+
+Undefined 类型只有一个值，就是特殊值 undefined 。当使用 var 或 let 声明了变量但没有初始化时，就相当于给变量赋予了 undefined 值：
+
+### 1.9 Null 类型
+
+Null 类型同样只有一个值，即特殊值 null 。逻辑上讲，null 值表示一个空对象指针，这也是给 typeof 传一个 null 会返回 "object" 的原因.
+
+在定义将来要保存对象值的变量时，建议使用 null 来初始化，不要使用其他值。这样，只要检查这个变量的值是不是 null 就可以知道这个变量是否在后来被重新赋予了一个对象的引用，比如：
+
+```javascript
+if (car != null) {
+// car是一个对象的引用
+}
+```
+
+### 1.10 Boolean 类型
+
+
+
+
 
 
 
