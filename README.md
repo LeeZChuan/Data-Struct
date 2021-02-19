@@ -27,11 +27,12 @@
 先是对于前端学习路线，我们需要做到一下几点：
 <!-- > 标识了 ✅ 的学习方向是完成了的，没有标识的是还没有开始或者还未完成的 -->
 
-* [✅计算机网络]()
+* [✅计算机网络](Internet/CS_Inter.md)
 * [HTML]()
 * [CSS]()
 * [JavaScript](Front-End/JavaScript/README.md)
-* []()
+* [离散数学]()
+* [操作系统]()
 
 
 ![frontend](/img/frontend.png)
