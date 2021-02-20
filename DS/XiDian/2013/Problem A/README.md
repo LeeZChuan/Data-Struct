@@ -17,4 +17,4 @@
      no
      yes
 
-![例子](/DS/XiDian/2013/A.jpg)
+![例子](Problem A/A.jpg)
