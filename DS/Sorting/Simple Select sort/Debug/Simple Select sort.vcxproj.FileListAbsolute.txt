@@ -1,0 +1,2 @@
+D:\CodeLearning\DS\Sorting\Simple Select sort\Debug\Simple Select sort.exe
+D:\CodeLearning\DS\Sorting\Simple Select sort\Debug\Simple Select sort.pdb

@@ -1,9 +1,1 @@
-﻿################################################################################
-# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
-################################################################################
-
-/.vs/Scrpit/v16
-/Heap sort/demo/.vs/Heap sort1/v16
-/Search/Binary Search/.vs/Binary Search/v16/Browse.VC.db
-/Search/Sequential Search/.vs/Sequential Search/v16/Browse.VC.db
-/Search/Sequential Search/.vs/Sequential Search/v16
+﻿
