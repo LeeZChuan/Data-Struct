@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EverySearch",
-    "\\Search"
+    "\\DS",
+    "\\DS\\Sorting",
+    "\\DS\\XiDian",
+    "\\DS\\XiDian\\2013",
+    "\\DS\\XiDian\\2013\\Problem A"
   ],
-  "SelectedNode": "\\EverySearch\\README.md",
+  "SelectedNode": "\\DS\\XiDian\\2013\\Problem A\\README.md",
   "PreviewInSolutionExplorer": false
 }
