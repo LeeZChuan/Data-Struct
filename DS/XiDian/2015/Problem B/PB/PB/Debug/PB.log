@@ -1,0 +1,6 @@
+﻿  PB.cpp
+D:\CodeLearning\DS\XiDian\2015\Problem B\PB\PB\PB.cpp(13,20): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+D:\CodeLearning\DS\XiDian\2015\Problem B\PB\PB\PB.cpp(13,20): message : 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
+D:\CodeLearning\DS\XiDian\2015\Problem B\PB\PB\PB.cpp(13,20): message : 缺失的可变参数 2 为格式字符串“%s”所需
+D:\CodeLearning\DS\XiDian\2015\Problem B\PB\PB\PB.cpp(13,20): message : 此参数用作缓冲区大小
+  PB.vcxproj -> D:\CodeLearning\DS\XiDian\2015\Problem B\PB\Debug\PB.exe
