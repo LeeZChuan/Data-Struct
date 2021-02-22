@@ -2,11 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\DS",
-    "\\DS\\Sorting",
     "\\DS\\XiDian",
-    "\\DS\\XiDian\\2013",
-    "\\DS\\XiDian\\2013\\Problem A"
+    "\\DS\\XiDian\\2015\\Problem A",
+    "\\DS\\XiDian\\2015\\Problem B\\PB",
+    "\\DS\\XiDian\\2015\\Problem B\\PB\\PB",
+    "\\DS\\XiDian\\2015\\Problem C",
+    "\\DS\\XiDian\\2015\\Problem C\\PC",
+    "\\DS\\XiDian\\2015\\Problem C\\PC\\PC"
   ],
-  "SelectedNode": "\\DS\\XiDian\\2013\\Problem A\\README.md",
+  "SelectedNode": "\\DS\\XiDian\\C++排序.docx",
   "PreviewInSolutionExplorer": false
 }
