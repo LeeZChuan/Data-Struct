@@ -1,9 +1,20 @@
 ﻿//压缩字符串
 //测试数据：    ABBCCC
 //有小问题
+/*压缩字符串
+输入只含 A - Z 的字符串 不超过 1000 个字母 将连续相同字母压缩为重复次数 + 字幕（这个
+忘记是多组输入还是单组了）
+例
+输入
+ABBCCC
+输出
+A2B3C
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+*/
+
+#include <iostream>
 using namespace std;
 
 int main()
@@ -11,7 +22,7 @@ int main()
     int cou = 1;
     char c;
     char s1[1000]; //保存初始输入的字符串
-    while (scanf_s("%s", s1) != EOF)
+    while (scanf("%s", s1) != EOF)
     {
         char s2[1000] = { '\0' };  //字符数组初始化为空
         int size = strlen(s1);
@@ -29,11 +40,11 @@ int main()
             char str[4];
             s3[0] = c;
             s3[1] = '\0';
-            strcat_s(s2, s3);
+            strcat(s2, s3);
             if (cou != 1)
             {
-                _itoa_s(cou, str, 10);  //类型转换函数。将十进制无符号整形cou转化成字符串str
-                strcat_s(s2, str);
+                itoa(cou, str, 10);  //类型转换函数。将十进制无符号整形cou转化成字符串str
+                strcat(s2, str);
             }
             cou = 1;
         }
