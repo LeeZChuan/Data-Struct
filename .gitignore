@@ -1,2 +1,5 @@
-﻿.vs
+﻿# git忽略上传的文档
+
+.vs
 .vscode
+.Debug
