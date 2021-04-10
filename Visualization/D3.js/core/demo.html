@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" content="">
+        <title>core - transition.attrTween(name,tween)</title>
+        <style type="text/css">
+        svg circle{
+            fill: orange;
+        }
+        </style>
+        <script type="text/javascript" src="../d3/d3.js"></script>
+    </head>
+    <body>
+        <text>10</text>
+        <script type="text/javascript">
+        //使用自定义补间函数过度文本内容
+       d3.select("text")
+        .transition()//开启动画
+        .duration(8000)//数据动画持续8000ms
+        // .ease(Math.sqrt)//线性缓动函数，用于动画变动效果
+        .tween("text",function()
+        {
+         var interpolate=d3.interpolate(d3.select(this).text(),1000);
+            return  function (t) {
+                d3.select(this).text(interpolate(t));  
+            };
+        });
+        
+        </script>
+    </body>
+</html>
