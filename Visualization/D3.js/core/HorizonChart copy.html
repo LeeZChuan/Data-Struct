@@ -38,8 +38,7 @@
                 pathId: DOM.uid("path")
             }, d)))
             .join("g")
-            .attr("transform", (d, i) => `translate(0,${i * (step + 1) + margin.top})`);
-            //用于将整体画框与顶部的margin的顶部向下移动
+            .attr("transform", (d, i) => `translate(0,${i * (step + 1) + margin.top})`);//用于将整体画框与顶部的margin的顶部向下移动
 
         g.append("clipPath")
             .attr("id", d => d.clipId.id)
