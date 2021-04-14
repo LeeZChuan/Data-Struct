@@ -34,6 +34,10 @@
 * [离散数学]()
 * [操作系统]()
 
+对于可视化学习方向可以将基础的常见工具学习精通
+* [Grafana](Visualization/Grafana/README.md)
+* [Echarts](Visualization/Echarts/README.md)
+* [D3.js](Visualization/D3.js/READMD.md)
 
 ![frontend](/img/frontend.png)
 
