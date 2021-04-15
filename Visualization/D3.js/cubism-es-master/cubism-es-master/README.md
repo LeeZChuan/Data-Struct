@@ -1,0 +1,76 @@
+# cubism-es
+cubism-es is an ES6 module of [cubism](https://github.com/square/cubism), based on D3V5.
+
+> **IMPORTANT** Version 1.1.0 contains api breaks. Please see below for details
+
+
+## Usage:
+
+1. ES6 Usage
+
+```
+npm install cubism-es --save
+import { context } from 'cubism-es';
+```
+Please note adding `cubism-es` will automatically add `d3` as a dependency into your project.
+From version `1.1.2`, there's no need to declare d3 as globals in your project with the `webpack ProvidePlugin`
+
+2. Standalone Usage
+
+```
+<script src="lib/d3.v5.min.js" charset="utf-8" type="application/javascript"></script>
+<script src="lib/cubism-es.standalone.js" charset="utf-8" type="application/javascript"></script>
+```
+
+## API Breaks (v1.1.0)
+function | cubism | cubism-es
+--- | --- | ---
+**Context.axis** | `d3.select(...).call(context.axis)` | `context.axis().render(d3.select(...))`
+**Context.rule** | `d3.select(...).call(context.rule)` | `context.rule().render(d3.select(...))`
+**Context.horizon** | `d3.select(...).call(context.horizon)` | `context.horizon().render(d3.select(...))`
+
+## API Breaks (v1.0.0 and previous)
+function | cubism | cubism-es
+--- | --- | ---
+**Context** | `d3.select(...).call(cubism.context)` | `const context = cubism.context(d3.select(...)).height(30)`
+**Context.axis** | `d3.select(...).call(context.axis)` | `context.axis(d3.select(...))`
+**Context.rule** | `d3.select(...).call(context.rule)` | `context.rule(d3.select(...))`
+**Context.horizon** | `d3.select(...).call(context.horizon)` | `context.horizon(d3.select(...))`
+
+
+## Demo
+the following samples work, you can try them by downloading this project and running `npm install` and `npm run dev`:
+
+* Mike, Bostock's [stock demo](https://bost.ocks.org/mike/cubism/intro/demo-stocks.html)
+* Patrick, Thompson's [Discrete Cubism](http://bl.ocks.org/patrickthompson/4d508eb3b8feac90762e)
+* Square Inc's [demo](http://square.github.io/cubism/)
+* Mike, Bostock's [random demo](https://bost.ocks.org/mike/cubism/intro/demo-random.html)
+* Comparison
+
+## Development
+1. Clone repository
+2. Run commands
+```
+npm install         // install dependencies
+npm run dev         // view demos in web browser at localhost:3004
+npm run build       // build
+npm run test        // run tests only
+npm run test:cover  // run tests and view coverage report
+```
+
+## Documentation
+For more information, please visit square/cubism's [home page](http://square.github.io/cubism/) and [wiki](https://github.com/square/cubism/wiki)
+
+
+## Limitation
+Graphite, Cube and GangliaWeb have not been verified yet.
+
+## Credits
+Contributors of the original [cubism](https://github.com/square/cubism).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+
+
