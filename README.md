@@ -34,10 +34,17 @@
 * [离散数学]()
 * [操作系统]()
 
+
+> 标识了 ✅ 的工具是目前常用的，没有标识的是还没有开始使用或者市面上现有的工具
 对于可视化学习方向可以将基础的常见工具学习精通
-* [Grafana](Visualization/Grafana/README.md)
-* [Echarts](Visualization/Echarts/README.md)
-* [D3.js](Visualization/D3.js/READMD.md)
+* [✅Grafana](Visualization/Grafana/README.md)
+* [Qlink]()
+* [Superset]()
+* [✅Echarts](Visualization/Echarts/README.md)
+* [✅D3.js](Visualization/D3.js/READMD.md)
+* [VegaLite]()
+
+
 
 ![frontend](/img/frontend.png)
 
