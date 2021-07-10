@@ -124,3 +124,12 @@ padding-left
 
 * css高度和宽度
 
+
+
+* css的position定位：分别由有absolute relative
+* 其中position有absolute relative
+* absolute : 　将对象从文档流中拖出，使用left，right，top，bottom等属性进行绝对定位。而其层叠通过css z-index属性定义。此时对象不具有边距，但仍有补白和边框
+* relative : 　对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置
+
+
+使用原因：有时一个布局中几个小对象，不易用css padding、css margin进行相对定位
