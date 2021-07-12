@@ -90,12 +90,12 @@ bind() 方法创建一个新的函数，在 bind() 被调用时，这个新函�
 
 
 ## 2. 组件的3大属性: props
-	所有组件标签的属性的集合对象
-	给标签指定属性, 保存外部数据(可能是一个function)
+所有组件标签的属性的集合对象，给标签指定属性, 保存外部数据(可能是一个function)
+	
 	在组件内部读取属性: this.props.propertyName
 	作用: 从目标组件外部向组件内部传递数据
 	对props中的属性值进行类型限制和必要性限制
-		Person.propTypes = {
+		Person.propTypes = {	
 			name: React.PropTypes.string.isRequired,
 			age: React.PropTypes.number.isRequired
 		}
@@ -104,4 +104,38 @@ bind() 方法创建一个新的函数，在 bind() 被调用时，这个新函�
 
 ## 3. 组件的3大属性: ref
 
-用处：组件内的标签可以定义ref属性来标识自己
+用处：组件内的标签可以定义ref属性来标识自己，但是在最新的文档更新了，弃用了ref标签的使用方式，字符串类型的ref不建议使用
+
+
+    建议使用回调函数形式的ref
+
+	执行回调函数的ref：<input ref={(c)=>{this.input=c}}>
+
+```javascript
+//创建组件
+		class Demo extends React.Component{
+			//展示左侧输入框的数据
+			showData = ()=>{
+				const {input1} = this
+				alert(input1.value)
+			}
+			//展示右侧输入框的数据
+			showData2 = ()=>{
+				const {input2} = this
+				alert(input2.value)
+			}
+			render(){
+				return(
+					<div>
+						<input ref={c => this.input1 = c } type="text" placeholder="点击按钮提示数据"/>&nbsp;
+						<button onClick={this.showData}>点我提示左侧的数据</button>&nbsp;
+						<input onBlur={this.showData2} ref={c => this.input2 = c } type="text" placeholder="失去焦点提示数据"/>&nbsp;
+					</div>
+				)
+			}
+		}
+```
+
+
+
+
