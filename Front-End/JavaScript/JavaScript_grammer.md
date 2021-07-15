@@ -143,13 +143,13 @@ if (car != null) {
 
 ### 1.10 Boolean 类型
 
-数据类型 | 转换为true的值 | 转换为false的值
---- | --- | ---
-**Boolean** | true | false
-**String** | 非空字符串 | ""(空字符串)
-**Number** | 非零数值 | 0、NaN
-**Object** | 任意对象 | null
-**Undefinead** | 未声明 | undefined
+| 数据类型       | 转换为true的值 | 转换为false的值 |
+| -------------- | -------------- | --------------- |
+| **Boolean**    | true           | false           |
+| **String**     | 非空字符串     | ""(空字符串)    |
+| **Number**     | 非零数值       | 0、NaN          |
+| **Object**     | 任意对象       | null            |
+| **Undefinead** | 未声明         | undefined       |
 
 ### 1.11 Number 类型
 
@@ -200,15 +200,76 @@ v();
 v();
 
 ```
+## 3 关系操作符
+
+### 3.1相等操作符
+
+1. 等于和不等于：等于号用（==）表示，不等于使用（!=）表示，在使用两个操作符都会先进行类型转换（通常称为强制类型转换）
+2. 如果在进行相等或者不等操作，一般**false**与**true**分别转化为0与1
+3. 如果一个操作数是字符串，另一个操作数是数，则将字符串转化城数值再进行比较
+4. 如果一个操作数是对象，另一个操作数不是，则调用对象的valueOf()方法取得其原始值，再根据前面的规则进行比较
+
+常见样式
+表达式 结果
+
+    null == undefined true
+    "NaN" == NaN false
+    5 == NaN false
+    NaN == NaN false
+    NaN != NaN true
+    false == 0 true
+    true == 1 true
+    true == 2 false
+    undefined == 0 false
+    null == 0 false
+    "5" == 5 true     
+
+### 3.2 全等和不全等
+
+全等操作符由三个等于号表示，只有两个操作数在不转换得前提下相等才返回true
+
+
+### 3.3 总结
+
+ES6得基本数据类型包括Undefined、Null、Boolean、Number、String和Symbol
+
+ES6不区分整数和浮点数，只有Number一种数值数据类型
+
+
+## 4 变量、作用域与内存
+
+### 4.1 动态属性
+
+```javascript
+let name1 = "Nicholas";
+let name2 = new String("Matt");
+name1.age = 27;
+name2.age = 26;
+console.log(name1.age); // undefined
+console.log(name2.age); // 26
+console.log(typeof name1); // string
+console.log(typeof name2); // object
+```
+
+### 4.2 赋值
+
+>  原始值与引用值通过变量赋值时，再通过变量吧一个原始值赋值到另一个变量时，原始值会被复制到新变量得位置；这里复制得值实际上一个指针，他指向存储在堆内存中得对象。完成赋值操作后，两个变量实际上指向同一个对象，因此一个对象上面得变化会在另一个对象上反应出来
+>  对于var声明变量时，变量会被自动添加到最接近得上下文（如果var变量声明得在函数的局部上下文，那么函数外侧也无法获取到该变量）
+> 如果变量没有声明就被初始化了，那么他会自动被添加到全局上下文
+> 在ES6所提到的let不会像var对象那样导致变量提升，
 
 
 
-
-
-
-
-
-
+```javascript
+let name1 = "Nicholas";
+let name2 = new String("Matt");
+name1.age = 27;
+name2.age = 26;
+console.log(name1.age); // undefined
+console.log(name2.age); // 26
+console.log(typeof name1); // string
+console.log(typeof name2); // object
+```
 
 
 
