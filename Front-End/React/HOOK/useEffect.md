@@ -1,0 +1,3 @@
+# useEffect
+useEffect()可以看做是class写法的componentDidMount、componentDidUpdate以及componentWillUnMount三个钩子函数的组合。
+
