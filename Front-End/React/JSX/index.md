@@ -102,4 +102,13 @@ ReactDOM.render(<MyComponent/>...执行了什么：
 1.React解析组件标签，找到了MyComponent组件
 2.发现该组件是使用类定义的，随后new出来该类的实例，并通过该实例调用到原型上的render方法。
 3.将render返回的虚拟DOM，转化为真实DOM，随后呈现在页面上。
+4.在组件中你修改调用状态修改就会启动render
+```
+
+### 1.3.1 在React中使用类对象
+
+卸载dom组件，使用ReactDOM组件卸载方法
+
+```javascript
+ReactDOM.unmountComponentAtNode(document.getElementById('test'))
 ```
