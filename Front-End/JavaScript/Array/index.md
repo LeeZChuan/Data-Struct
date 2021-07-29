@@ -115,3 +115,133 @@ points.sort(function(a, b){return b - a});
 var points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return 0.5 - Math.random()});
  ```
+
+
+##  JavaScript 查找最高（或最低）的数组值。
+
+```javascript
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});//升序排序
+
+// 现在 points[0] 包含最低值
+// 而 points[points.length-1] 包含最高值
+```
+
+##  JavaScript 对数组使用 Math.max()方法/自定义查找最大最小方法
+
+     您可以使用 Math.max.apply 来查找数组中的最高值：
+     您可以使用 Math.min.apply 来查找数组中的最低值：
+
+
+```javascript
+function myArrayMax(arr) {
+    return Math.max.apply(null, arr);
+}
+
+Math.max.apply([1, 2, 3]) 等于 Math.max(1, 2, 3)。
+```
+
+```javascript
+//自定义查找方法
+function myArrayMax(arr) {
+    var len = arr.length
+    var max = -Infinity;
+    while (len--) {
+        if (arr[len] > max) {
+            max = arr[len];
+        }
+    }
+    return max;
+}
+```
+
+# JavaScript 数组迭代方法
+
+## Array.forEach() forEach() 方法为每个数组元素调用一次函数（回调函数）。
+
+```javascript
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  txt = txt + value + "<br>"; 
+}
+```
+
+## Array.map()
+
+     map() 方法通过对每个数组元素执行函数来创建新数组。
+
+     map() 方法不会对没有值的数组元素执行函数。
+
+     map() 方法不会更改原始数组。
+
+     这个例子将每个数组值乘以2：
+ 
+```javascript
+ var numbers1 = [45, 4, 9, 16, 25];
+var numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+```
+
+## Array.filter()
+
+filter() 方法创建一个包含通过测试的数组元素的新数组
+
+这个例子用值大于 18 的元素创建一个新数组：
+
+```javascript
+var numbers = [45, 4, 9, 16, 25];
+var over18 = numbers.filter(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+```
+
+## Array.reduce()
+
+     reduce() 方法在每个数组元素上运行函数，以生成（减少它）单个值。
+
+     reduce() 方法在数组中从左到右工作。另请参阅 reduceRight()。
+
+     reduce() 方法不会减少原始数组。     
+
+
+```javascript
+var numbers1 = [45, 4, 9, 16, 25];
+var sum = numbers1.reduce(myFunction);
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+```
+
+## Array.every()
+
+
+```javascript
+//every() 方法检查所有数组值是否通过测试。
+
+//这个例子检查所有数组值是否大于 18：
+
+var numbers = [45, 4, 9, 16, 25];
+var allOver18 = numbers.every(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+```
+
+## Array.indexOf()
+
+```javascript
+//indexOf() 方法在数组中搜索元素值并返回其位置。
+//注释：第一个项目的位置是 0，第二个项目的位置是 1，以此类推。
+var fruits = ["Apple", "Orange", "Apple", "Mango"];
+var a = fruits.indexOf("Apple");
+```
