@@ -280,5 +280,110 @@ console.log(typeof name2); // object
 ### 5.2原始值包装类型
 
 
+## 6.Promise、async与await
+
+### 6.1 Promise
+
+   解决的是将程序异步执行变成同步执行
+
+- 执行async函数，返回的都是Promise对象
+
+```javascript
+async function test1()
+{
+      return 1;
+}
+
+async funcation test2(){
+      return Promise.resolve(2);
+}
+
+//以上两个输出都是Promise对象
+
+//Promise.then成功的情况对应await
+
+async function test3(){
+      const p3=Promise.resolve(3);
+      p3.then(data=>{
+            console.log('data',data);
+      })
+
+      const data=await p3;
+}
+
+async function test4() {
+	const data = await 4;//await Promise.resolve(4);
+	console.log('data', data);
+
+}
+
+test4();
+
+```
+[Promise例子](./原理实现/Promise/Promise.html)
+
+### 6.2 Promise的then，catch如何改变promise状态
+
+- then正常返回的时候，Promise的状态是fulfilled
+- 报错的时候Promise的状态是rejected
+- catch正常返回的时候Promise的状态是fulfilled，
+- 报错返回的状态是rejected
 
 
+
+- fulfilled状态的Promise会执行then里面的回调函数
+- rejected状态的Promise会执行catch里面的回调函数
+
+
+
+* 如果回调函数throw了一个Error的话，那么这个Promise的状态就回变成rejected
+
+
+## 7.深拷贝与浅拷贝
+
+- 浅拷贝由于引用是指针上的引用，没有改变对象的储存地址，当在引用对象进行了修改，原始数据上也会进行修改
+- 而深拷贝，当拷贝完成，那么你在修改新的对象的时候，并不会出现原始对象也被修改的情况
+
+
+```javascript
+function deepCopy(obj) {
+    if (typeof obj !== 'object' || obj == null) {
+        return obj;
+    }
+    let result;
+    if (obj instanceof Array) {
+        result = [];
+    } else {
+        result = {};
+    }
+    //开始拷贝
+    for (let key in obj) {
+        // result[key] = obj[key];//深拷贝核心--一层克隆
+        if(obj.hasOwnProperty(key)){
+              //hasOwnProperty() 方法会返回一个布尔值，指示对象自身属性中是否具有指定的属性（也就是，是否有指定的键）。
+            result[key]=deepCopy(obj[key]);//递归调用嵌套对象就不会被影响到
+        }
+    }
+    return result;
+}
+
+//对于数组对象的深拷贝则有两个方法
+
+//（1）for循环实现数组的深拷贝
+//（2）concat 方法实现数组的深拷贝
+
+concat() 方法用于连接两个或多个数组。
+
+//(3)slice 方法实现数组的深拷贝
+
+arrayObject.slice(start,end)
+
+//（4）ES6扩展运算符实现数组的深拷贝
+// ...扩展运算符是ES6的语法，使用起来非常的方便简洁，相信在写ES6的时候也是备受欢迎的。但是需要注意的是：用扩展运算符对数组或者对象进行拷贝时，只能扩展和深拷贝第一层的值，对于第二层极其以后的值，扩展运算符将不能对其进行打散扩展，也不能对其进行深拷贝，即拷贝后和拷贝前第二层中的对象或者数组仍然引用的是同一个地址，其中一方改变，另一方也跟着改变。
+
+1 var arr1 = [1, 2, 3];
+2 var [...arr2] = arr1;
+3 arr1[0] = 4;
+4 console.log(arr1); //4, 2, 3
+5 console.log(arr2); //1, 2, 3
+```
