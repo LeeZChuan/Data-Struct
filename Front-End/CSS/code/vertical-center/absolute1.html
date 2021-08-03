@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>absolute + 负margin</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .wp {
+            position: relative;
+        }
+        .box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>absolute + 负margin</h1>
+    <div class="wp">
+        <div class="left-dot" style=" background: red;" ></div>
+        <div class="top-dot" style=" background: red;" ></div>
+        <div class="box size"></div>
+    </div>
+    
+    <script src="//yanhaijing.com/assets/plugin/tongji/baidu.js"></script>
+</body>
+</html>

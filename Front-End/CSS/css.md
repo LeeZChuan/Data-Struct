@@ -126,10 +126,15 @@ padding-left
 
 
 
-* css的position定位：分别由有absolute relative
-* 其中position有absolute relative
-* absolute : 　将对象从文档流中拖出，使用left，right，top，bottom等属性进行绝对定位。而其层叠通过css z-index属性定义。此时对象不具有边距，但仍有补白和边框
-* relative : 　对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置
+* css的position定位：分别有static、absolute、relative、fixed、sticky
+* static(静态)，静态定位的元素不受top、bottom、left、right属性的影响，根据页面的正常流程来继续进行绘制
+* absolute （绝对定位）: 　将对象从文档流中拖出，使用left，right，top，bottom等属性进行绝对定位。而其层叠通过css z-index属性定义。此时对象不具有边距，但仍有补白和边框
+* relative （相对定位）: 　对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置
+* fixed()：元素是相对于窗口进行定位的，这意味着即使滚动页面，他也始终处于同一位置，一般试用于需要一直展示在页面上方的效果
 
 
 使用原因：有时一个布局中几个小对象，不易用css padding、css margin进行相对定位
+
+
+* css的Display
+* 
