@@ -128,13 +128,14 @@ padding-left
 
 * css的position定位：分别有static、absolute、relative、fixed、sticky
 * static(静态)，静态定位的元素不受top、bottom、left、right属性的影响，根据页面的正常流程来继续进行绘制
-* absolute （绝对定位）: 　将对象从文档流中拖出，使用left，right，top，bottom等属性进行绝对定位。而其层叠通过css z-index属性定义。此时对象不具有边距，但仍有补白和边框
+* absolute （绝对定位）: 　将对象从文档流中拖出，使用left，right，top，bottom等属性进行绝对定位。而其层叠通过css z-index属性定义。此时对象不具有边距，但仍有补白和边框，并且设置absolute的元素回相对于最近的定位祖先进行定位，如果没有那么就会按照窗口windos来定位
 * relative （相对定位）: 　对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置
-* fixed()：元素是相对于窗口进行定位的，这意味着即使滚动页面，他也始终处于同一位置，一般试用于需要一直展示在页面上方的效果
+* fixed()：元素是相对于窗口进行定位的，这意味着即使滚动页面，他也始终处于同一位置，一般用于需要一直展示在窗口正上方的效果
+* sticky(粘性定位):根据用户的滚动位置进行定位，粘性定位根据滚动位置在相对(relative)和固定(fixed)之间进行切换。起先它会被相对定位，知道在视口中遇到给定的偏移位置为止，然后将其"粘贴"在适当的位置
 
 
 使用原因：有时一个布局中几个小对象，不易用css padding、css margin进行相对定位
 
 
-* css的Display
+* css的重叠元素，z-index数据指定元素的堆栈顺序(那个元素放置在其他元素的前面或者后面·)，
 * 
