@@ -245,3 +245,7 @@ function myFunction(value, index, array) {
 var fruits = ["Apple", "Orange", "Apple", "Mango"];
 var a = fruits.indexOf("Apple");
 ```
+
+
+## for...in
+for...in语句以任意顺序遍历一个对象的除Symbol以外的可枚举属性。
