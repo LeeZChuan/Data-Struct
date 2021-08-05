@@ -392,3 +392,11 @@ arrayObject.slice(start,end)
 4 console.log(arr1); //4, 2, 3
 5 console.log(arr2); //1, 2, 3
 ```
+
+## 8.Math
+
+  Math()方法一般常有random()方法返回一个0-1范围内的随机数，其中包含0不包含1，
+  ceil()方法始终向上舍入为最接近的整数。
+  floor()方法始终向下舍入为最接近的整数。
+  注意：如果是想要为了加密而需要生成随机数，建议使用window.crpto.getRandomValues()
+
