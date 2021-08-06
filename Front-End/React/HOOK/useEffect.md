@@ -1,3 +1,6 @@
 # useEffect
 useEffect()可以看做是class写法的componentDidMount、componentDidUpdate以及componentWillUnMount三个钩子函数的组合。
 
+
+其中useEffect这个钩子函数可以用不同state进行监控渲染，也就是当state变化的时候这个钩子函数就会重新加载执行组件
+
