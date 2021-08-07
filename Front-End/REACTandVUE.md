@@ -94,3 +94,13 @@ Vue合理利用了snabbdom库的模块插件
 React
 React原生事件被包装，所有事件都冒泡到顶层document监听，然后在这里合成事件下发 。基于这套，可以跨端使用事件机制，而不是和Web DOM强绑定。
 React组件上无事件，父子组件通信使用props
+
+
+
+综合：
+component层面，web component和virtual dom
+数据绑定（vue双向，react的单向）等好多
+计算属性 vue 有，提供方便；而 react 不行
+vue 可以 watch 一个数据项；而 react 不行
+vue 由于提供的 direct 特别是预置的 directive 因为场景场景开发更容易；react 没有
+生命周期函数名太长 directive
