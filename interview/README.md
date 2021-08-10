@@ -1,6 +1,3 @@
-作者：AmbitionC
-链接：https://www.nowcoder.com/discuss/258810
-来源：牛客网
 
 一、JavaScript
 1. 原始值和引用值类型及区别
