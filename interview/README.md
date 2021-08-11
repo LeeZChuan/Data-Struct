@@ -1,3 +1,84 @@
+- [一、JavaScript](#一javascript)
+  - [1. 原始值和引用值类型及区别](#1-原始值和引用值类型及区别)
+  - [2. 判断数据类型typeof、instanceof、Object.prototype.toString.call()、constructor](#2-判断数据类型typeofinstanceofobjectprototypetostringcallconstructor)
+  - [3. 类数组与数组的区别与转换](#3-类数组与数组的区别与转换)
+  - [1. 数组的常见API](#1-数组的常见api)
+  - [5. bind、call、apply的区别](#5-bindcallapply的区别)
+  - [6. new的原理](#6-new的原理)
+  - [7. 如何正确判断this？](#7-如何正确判断this)
+  - [8. 闭包及其作用](#8-闭包及其作用)
+  - [9.  原型和原型链](#9--原型和原型链)
+  - [10. prototype与__proto__的关系与区别](#10-prototype与__proto__的关系与区别)
+  - [11. 继承的实现方式及比较](#11-继承的实现方式及比较)
+  - [12. 深拷贝与浅拷贝](#12-深拷贝与浅拷贝)
+  - [13. 防抖和节流](#13-防抖和节流)
+  - [14. 作用域和作用域链、执行期上下文](#14-作用域和作用域链执行期上下文)
+  - [15. DOM常见的操作方式](#15-dom常见的操作方式)
+  - [16. Array.sort()方法与实现机制](#16-arraysort方法与实现机制)
+  - [17. Ajax的请求过程](#17-ajax的请求过程)
+  - [18. JS的垃圾回收机制](#18-js的垃圾回收机制)
+  - [19. JS中的String、Array和Math方法](#19-js中的stringarray和math方法)
+  - [20. addEventListener和onClick()的区别](#20-addeventlistener和onclick的区别)
+  - [21. new和Object.create的区别](#21-new和objectcreate的区别)
+  - [22. DOM的location对象](#22-dom的location对象)
+  - [23. 浏览器从输入URL到页面渲染的整个流程（涉及到计算机网络数据传输过程、浏览器解析渲染过程）](#23-浏览器从输入url到页面渲染的整个流程涉及到计算机网络数据传输过程浏览器解析渲染过程)
+  - [24.  跨域、同源策略及跨域实现方式和原理](#24--跨域同源策略及跨域实现方式和原理)
+  - [25. 浏览器的回流（Reflow）和重绘（Repaints）](#25-浏览器的回流reflow和重绘repaints)
+  - [26. JavaScript中的arguments](#26-javascript中的arguments)
+  - [27. EventLoop事件循环](#27-eventloop事件循环)
+  - [28. 宏任务与微任务](#28-宏任务与微任务)
+  - [29. BOM属性对象方法](#29-bom属性对象方法)
+  - [30. 函数柯里化及其通用封装](#30-函数柯里化及其通用封装)
+  - [31. JS的map()和reduce()方法](#31-js的map和reduce方法)
+  - [32. “==”和“===”的区别](#32-和的区别)
+  - [33. setTimeout用作倒计时为何会产生误差？](#33-settimeout用作倒计时为何会产生误差)
+- [二、ES6](#二es6)
+  - [1. let、const和var的概念与区别](#1-letconst和var的概念与区别)
+  - [2. 变量提升与暂时性死区](#2-变量提升与暂时性死区)
+  - [3. 变量的解构赋值](#3-变量的解构赋值)
+  - [4. 箭头函数及其this问题](#4-箭头函数及其this问题)
+  - [5. Symbol概念及其作用](#5-symbol概念及其作用)
+  - [6. Set和Map数据结构](#6-set和map数据结构)
+  - [7. Proxy](#7-proxy)
+  - [8. Reflect对象](#8-reflect对象)
+  - [9.  Promise（手撕Promise A+规范、Promise.all、Promise相关API和方法）](#9--promise手撕promise-a规范promiseallpromise相关api和方法)
+  - [10. Iterator和for...of（Iterator遍历器的实现）](#10-iterator和forofiterator遍历器的实现)
+  - [11. 循环语法比较及使用场景（for、forEach、for...in、for...of）](#11-循环语法比较及使用场景forforeachforinforof)
+  - [12. Generator及其异步方面的应用](#12-generator及其异步方面的应用)
+  - [13. async函数](#13-async函数)
+  - [14. 几种异步方式的比较（回调、setTimeout、Promise、Generator、async）](#14-几种异步方式的比较回调settimeoutpromisegeneratorasync)
+    - [why](#why)
+  - [15.   class基本语法及继承](#15---class基本语法及继承)
+  - [16.  模块加载方案比较（CommonJS和ES6的Module）](#16--模块加载方案比较commonjs和es6的module)
+  - [17.  ES6模块加载与CommonJS加载的原理](#17--es6模块加载与commonjs加载的原理)
+- [三、HTML/CSS](#三htmlcss)
+  - [1. CSS权重及其引入方式](#1-css权重及其引入方式)
+  - [2. <a></a>标签全部作用](#2-标签全部作用)
+  - [3. 用CSS画三角形](#3-用css画三角形)
+  - [4. 未知宽高元素水平垂直居中（方案及比较）](#4-未知宽高元素水平垂直居中方案及比较)
+  - [5. 元素种类的划分](#5-元素种类的划分)
+  - [6. 盒子模型及其理解](#6-盒子模型及其理解)
+  - [7. 定位方式及其区别（文档流）](#7-定位方式及其区别文档流)
+  - [8. margin塌陷及合并问题](#8-margin塌陷及合并问题)
+  - [9.  浮动模型及清除浮动的方法](#9--浮动模型及清除浮动的方法)
+  - [10. CSS定位属性](#10-css定位属性)
+  - [11. display及相关属性](#11-display及相关属性)
+  - [12. IFC与BFC](#12-ifc与bfc)
+  - [13. 圣杯布局和双飞翼布局的实现](#13-圣杯布局和双飞翼布局的实现)
+  - [14. Flex布局](#14-flex布局)
+  - [15. px、em、rem的区别](#15-pxemrem的区别)
+  - [16. Less预处理语言](#16-less预处理语言)
+  - [17. 媒体查询](#17-媒体查询)
+  - [18. vh与vw](#18-vh与vw)
+  - [19. H5的语义化作用及语义化标签](#19-h5的语义化作用及语义化标签)
+  - [20. Web Worker和Web Socket](#20-web-worker和web-socket)
+  - [21. CSS3及相关动画](#21-css3及相关动画)
+  - [22. 如何实现响应式布局](#22-如何实现响应式布局)
+  - [23. SEO的概念及实现](#23-seo的概念及实现)
+  - [24. HTML5的新特性](#24-html5的新特性)
+  - [25. Less和Sass使用](#25-less和sass使用)
+- [四、HTTP与计算机网络](#四http与计算机网络)
+
 
 # 一、JavaScript
 ## 1. 原始值和引用值类型及区别
@@ -267,9 +348,11 @@ reload 强制从服务器从新加载当前页面，replace 重新加载页面�
 
 跨域之所以出现是因为浏览器为了保证安全而制定的一个同源策略，浏览器之外是不存在跨域的，同源策略是一个域去访问另一个域中的资源是会被禁止，同源要求 ur 协议，主机名，端口都相同
 
-解决跨域一般有四种方式：第一种是通过跨域资源共享，这种是在服务端进行解决，第二种是使用 jsonp，这种方式的缺点是只能发 get 请求，不能捕获服务端的错误，并且请求过程无法终止，是利用了浏览器对 script 标签没有同源策略的限制来实现的，第三种是通过 webscort 来解决跨域，这是因为他是个全双工协议，不是同源策略限制，最后一种是通过代理转发的方式，比如 webpack 的 devserve，nginx 配置 proxy_pass
-
-还有一种跨域是父子页面的跨域，例如使用 iframe 来进行父子页面之间的通信，这是可以使用，postMessage 来进行通信，也可以用过改域的方式来解决，将 document.domain 改成更高的父域
+解决跨域一般有四种方式：
+1. 第一种是通过跨域资源共享，这种是在服务端进行解决，
+2. 第二种是使用 jsonp，这种方式的缺点是只能发 get 请求，不能捕获服务端的错误，并且请求过程无法终止，是利用了浏览器对 script 标签没有同源策略的限制来实现的，
+3. 第三种是通过 webscort 来解决跨域，这是因为他是个全双工协议，不是同源策略限制，最后一种是通过代理转发的方式，比如 webpack 的 devserve，nginx 配置 proxy_pass
+4. 还有一种跨域是父子页面的跨域，例如使用 iframe 来进行父子页面之间的通信，这是可以使用，postMessage 来进行通信，也可以用过改域的方式来解决，将 document.domain 改成更高的父域
 
 ## 25. 浏览器的回流（Reflow）和重绘（Repaints）
 
@@ -313,13 +396,13 @@ nodejs 中底层使用 libuv 库实现多线程
 
 微任务中的 Process.nextTick 是一个独立于事件循环的任务队列，每一个轮事件循环结束后回去检查这个队列，如果有，会让其优于微任务执行
 
-29. BOM属性对象方法
+## 29. BOM属性对象方法
 
 对象：Window，document，location，screen，history，navigator。
 
 方法：Alert()，confirm()，prompt()，open()，close()
 
-30. 函数柯里化及其通用封装
+## 30. 函数柯里化及其通用封装
 
 函数柯里化是指将多个参数的函数装化成一系列使用一个参数的函数，一个简单的函数柯里化实现：
 
@@ -343,13 +426,13 @@ function curry(fn, args) {
 使用函数柯里化可以实现参数复用，提前返回，延迟计算或执行，js 中的 bind 是延迟函数的执行
 
 
-31. JS的map()和reduce()方法
+## 31. JS的map()和reduce()方法
 
 map 方法主要来遍数组，返回一个新数组不会对原数组产生影响，第一个参数为回调函数，用来对数组的元素进行处理，其中回调函数的参数第一个为当前数组元素，第二个为当前下标，第三个为遍历的数组，第二参数 this 的显示绑定
 
 reduce 方法也用来遍历数组，第一个参数为回调函数，第二个参数为初始值，回调函数的第一个参数为累机器，第二个为当前元素，第三个为当前索引，第四个为遍历的数组
 
-32. “==”和“===”的区别
+## 32. “==”和“===”的区别
 
 ==在进行判断时会进行隐式的数据类型转换，而===在进行比较是不会进行数据类型转换
 
@@ -363,58 +446,709 @@ null 和 undefined 比较，结果为真，他们和其他值比较均为假
 若两个都是对象，判断他们是否指向同一个对象，是的话为 true，否为为 false
 Object.is(),也可以用来进行比较，他主要是修复了一些特殊情况下的 bug，比如正 0 等于负零，NaN 不等于 NaN
 
-33. setTimeout用作倒计时为何会产生误差？
+## 33. setTimeout用作倒计时为何会产生误差？
 
 setTimeout 属于宏任务，如果当前执行栈的执行时间很长大于定于定时器的时间，那定时器的回调在宏任务里来不及去调用，这个时候就会产生误差，另外一种，是在上一轮事件循环中将 setTimeout 推入到宏任务队列中，若上一轮事件循环也需要很长的时间执行，也会造成误差，所以 setTimeout 的倒计时只是保证在这个倒计时之前不会被执行，但不能保证倒计时结束之后一定被执行
 
-二、ES6
-1. let、const和var的概念与区别
-2. 变量提升与暂时性死区
-3. 变量的结构赋值
-4. 箭头函数及其this问题
-5. Symbol概念及其作用
-6. Set和Map数据结构
-7. Proxy
-8. Reflect对象
-9. Promise（手撕Promise A+规范、Promise.all、Promise相关API和方法）
-10. Iterator和for...of（Iterator遍历器的实现）
-11. 循环语法比较及使用场景（for、forEach、for...in、for...of）
-12. Generator及其异步方面的应用
-13. async函数
-14. 几种异步方式的比较（回调、setTimeout、Promise、Generator、async）
-15. class基本语法及继承
-16. 模块加载方案比较（CommonJS和ES6的Module）
-17. ES6模块加载与CommonJS加载的原理
-三、HTML/CSS
-1. CSS权重及其引入方式
-2. <a></a>标签全部作用
-3. 用CSS画三角形
-4. 未知宽高元素水平垂直居中（方案及比较）
-5. 元素种类的划分
-6. 盒子模型及其理解
-7. 定位方式及其区别（文档流）
-8. margin塌陷及合并问题
-9. 浮动模型及清除浮动的方法
-10. CSS定位属性
-11. display及相关属性
-12. IFC与BFC
-13. 圣杯布局和双飞翼布局的实现
-14. Flex布局
-15. px、em、rem的区别
-16. Less预处理语言
-17. 媒体查询
-18. vh与vw
-19. H5的语义化作用及语义化标签
-20. Web Worker和Web Socket
-21. CSS3及相关动画
-22. 如何实现响应式布局
-23. SEO的概念及实现
-24. HTML5的新特性
-25. Less和Sass使用
+# 二、ES6
+## 1. let、const和var的概念与区别
+
+let 声明的块级作用域，而 var 声明的词法作用域，这两者都声明可变的变量，前者不可重复声明，后者可重复声明，会进行覆盖
+
+const 也是声明的块级作用域，声明不可变得变量，不可重复声明，这里的不可变是指变量在栈中的位置不可变，对于复杂数据类型，存储在堆当中，堆中的数据是可以改变的，如果想让复杂数据类型彻底的不可变可以对对象进行冻结操作
+
+let 和 const 会有暂时性死区，而 var 会有变量提升
+
+## 2. 变量提升与暂时性死区
+
+暂时性死区是指变量只能在声明后在使用，在一个作用域中开始到声明变量，这之间的区域成为暂时性死区
+
+变量提升是指当全局声明了一个变量会先将变量的声明提升到作用域的顶端，然后再原来的位置进行赋值，如果有的话，函数会将整个函数体放到作用域的顶端，造成变量提升的本质是 js 引擎在执行代码前有一个解析的过程，创建了执行上下文，初始化了一些执行代码需要用到的变量
+
+## 3. 变量的解构赋值
+
+解构赋值分为两个步骤：变量的声明，和变量的赋值，解构赋值的本质就是模式匹配，只要等号两边模式相同，左边的变量就会被赋予右边的值，如果匹配不成功，就会被赋值为 undefined
+
+解构分为数组的解构赋值，对象的解构赋值，对象的结构也包括比如说基本数类型的解构赋值，因为基本数据也是可以转为对象的
+
+对于数组的解构赋值，只要某种数据具备 Ierator 接口既可以结构维数组，如果不使用默认值，不会执行默认的函数
+
+对于对象的解构赋值，只要右边不是对象或数组，就会先转为对象，由于 undefined 和 null 都不是对象，所以对他们进行解构赋值会报错
+
+只有变量严格等于 undefined 是才会使用默认值，null 不会使用默认值
+
+## 4. 箭头函数及其this问题
+
+关于箭头函数，内部的 this 指向定义是所在的上下文，而不是使用时所在的上下文，他不可以当做构造函数使用，不可以使用 new 命令，使用会报错，也没余原型对象，也没有参数对象 arguments，不过可以使用 rest 代替，也不可以使用 yield，箭头函数不能用作 generator
+
+## 5. Symbol概念及其作用
+
+symbol 不能使用 new 命令，接受一个字符串作为参数，表示对 symbol 实例的描述，可在控制台显示转为字符串，symbol 作为属性名，不会被 forin，forof，Objet.key(),Object.getOwnPropertyNames()，遍历到，也不能被 JSON.stringfy 返回，但可以使用 Object.getOwnPropertySymbols 方法返回一个数组，成员是对象所有用作属性名的 Symbol 值
+
+Symbol.for(),接受一个字符串做为参数，然后搜索有没有以该参数作为名称的 Symbol 的值，若有就返回这个 Symbol 值，没有就创建一个，相应的也有 Symbol.keyFor(),参数为一个变量，返回一个已登记的 symbol 类型的 key 值
+
+## 6. Set和Map数据结构
+
+es6 提供的新的数据结构，set 和 map，同时还有 weakSet，weakMap
+
+set 类似数组，但他里面存的都是唯一的值，没有重复值，weakSet 的成员只能是对象，不能是其他类型的值，weakSet 中的对象都是弱引用，即垃圾回收机制不考虑 weakSet 对该对象的引用
+
+map 里存的都是键值对的集合，类似于对象，但是他的键不限于字符串也可以是其他类型的值，比如对象，weakMap 只接受对象组为健名，该对象也是弱引用，不计入垃圾回收机制
+
+## 7. Proxy
+
+proxy 是代理的意思，用于修改某些操作的默认行为，等同于在语言层面作出修改，所以属于一种元编程，也就是对编程语言尽行编程，proxy 就是在目标对象之前做一层拦截，外界访问该对象都必须经过这层拦截，因此它提供了一种机制，可以对外界的访问进行过滤和改写
+
+## 8. Reflect对象
+
+Reflect 的目的是为了让一些明显属于语言内部的方法放到 Reflect 上，比如 Object.defineProperty,修改某些方法的返回结果，让其更合理,让 Object 的操作都变成函数行为
+
+Reflect 与 Proxy 的方法一一对应，也就是说，不管 proxy 怎么修改默认行为，只要是 Proxy 对象的方法，就能在 Reflect 对象上找到对应的方法，总可以在 Reflect 上获取默认行为
+
+## 9.  Promise（手撕Promise A+规范、Promise.all、Promise相关API和方法）
 
 
 
-四、HTTP与计算机网络
+## 10. Iterator和for...of（Iterator遍历器的实现）
+
+Iterator 是一种接口，为各种不同的数据类型提供统一的访问机制，任何数据类型只要部署 Iterator 接口，就可以完成便利操作，作用主要有三个，一是提供统一的简便的访问接口，二是使得数据结构的成员能够按照某种次序排序，三是 es6 提供了针对 Iterator 消费的 for of 遍历，js 有许多数据类型都默认部署了 Iterator 接口，比如 Array，map，set,String,arguments,nodelist
+
+for of 可以再可迭代对象上创建一个迭代循环，调用自身的迭代钩子，为每个不同的属性的值执行语句
+
+Iterator 遍历器的简单实现：
+
+const makeIterator = (array) => {
+  var nextIndex = 0;
+  return {
+    next: function() {
+      return nextIndex < array.length
+        ? { value: array[nextIndex++], done: false }
+        : { value: undefined, done: true };
+    },
+  };
+};
+
+## 11. 循环语法比较及使用场景（for、forEach、for...in、for...of）
+
+for 循环 缺点是很麻烦。
+
+forEach 回调函数参数分别是 value,index,array
+
+缺点在于无法中途跳出 forEach 循环，break 和 return 命令都不行。
+
+for…in 用于遍历所有的可枚举属性，功能类似于 Object.keys()，但是遍历不到 constructor、length 这样的不可枚举属性。
+
+缺点：
+
+数组的键名为数字，但是 for…in 循环是以字符串作为键名"0",“1”,“2”
+
+for…in 循环主要是为遍历对象而设计的，不适用于遍历数组。
+
+for…of for…of 是 ES6 新增的遍历方式，它提供了统一的遍历机制。所有实现了[Symbol.iterator]接口的对象都可以被遍历。for…of 循环可以使用的范围包括数组、Set 和 Map 结构、某些类似数组的对象（比如 arguments 对象、DOM NodeList 对象）、Generator 对象，以及字符串
+
+优点：1、用法简洁 2、可以和 break,continue,return 配合使用 3、提供了遍历所有数据结构的统一操作接口。
+
+三个遍历器对象：
+
+entries() 返回一个遍历器对象，一个给定对象自身可枚举属性的键值对数组,其排列与使用 for...in 循环遍历该对象时返回的顺序一致（区别在于 for-in 循环还会枚举原型链中的属性）,对于数组，键名就是索引值；对于 Set，键名与键值相同。Map 结构的 Iterator 接口，默认就是调用 entries 方法。
+keys() 返回一个遍历器对象，一个由一个给定对象的自身可枚举属性组成的数组。
+values() 返回一个遍历器对象，一个给定对象自身的所有可枚举属性值的数组。
+
+## 12. Generator及其异步方面的应用
+
+Generator 是一种异步编程解决方案，最大的特点就是可以交出函数的执行权，和 yield 配合返回的是一个迭代器
+
+Generator 是 es6 的一个新关键词，是一个带星号的函数，但他不是一个函数，可以配合 yield 关键字来暂停或执行函数执行，当声明了一个 Generator 变量后，程序会阻塞住，不会执行任何语句，这个变量是 object 而不是 function，调用 gen.next()，程序会继续执行到 yield 关键词处停止，next 方法会返回一个对象，对象有两个属性，value 和 done，value 表示 yield 返回的值，done 表示 Generator 是否执行完毕
+
+Generator 在异步方面的应用，可以通过 Generator 与 thunk 函数结合来实现异步的控制，thunk 函数的基本思路是接受一定的参数，会产出定制化的函数，最后使用定制化的函数去实现想要实现的功能比如一个读取文件的例子
+
+```javascript
+const readFileThunk = (filename) => {
+  return (callback) => {
+    fs.readFile(filename, callback);
+  };
+};
+
+const gen = function*() {
+  const data1 = yield readFileThunk("./1.txt");
+  console.log(data1.toString());
+  const data2 = yield readFileThunk("./2.txt");
+  console.log(data2.toString());
+};
+
+let g = gen();
+g.next().value((err, data1) => {
+  g.next(data1).value((err, data2) => {
+    g.next(data2);
+  });
+});
+
+//将执行的代码进行封装
+
+function run(gen) {
+  const next = (err, data) => {
+    let res = gen.next(data);
+    if (res.done) return;
+    res.value(next);
+  };
+  next();
+}
+
+
+//Generator 也可以与 Promise 结合
+
+const readFilePromise = function(filename) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filename, (err, data) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    });
+  }).then((res) => res);
+};
+
+const gen = function*() {
+  const data1 = yield readFilePromise("./1.txt");
+  console.log(data1.toString());
+  const data2 = yield readFilePromise("./2.txt");
+  console.log(data2.toString());
+};
+
+function run(gen) {
+  const next = (err, data) => {
+    let res = gen.next(data);
+    if (res.done) return;
+    res.value.then(next);
+  };
+  next();
+}
+run(g);
+```
+有一个 co 函数库可以处理 Generator 的自动执行，核心就是通过 thunk 函数以及 Promise 对象进行配合来实现
+
+Generator 就是一个异步操作的容器，它需要一种自动执行机制，co 函数库接受一个 Generator 函数作为参数然后返回一个 Promise，在返回的 Promise 函数里检查 gen 是否为 Generator 函数，如果是，就执行该函数，否则将 Promise 对象的状态改为 resolved，co 将 Generator 函数的内部指针对象的 next 方法包装成 onFulfilled 函数，这样做的是为了能够捕获抛出的错误，关键是配合 next 函数，反复调用自身
+
+
+## 13. async函数
+
+async/await 可以让我们用同步的方式来书写异步的代码，又得到底层语法的支持，无需借助任何第三方库，async 相对于 Generator 的改进体现在内置执行器，适应性更好，可读性更好，它其实是 Generator 与 Promise 的语法糖
+
+一个带有 async 的函数返回的必定是一个 Promise 对象，如果函数没有返回一个 Promise，他会自动用 Promise.resolve()包装，如果显式的返回了 Promise，那就以返回的 Promise 为准
+
+await 右侧如果是函数，那么返回函数的返回值就是表达式结果，右侧如果是'123'，或者什么值，拿表达式的结果就是 123
+
+async/awiat 还可以使用 try/catch 来同时处理同步和异步的错误
+
+## 14. 几种异步方式的比较（回调、setTimeout、Promise、Generator、async）
+
+所谓的同步就是在执行某段代码时，在该代码没有得到返回结果之前，其他代码暂时是无法执行的，但是一旦执行完成拿到返回值之后，就可以执行其他代码了。换句话说，在此段代码执行完未返回结果之前，会阻塞之后的代码执行，这样的情况称为同步 所谓异步就是当某一代码执行异步过程调用发出后，这段代码不会立刻得到返回结果。而是在异步调用发出之后，一般通过回调函数处理这个调用之后拿到结果。异步调用发出后，不会影响阻塞后面的代码执行，这样的情形称为异步。 
+### why 
+
+JavaScript 是单线程的，如果 JS 都是同步代码执行意味着什么呢？这样可能会造成阻塞，如果当前我们有一段代码需要执行时，如果使用同步的方式，那么就会阻塞后面的代码执行；而如果使用异步则不会阻塞，我们不需要等待异步代码执行的返回结果，可以继续执行该异步任务之后的代码逻辑。因此在 JS 编程中，会大量使用异步来进行编程
+
+> 异步的发展 回调函数--> Promise--> Generator-->async/await
+
+
+1#   回调函数 早些年为了实现 JS 的异步编程，一般都采用回调函数的方式，比如比较典型的事件的回调，或者用 setTimeout/ setInterval 来实现一些异步编程的操作，但是使用回调函数来实现存在一个很常见的问题，那就是回调地狱 
+```javascript   
+fs.readFile(A, "utf-8", function(err, data) {
+  fs.readFile(B, "utf-8", function(err, data) {
+    fs.readFile(C, "utf-8", function(err, data) {
+      fs.readFile(D, "utf-8", function(err, data) {
+        //....
+      });
+    });
+  });
+});
+```
+
+回调实现异步编程的场景也有很多，比如： 
+ajax 请求的回调； 定时器中的回调； 
+事件回调； Nodejs 中的一些方法回调。 
+异步回调如果层级很少，可读性和代码的维护性暂时还是可以接受，一旦层级变多就会陷入回调地狱，上面这些异步编程的场景都会涉及回调地狱的问题 # Promise 为了解决回调地狱的问题，之后社区提出了 Promise 的解决方案，
+ES6 又将其写进了语言标准，采用 Promise 的实现方式在一定程度上解决了回调地狱的问题 
+```javascript
+function read(url) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(url, "utf8", (err, data) => {
+      if (err) reject(err);
+
+      resolve(data);
+    });
+  });
+}
+
+read(A)
+  .then((data) => {
+    return read(B);
+  })
+  .then((data) => {
+    return read(C);
+  })
+  .then((data) => {
+    return read(D);
+  })
+  .catch((reason) => {
+    console.log(reason);
+  });
+  ```
+针对回调地狱进行这样的改进，可读性的确有一定的提升，优点是可以将异步操作以同步操作的流程表达出来，避免了层层嵌套的回调函数，但是 Promise 也存在一些问题，即便是使用 Promise 的链式调用，如果操作过多，其实并没有从根本上解决回调地狱的问题，只是换了一种写法，可读性虽然有所提升，但是依旧很难维护。不过 Promise 又提供了一个 all 方法，对于这个业务场景的代码，用 all 来实现可能效果会更好
+
+```javascript
+function read(url) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(url, "utf8", (err, data) => {
+      if (err) reject(err);
+
+      resolve(data);
+    });
+  });
+}
+
+// 通过 Promise.all 可以实现多个异步并行执行，同一时刻获取最终结果的问题
+
+Promise.all([read(A), read(B), read(C)])
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => console.log(err));
+
+```
+async/await
+ES6 之后 ES7 中又提出了新的异步解决方案：async/await，async 是 Generator 函数的语法糖，async/await 的优点是代码清晰（不像使用 Promise 的时候需要写很多 then 的方法链），可以处理回调地狱的问题。async/await 写起来使得 JS 的异步代码看起来像同步代码，其实异步编程发展的目标就是让异步逻辑的代码看起来像同步一样容易理解
+```javascript
+ function testWait() {
+  return new Promise((resolve, reject) => {
+    setTimeout(function() {
+      console.log("testWait");
+
+      resolve();
+    }, 1000);
+  });
+}
+
+async function testAwaitUse() {
+  await testWait();
+
+  console.log("hello");
+
+  return 123; // 输出顺序：testWait，hello // 第十行如果不使用await输出顺序：hello , testWait
+}
+
+console.log(testAwaitUse());
+```
+
+## 15.   class基本语法及继承   
+    class 的出现是为了不出 js 缺少一些面向对象语言的特性，但本质上来说是一种构造函数的语法糖，背后依然是原型继承的思想，采用的是寄生组合式继承，通过 class 可以更好地组织代码，在 class 上添加方法其实是在类的原型上添加方法,class 内部默认采用的是严格模式，class 中的静态方法不可以被继承，可以通过类名来调用，也可以在子类中通过 super 来调用，类中的 construct 默认返回实例对象，但也可以返回另一个对象，类必须使用 new 来调用，类不存在变量提升因为有继承，所以必须保证子类在父类后面，私有方法 es6 不提供，只能通过变通的方法来模拟私有变量，比如 symbol，类的内部 this 默认指向类的实例
+
+类的继承可以通过 extend 来实现这比通过修改原型链继承更加清晰方便，子类必须在 construct 中调用 super 否则得不到 this 对象，super 要放到使用 this 前面，否则创建实例时会报错
+
+
+## 16.  模块加载方案比较（CommonJS和ES6的Module）
+   
+es6 模块输出的是值的引用，commonjs 输出的是值的拷贝
+值的拷贝意味着一旦输出一个值，模块内部的变化就影响不到这个值，es6 模块的运行机制和 common 不一样，js 在对脚本静态分析的时候，遇到模块加载命令 import，会生成一个只读的引用，等到脚本真正执行的时候再根据这个只读的引用，到被加载的那个模块里去取值
+commonjs 是运行时加载，es6 模块是编译时加载输出接口
+运行时加载就是先加载整个模块，生成一个对象，然后从这个对象上读取方法
+编译时加载：e6 模块 s 不是对象，而是通过 export 命令显示指定输出代码，import 时采用静态命令的形式，在 import 时指定加载某个输出值，而不是加载整个模块，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成
+commonjs 模块加载方式并不是语言层面的标准，只能在运行时确定模块的依赖关系以及输入输出变量，而 es6 模块在语言规格层面支持模块功能，支持编译时静态分析，便于 js 引入宏和类型检查，动态绑定
+commonjs 导入模块是只能是的路劲可以是一个表达式，因为使用的 require()方法，而 es6 模块只能是字符串
+commonjs 模块的 this 指向当前模块，而 es6 模块的 this 指向 undefined
+
+
+## 17.  ES6模块加载与CommonJS加载的原理
+
+
+# 三、HTML/CSS
+## 1. CSS权重及其引入方式
+
+判断优先级时，首先我们会判断一条属性声明是否有权重，也就是是否在声明后面加上了!important。一条声明如果加上了权重，那么它的优先级就是最高的，前提是它之后不再出现相同权重的声明。如果权重相同，我们则需要去比较匹配规则的特殊性。
+
+一条匹配规则一般由多个选择器组成，一条规则的特殊性由组成它的选择器的特殊性累加而成。选择器的特殊性可以分为四个等级，第一个等级是行内样式，为 1000，第二个等级是 id 选择器，为 0100，第三个等级是类选择器、伪类选择器和属性选择器，为 0010，第四个等级是元素选择器和伪元素选择器，为 0001。规则中每出现一个选择器，就将它的特殊性进行叠加，这个叠加只限于对应的等级的叠加，不会产生进位。选择器特殊性值的比较是从左向右排序的，也就是说以 1 开头的特殊性值比所有以 0 开头的特殊性值要大。比如说特殊性值为 1000 的的规则优先级就要比特殊性值为 0999 的规则高。如果两个规则的特殊性值相等的时候，那么就会根据它们引入的顺序，后出现的规则的优先级最高
+
+## 2. <a></a>标签全部作用
+
+a 标签有四个作用：
+
+* 使用 target 规定在何处打开文档，也就是超连接作用
+* 设置锚点
+* 打电话或发邮件
+* 协议限定符
+* target 属性有：_blank,_self,_parent,_top
+
+锚点通过#配合 id 来设置
+
+打电话发邮件时需要将href设置为tel:xxx,mailto:xxx
+
+最后一种协议限定符这样使用:<a href="javascript:alert('alert')">点击a标签时执行里面的代码</a>
+
+## 3. 用CSS画三角形
+
+```css
+.demo {
+  weight: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-right: 40px solid red;
+}
+```
+
+## 4. 未知宽高元素水平垂直居中（方案及比较）
+
+
+* 方法一 
+思路：显示设置父元素为：table，子元素为：cell-table，这样就可以使用vertical-align: center，实现水平居中
+优点：父元素（parent）可以动态的改变高度（table元素的特性）
+缺点：IE8以下不支持
+
+
+* 方法二：
+
+思路：使用一个空标签span设置他的vertical-align基准线为中间，并且让他为inline-block，宽度为0
+缺点：多了一个没用的空标签，display:inline-blockIE 6 7是不支持的(添加上：_zoom1;*display:inline)。
+当然也可以使用伪元素来代替span标签，不过IE支持也不好，但这是后话了
+
+* 方法三
+
+思路：子元素绝对定位，距离顶部 50%，左边50%，然后使用css3 transform:translate(-50%; -50%)
+优点：高大上,可以在webkit内核的浏览器中使用
+缺点：不支持IE9以下不支持transform属性
+
+* 方法四：
+思路：使用css3 flex布局
+优点：简单 快捷
+缺点：兼容不好吧，详情见：http://caniuse.com/#search=flex
+
+## 5. 元素种类的划分
+
+块状元素、内联元素(又叫行内元素)和内联块状元素
+
+块级元素总是独占一行，另起一行开始，后面的元素也得另起一行，宽度，高度，内边距，外边距都可以控制
+
+内联元素和相邻的内联元素在同一行，只要 padding 和 margin 的 left 和 right 可以设置，其他宽度高度等等都不可设置
+
+inline-block 可以这这是宽高，不会自动换行，一般有，input，button，img，label，texterea
+
+## 6. 盒子模型及其理解
+
+css 盒模型描述了以文档树中的元素而生成的矩阵框，并根据排版模式进行布局，每个盒子都有一个内容区域以及周围可选的 padding，border，margin,css 盒模型负责计算块级元素占用多少空间，边框是否重叠，边距是否合并，盒子的尺寸
+
+盒模型有以下规则：
+
+块级元素大小由 width，height，padding，margin,border 共同决定
+如果没有指定 height，块级元素的高度等于其包含的子元素的告诉加上 padding(在没有浮动的情况下)
+如果没有指定 width，非浮动元素的宽度等于其父元素的宽度减去父元素的 padding
+元素的 height 是由内容的 height 来计算的。
+元素的 width 是由内容的 width 来计算的。
+默认情况下，padding 和 border 不是元素 width 和 height 的组成部分
+盒模型又分为标准盒模型和 ie 盒模型
+
+盒模型都是由四个部分组成的，分别是 margin、border、padding 和 content。
+
+标准盒模型和 IE 盒模型的区别在于设置 width 和 height 时，所对应的范围不同。标准盒模型的 width 和 height 属性的范围只包含了 content，而 IE 盒模型的 width 和 height 属性的范围包含了 border、padding 和 content。
+
+一般来说，我们可以通过修改元素的 box-sizing 属性来改变元素的盒模型
+
+::: tip 在 ie8+浏览器中使用哪个盒模型可以由 box-sizing（CSS 新增的属性）控制，默认值为 content-box，即标准盒模型；
+
+如果将 box-sizing 设为 border-box 则用的是 IE 盒模型。如果在 ie6，7，8 中 DOCTYPE 缺失会将盒子模型解释为 IE 盒子模型。若在页面中声明了 DOCTYPE 类型，所有的浏览器都会把盒模型解释为 W3C 盒模型 :::
+
+## 7. 定位方式及其区别（文档流）
+
+absolute 生成绝对定位的元素，相对于值不为 static 的第一个父元素的 paddingbox 进行定位，也可以理解为离自己这一级元素最近的一级 position 设置为 absolute 或者 relative 的父元素的 paddingbox 的左上角为原点的。不为元素预留空间，绝对定位的元素可以设置外边距（margins），且不会与其他边距合并
+
+fixed 不为元素预留空间，而是通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。fixed 属性会创建新的层叠上下文。当元素祖先的 transform 属性非 none 时，容器由视口改为该祖先
+
+relative 生成相对定位的元素，相对于其在普通流中的位置进行定位。该关键字下，元素先放置在未添加定位时的位置，再在不改变页面布局的前提下调整元素位置（因此会在此元素未添加定位时所在位置留下空白）
+
+static 默认值。该关键字指定元素使用正常的布局行为，即元素在文档常规流中当前的布局位置。此时 top, right, bottom, left 和 z-index 属性无效
+
+sticky 是 2017 年浏览器才开始支持，会产生动态效果，类似 relative 和 fixed 的结合，一个实例是"动态固定"，生效前提是必须搭配 top,left,bottom,right 一起使用，不能省略，否则等同于 relative 定位，不产生"动态固定"的效果
+
+::: tip 谈到 float 还有 position 中的 absolute 和 fixed 脱离文本流的时候，问到底是脱离文档流还是文本流
+
+文档流是相对于盒子模型讲的
+
+文本流是相对于文子段落讲的
+
+元素浮动之后，会让它跳出文档流，也就是说当它后面还有元素时，其他元素会无视它所占据了的区域，直接在它身下布局。但是文字却会认同浮动元素所占据的区域，围绕它布局，也就是没有拖出文本流。
+
+但是绝对定位后，不仅元素盒子会拖出文档流，文字也会出文本流。那么后面元素的文本就不会在认同它的区域位置，会直接在它后面布局，不会在环绕。当然你可以使用 index-z 来让底部的元素到上面来，类似于一个图层的概念 :::
+
+## 8. margin塌陷及合并问题
+
+margin 重叠指的是在垂直方向上，两个相邻元素的 margin 发生重叠的情况。
+
+一般来说可以分为四种情形：
+
+第一种是相邻兄弟元素的 marin-bottom 和 margin-top 的值发生重叠。这种情况下我们可以通过设置其中一个元素为 BFC 来解决。
+
+第二种是父元素的 margin-top 和子元素的 margin-top 发生重叠。它们发生重叠是因为它们是相邻的，所以我们可以通过这一点来解决这个问题。我们可以为父元素设置 border-top、padding-top 值来分隔它们，当然我们也可以将父元素设置为 BFC 来解决。
+
+第三种是高度为 auto 的父元素的 margin-bottom 和子元素的 margin-bottom 发生重叠。它们发生重叠一个是因为它们相邻，一个是因为父元素的高度不固定。因此我们可以为父元素设置 border-bottom、padding-bottom 来分隔它们，也可以为父元素设置一个高度，max-height 和 min-height 也能解决这个问题。当然将父元素设置为 BFC 是最简单的方法。
+
+第四种情况，是没有内容的元素，自身的 margin-top 和 margin-bottom 发生的重叠。我们可以通过为其设置 border、padding 或者高度来解决这个问题。
+
+## 9.  浮动模型及清除浮动的方法
+
+浮动（float）是 CSS 定位属性。浮动元素从网页的正常流动中移出，但是保持了部分的流动性，会影响其他元素的定位（比如文字会围绕着浮动元素）。这一点与绝对定位不同，绝对定位的元素完全从文档流中脱离。
+
+CSS 的 clear 属性通过使用 left、right、both，让该元素向下移动（清除浮动）到浮动元素下面
+
+如果父元素只包含浮动元素，那么该父元素的高度将塌缩为 0。我们可以通过清除（clear）从浮动元素后到父元素关闭前之间的浮动来修复这个问题
+
+清除浮动是为了清除使用浮动元素产生的影响。浮动的元素，高度会塌陷，而高度的塌陷使我们页面后面的布局不能正常显示
+
+清除浮动的方法有：
+
+额外标签，即在最后一个浮动标签后加一个空 div，给其设置 clear:both ，缺点是增加无意义标签，语义化差
+a 内部标签：会将父盒子的高度重新撑开
+b 外部标签：只能将浮动盒子的影响清除，但是不会撑开盒子
+给父级元素添加 overflow:不为 visible 通过触发 BFC 的方式清除浮动，先找到浮动盒子的父元素，给父元素添加一个属性：overflow:hidden;就会清除子元素对页面的影响（不推荐使用）
+使用 after 伪元素，缺点是 IE6-7 不支持伪元素，zoom:1 触发 hasLayout,zoom 属性是 IE 浏览器的专有属性
+::: tip clear 属性清除浮动的原理 如果单看字面意思，clear:left 应该是“清除左浮动”，clear:right 应该是“清除右浮动”的意思，实际上，这种解释是有问题的，因为浮动一直还在，并没有清除。
+
+官方对 clear 属性的解释是：“元素盒子的边不能和前面的浮动元素相邻。”，我们对元素设置 clear 属性是为了避免浮动元素对该元素的影响，而不是清除掉浮动还需要注意的一点是 clear 属性指的是元素盒子的边不能和前面的浮动元素相邻，注意这里“前面的”3 个字，也就是 clear 属性对“后面的”浮动元素是不闻不问的。考虑到 float 属性要么是 left，要么是 right，不可能同时存在，同时由于 clear 属性对“后面的”浮动元素不闻不问，因此，当 clear:left 有效的时候，clear:right 必定无效，也就是此时 clear:left 等同于设置 clear:both；同样地，clear:right 如果有效也是等同于设置 clear:both。由此可见，clear:left 和 clear:right 这两个声明就没有任何使用的价值，至少在 CSS 世界中是如此，直接使用 clear:both 吧。
+
+clear 属性只有块级元素才有效的，而::after 等伪元素默认都是内联水平，这就是借助伪元素清除浮动影响时需要设置 display 属性值的原因 :::
+
+## 10. CSS定位属性
+
+
+
+## 11. display及相关属性
+
+这个属性用于定义建立布局时元素生成的显示框类型
+
+block 块类型。默认宽度为父元素宽度，可设置宽高，换行显示。
+
+none 元素不显示，并从文档流中移除。
+
+inline 行内元素类型。默认宽度为内容宽度，不可设置宽高，同行显示。
+
+inline-block 默认宽度为内容宽度，可以设置宽高，同行显示。
+
+list-item 像块类型元素一样显示，并添加样式列表标记。
+
+table 此元素会作为块级表格来显示。
+
+inherit 规定应该从父元素继承 display 属性的值
+
+::: tip display 、position 和 float 的相互关系 （1）首先我们判断 display 属性是否为 none，如果为 none，则 position 和 float 属性的值不影响元素最后的表现。
+
+（2）然后判断 position 的值是否为 absolute 或者 fixed，如果是，则 float 属性失效，并且 display 的值应该被设置为 table 或者 block，具体转换需要看初始转换值。
+
+（3）如果 position 的值不为 absolute 或者 fixed，则判断 float 属性的值是否为 none，如果不是，则 display 的值则按上面的规则转换。注意，如果 position 的值为 relative 并且 float 属性的值存在，则 relative 相对于浮动后的最终位置定位。
+
+（4）如果 float 的值为 none，则判断元素是否为根元素，如果是根元素则 display 属性按照上面的规则转换，如果不是，则保持指定的 display 属性值不变。
+
+总的来说，可以把它看作是一个类似优先级的机制，"position:absolute"和"position:fixed"优先级最高，有它存在的时候，浮动不起作用，'display'的值也需要调整；其次，元素的'float'特性的值不是"none"的时候或者它是根元素的时候，调整'display'的值；最后，非根元素，并且非浮动元素，并且非绝对定位的元素，'display'特性值同设置值。 :::
+
+::: tip 使用 display:inline-block 会产生什么问题
+
+
+产生空白的原因
+
+元素被当成行内元素排版的时候，元素之间的空白符（空格、回车换行等）都会被浏览器处理，根据 CSS 中 white-space 属性的处理方式（默认是 normal，合并多余空白），原来 HTML 代码中的回车换行被转成一个空白符，在字体不为 0 的情况下，空白符占据一定宽度，所以 inline-block 的元素之间就出现了空隙
+
+解决办法:
+
+将子元素标签的结束符和下一个标签的开始符写在同一行或把所有子标签写在同一行
+父元素中设置 font-size: 0，在子元素上重置正确的 font-size
+为子元素设置 float:left :::
+
+## 12. IFC与BFC
+
+BFC （Block formatting contexts ）：
+
+块级格式上下文页面上的一个隔离的渲染区域，那么他是如何产生的呢？可以触发 BFC 的元素有 float、position、overflow、display：table-cell/inline-block/table-caption ；BFC 有什么作用呢？比如说实现多栏布局’
+
+IFC （Inline formatting contexts ）：
+
+内联格式上下文 IFC 的 line box（线框）高度由其包含行内元素中最高的实际高度计算而来（不受到竖直方向的 padding/margin 影响)IFC 中的 line box 一般左右都贴紧整个 IFC，但是会因为 float 元素而扰乱。float 元素会位于 IFC 与与 line box 之间，使得 line box 宽度缩短。 同个 ifc 下的多个 line box 高度会不同 IFC 中时不可能有块级元素的，当插入块级元素时（如 p 中插入 div）会产生两个匿名块与 div 分隔开，即产生两个 IFC，每个 IFC 对外表现为块级元素，与 div 垂直排列。那么 IFC 一般有什么用呢？水平居中：当一个块要在环境中水平居中时，设置其为 inline-block 则会在外层产生 IFC，通过 text-align 则可以使其水平居中。垂直居中：创建一个 IFC，用其中一个元素撑开父元素的高度，然后设置其 vertical-align:middle，其他行内元素则可以在此父元素下垂直居中。
+
+GFC （GrideLayout formatting contexts ）：
+
+网格布局格式化上下文当为一个元素设置 display 值为 grid 的时候，此元素将会获得一个独立的渲染区域，我们可以通过在网格容器（grid container）上定义网格定义行（grid definition rows）和网格定义列（grid definition columns）属性各在网格项目（grid item）上定义网格行（grid row）和网格列（grid columns）为每一个网格项目（grid item）定义位置和空间。那么 GFC 有什么用呢，和 table 又有什么区别呢？首先同样是一个二维的表格，但 GridLayout 会有更加丰富的属性来控制行列，控制对齐以及更为精细的渲染语义和控制。
+
+FFC （Flex formatting contexts ）:
+
+自适应格式上下文 display 值为 flex 或者 inline-flex 的元素将会生成自适应容器（flex container），可惜这个牛逼的属性只有谷歌和火狐支持，不过在移动端也足够了，至少 safari 和 chrome 还是 OK 的，毕竟这俩在移动端才是王道。FlexBox 由伸缩容器和伸缩项目组成。通过设置元素的 display 属性为 flex 或 inline-flex 可以得到一个伸缩容器。设置为 flex 的容器被渲染为一个块级元素，而设置为 inline-flex 的容器则渲染为一个行内元素。伸缩容器中的每一个子元素都是一个伸缩项目。伸缩项目可以是任意数量的。伸缩容器外和伸缩项目内的一切元素都不受影响。简单地说，Flexbox 定义了伸缩容器内伸缩项目该如何布局。
+
+## 13. 圣杯布局和双飞翼布局的实现
+
+
+
+## 14. Flex布局
+
+lex 布局是 CSS3 新增的一种布局方式，我们可以通过将一个元素的 display 属性值设置为 flex 从而使它成为一个 flex 容器，它的所有子元素都会成为它的项目。
+
+一个容器默认有两条轴，一个是水平的主轴，一个是与主轴垂直的交叉轴。我们可以使用 flex-direction 来指定主轴的方向。
+
+我们可以使用 justify-content 来指定元素在主轴上的排列方式，使用 align-items 来指定元素在交叉轴上的排列方式。还可以使用 flex-wrap 来规定当一行排列不下时的换行方式。
+
+对于容器中的项目，我们可以使用 order 属性来指定项目的排列顺序，还可以使用 flex-grow 来指定当排列空间有剩余的时候，项目的放大比例。还可以使用 flex-shrink 来指定当排列空间不足时，项目的缩小比例
+
+::: tip flex 属性 以下 6 个属性设置在容器上。
+
+flex-direction 属性决定主轴的方向（即项目的排列方向）。
+
+flex-wrap 属性定义，如果一条轴线排不下，如何换行。
+
+flex-flow 属性是 flex-direction 属性和 flex-wrap 属性的简写形式，默认值为 rownowrap。
+
+justify-content 属性定义了项目在主轴上的对齐方式。
+
+align-items 属性定义项目在交叉轴上如何对齐。
+
+align-content 属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
+
+以下 6 个属性设置在项目上。
+
+order 属性定义项目的排列顺序。数值越小，排列越靠前，默认为 0。
+
+flex-grow 属性定义项目的放大比例，默认为 0，即如果存在剩余空间，也不放大。
+
+flex-shrink 属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小。
+
+flex-basis 属性定义了在分配多余空间之前，项目占据的主轴空间。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为 auto，即项目的本来大小。
+
+flex 属性是 flex-grow，flex-shrink 和 flex-basis 的简写，默认值为 01auto。
+
+align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。 :::
+
+## 15. px、em、rem的区别
+
+px 像素（Pixel）。相对长度单位。像素 px 是相对于显示器屏幕分辨率而言的
+
+IE 无法调整那些使用 px 作为单位的字体大小；
+国外的大部分网站能够调整的原因在于其使用了 em 或 rem 作为字体单位；
+Firefox 能够调整 px 和 em，rem，但是 96%以上的中国网民使用 IE 浏览器(或内核)。
+em 是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸
+
+em 的值并不是固定的；
+em 会继承父级元素的字体大小。
+::: tip 任意浏览器的默认字体高都是 16px。所有未经调整的浏览器都符合: 1em=16px。那么 12px=0.75em,10px=0.625em。为了简化 font-size 的换算，需要在 css 中的 body 选择器中声明 Font-size=62.5%，这就使 em 值变为 16px*62.5%=10px, 这样 12px=1.2em, 10px=1em, 也就是说只需要将你的原来的 px 数值除以 10，然后换上 em 作为单位就行了 :::
+
+rem 是 CSS3 新增的一个相对单位（root em，根 em），这个单位与 em 有什么区别呢？区别在于使用 rem 为元素设定字体大小时，仍然是相对大小，但相对的只是 HTML 根元素。这个单位可谓集相对大小和绝对大小的优点于一身，通过它既可以做到只修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁反应，目前，除了 IE8 及更早版本外，所有浏览器均已支持 rem
+
+优点：
+
+在屏幕分辨率千差万别的时代，只要将 rem 与屏幕分辨率关联起来就可以实现页面的整体缩放，使得在设备上的展现都统一起来了。而且现在浏览器基本都已经支持 rem 了，兼容性也非常的好。
+
+缺点：
+
+在奇葩的 dpr 设备上表现效果不太好，比如一些华为的高端机型用 rem 布局会出现错乱。
+
+使用 iframe 引用也会出现问题。
+
+rem 在多屏幕尺寸适配上与当前两大平台的设计哲学不一致。即大屏的出现到底是为了看得又大又清楚，还是为了看的更多的问题。
+
+::: tip 对于只需要适配少部分手机设备，且分辨率对页面影响不大的，使用 px 即可。
+
+对于需要适配各种移动设备，使用 rem，例如只需要适配 iPhone 和 iPad 等分辨率差别比较挺大的设备 :::
+
+## 16. Less预处理语言
+
+
+
+## 17. 媒体查询
+
+假设你现在正用一台显示设备来阅读这篇文章，同时你也想把它投影到屏幕上，或者打印出来，而显示设备、屏幕投影和打印等这些媒介都有自己的特点，CSS 就是为文档提供在不同媒介上展示的适配方法当媒体查询为真时，相关的样式表或样式规则会按照正常的级联规被应用。当媒体查询返回假，标签上带有媒体查询的样式表仍将被下载（只不过不会被应用）。包含了一个媒体类型和至少一个使用宽度、高度和颜色等媒体属性来限制样式表范围的表达式。CSS3 加入的媒体查询使得无需修改内容便可以使样式应用于某些特定的设备范围
+
+## 18. vh与vw
+
+vw : 1vw 等于视口宽度的 1%
+vh : 1vh 等于视口高度的 1%
+vmin : 选取 vw 和 vh 中最小的那个
+vmax : 选取 vw 和 vh 中最大的那个
+
+## 19. H5的语义化作用及语义化标签
+
+html 语义化主要指的是我们应该使用合适的标签来划分网页内容的结构。html 的本质作用其实就是定义网页文档的结构，一个语义化的文档，能够使页面的结构更加清晰，易于理解。这样不仅有利于开发者的维护和理解，同时也能够使机器对文档内容进行正确的解读
+
+比如说我们常用的 b 标签和 strong 标签，它们在样式上都是文字的加粗，但是 strong 标签拥有强调的语义。对于一般显示来说，可能我们看上去没有差异，但是对于机器来说，就会有很大的不同。如果用户使用的是屏幕阅读器来访问网页的话，使用 strong 标签就会有明显的语调上的变化，而 b 标签则没有。如果是搜索引擎的爬虫对我们网页进行分析的话，那么它会依赖于 html 标签来确定上下文和各个关键字的权重，一个语义化的文档对爬虫来说是友好的，是有利于爬虫对文档内容解读的，从而有利于我们网站的 SEO
+
+从 html5 我们可以看出，标准是倾向于以语义化的方式来构建网页的，比如新增了 header 、footer 这些语义标签，删除了 big 、font 这些没有语义的标签
+
+## 20. Web Worker和Web Socket
+
+web worker 就是在 web 应用程序中使用的 worker。这个 worker 是独立于 web 主线程的，在后台运行的线程,web worker 的优点就是可以将工作交给独立的其他线程去做，这样就不会阻塞主线程
+
+基本使用：
+
+通过 worker = new Worker( url ) 加载一个 JS 文件来创建一个 worker，同时返回一个 worker 实例。
+
+通过worker.postMessage( data ) 方法来向 worker 发送数据。
+
+绑定worker.onmessage方法来接收 worker 发送过来的数据。
+
+可以使用 worker.terminate() 来终止一个 worker 的执行。
+
+WebSocket 是 Web 应用程序的传输协议，它提供了双向的，按序到达的数据流。他是一个 Html5 协议，WebSocket 的连接是持久的，他通过在客户端和服务器之间保持双工连接，服务器的更新可以被及时推送给客户端，而不需要客户端以一定时间间隔去轮询
+
+## 21. CSS3及相关动画
+
+
+
+## 22. 如何实现响应式布局
+
+响应式网站设计是一个网站能够兼容多个终端，而不是为每一个终端做一个特定的版本。基本原理是通过媒体查询检测不同的设备屏幕尺寸做处理。页面头部必须有 meta 声明的 viewport
+
+::: tip 响应式设计与自适应设计有何不同 响应式设计和自适应设计都以提高不同设备间的用户体验为目标，根据视窗大小、分辨率、使用环境和控制方式等参数进行优化调整。
+
+响应式设计的适应性原则：网站应该凭借一份代码，在各种设备上都有良好的显示和使用效果。响应式网站通过使用媒体查询，自适应栅格和响应式图片，基于多种因素进行变化，创造出优良的用户体验。就像一个球通过膨胀和收缩，来适应不同大小的篮圈。
+
+自适应设计更像是渐进式增强的现代解释。与响应式设计单一地去适配不同，自适应设计通过检测设备和其他特征，从早已定义好的一系列视窗大小和其他特性中，选出最恰当的功能和布局。与使用一个球去穿过各种的篮筐不同，自适应设计允许使用多个球，然后根据不同的篮筐大小，去选择最合适的一个 :::
+
+## 23. SEO的概念及实现
+
+前端需要注意哪些 SEO
+
+（1）合理的 title、description、keywords：搜索对着三项的权重逐个减小，title 值强调重点即可，重要关键词出现不要超过 2 次，而且要靠前，不同页面 title 要有所不同；description 把页面内容高度概括，长度合适，不可过分堆砌关键词，不同页面 description 有所不同；keywords 列举出重要关键词即可。
+
+（2）语义化的 HTML 代码，符合 W3C 规范：语义化代码让搜索引擎容易理解网页。
+
+（3）重要内容 HTML 代码放在最前：搜索引擎抓取 HTML 顺序是从上到下，有的搜索引擎对抓取长度有限制，保证重要内容肯定被抓取。
+
+（4）重要内容不要用 js 输出：爬虫不会执行 js 获取内容
+
+（5）少用 iframe：搜索引擎不会抓取 iframe 中的内容
+
+（6）非装饰性图片必须加 alt
+
+（7）提高网站速度：网站速度是搜索引擎排序的一个重要指标
+
+在 SEO 中，所谓的 TDK 其实就是 title、description、keywords 这三个标签，title 标题标签，description 描述标签，keywords 关键词标签
+
+## 24. HTML5的新特性
+
+HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
+
+新增的有：
+
+绘画 canvas;
+用于媒介回放的 video 和 audio 元素;
+本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;
+sessionStorage 的数据在浏览器关闭后自动删除;
+语意化更好的内容元素，比如 article、footer、header、nav、section;
+表单控件，calendar、date、time、email、url、search;
+新的技术 webworker, websocket;
+新的文档属性 document.visibilityState
+移除的元素有：
+
+纯表现的元素：basefont，big，center，font, s，strike，tt，u;
+对可用性产生负面影响的元素：frame，frameset，noframes；
+
+## 25. Less和Sass使用
+
+
+
+# 四、HTTP与计算机网络
 
 
 1. TCP/IP协议分层管理
@@ -489,25 +1223,81 @@ Web 服务器一般指网站服务器，是指驻留于因特网上某种类型�
 灵活扩展，语义上很自由，没有严格的语法限制，传输形式多样 可靠传输，将 TCP 的这一特性继承了下来 请求-应答，一收一发，有来有回 无状态，指的是通信过程中的上下文信息，每次 http 请求都是独立，无关的，默认不需要保留状态信息 缺点： 无状态，在长链接中，需要保存大量的上下文信息，一面传输大量的重复信息，这时无状态就成了缺点，而少量的数据传输不需要保存上下文信息，无状态减少了网络开销，就是无状态的优点 明文传输，报文都是文本形式，而不是使用的二进制形式，报文信息暴露给外界，方便调试的同时也给了攻击者方便，比如 wifi 陷阱 队头阻塞问题，当开启长连接，多个请求共用一个 TCP，同一时刻只能处理一个请求，那么如果当前请求耗时过长，其它请求就只能处于阻塞状态
 
 10.  HTTP通用首部字段
-11.  
-12. HTTP请求首部字段、响应首部字段、实体首部字段
-13. Cookie相关首部字段
-14. HTTPS与HTTP区别及实现方式
-15. Cookie与Session
-16. 基于HTTP的功能追加协议（SPY、WebSocket、HTTP）
-17. 常见的Web攻击分类
-18. TCP与UDP区别
-19. 存储机制localStorage、sessionStorage与Cookie存储技术
-20. XSS攻击及防御
-21. CSRF攻击及防御
+
+
+
+11. HTTP请求首部字段、响应首部字段、实体首部字段
+12. Cookie相关首部字段
+13. HTTPS与HTTP区别及实现方式
+14. Cookie与Session
+15. 基于HTTP的功能追加协议（SPY、WebSocket、HTTP）
+16. 常见的Web攻击分类
+17. TCP与UDP区别
+18. 存储机制localStorage、sessionStorage与Cookie存储技术
+19. XSS攻击及防御
+20. CSRF攻击及防御
 五、前端工程化
 1. 前端工程化的流程（架构选型、业务开发、测试、打包构建、部署上线、项目监控）
+
+前端工程化的话，首先是工具的选择，比如是用什么框架，是用什么脚手架等等，然后是一个好的代码编辑器和一个好的开发环境，比如使用 vscode 插件来提升编码速度，使用 webpak 的 devserver 来提高开发环境下的构建速度，也可以使用一些 nobundle 类的打包工具，比如 vite，使用 HMR 来进一步提高开发中的效率，前后端交互中，数据往往有后端提供，为了提高开发的整体速度，前端可以显示 mock 的形式自己 mock 一份数据，这样前后端同时开发，等后端的接口开发完毕，就可以将 mock 数据提换成真实的数据，但我们开发完了一个项目，需要对现目进行打包，这时，可以通过 webpack 的一系列的优化打包的方案来对代码进行更好地打包，比如代码压缩，tree sharking 等等，最后是项目部书，可以引入自动化部署方案，比如 Jenkins
+
+对于一些重复性比较高的，实现起来比较通用的页面可以使用低代码开发或无代码开发
+
+开发效率方面除了传统的的前后端分离的开发方式，也可以会用前后端一体化的云开发
+
 2. Webpack基本概念与配置
+
+webpack 是一个打包工具，它借助 babel 具备编译代码的能力，比如将一些包含新特性的代码编译成浏览器所兼容的代码，能够将项目中一些散落的模块打包到一块，因为只有开发阶段才需要模块文件的划分，来帮我们更好地组织代码，借助 loader 机制可以支持各种类型的文件，比如图片，字体文件，样式文件都可以将其看作为一个模块，这样一来就有了一个统一的模块化方案
+
+webpack4 的话又是那种打包模式，开发模式，生产模式，和 none 模式，none 模式进行最原始的打包，不做任何处理，前两种打包模式都会在一定程度上进行优化，production 模式下，启动内置优化插件，自动优化打包结果，打包速度偏慢，development 模式下，自动优化打包速度，添加一些调试过程中的辅助插件
+
 3. loader与plugin原理与实现
+
+每个 Webpack 的 Loader 都需要导出一个函数，这个函数就是我们这个 Loader 对资源的处理过程，它的输入就是加载到的资源文件内容，输出就是我们加工后的结果
+
+Webpack 加载资源文件的过程类似于一个工作管道，你可以在这个过程中依次使用多个 Loader，但是最终这个管道结束过后的结果必须是一段标准的 JS 代码字符串
+
+相比于 Loader，插件的能力范围更宽，因为 Loader 只是在模块的加载环节工作，而插件的作用范围几乎可以触及 Webpack 工作的每一个环节 webpack 的插件机制就是我们在软件开发中最常见的钩子机制,钩子机制也特别容易理解，它有点类似于 Web 中的事件。在 Webpack 整个工作过程会有很多环节，为了便于插件的扩展，Webpack 几乎在每一个环节都埋下了一个钩子。这样我们在开发插件的时候，通过往这些不同节点上挂载不同的任务，就可以轻松扩展 Webpack 的能力
+
+Webpack 要求我们的插件必须是一个函数或者是一个包含 apply 方法的对象，一般我们都会定义一个对象，在这个对象中定义 apply 方法。然后在使用时，再通过这个对象来创建一个实例对象去使用这个插件
+
+这个方法会在 Webpack 启动时被调用，它接收一个 compiler 对象参数，这个对象是 Webpack 工作过程中最核心的对象，里面包含了我们此次构建的所有配置信息，我们就是通过这个对象去注册钩子函数
+
 4. Webpack的模块热替换及实现
+
+
+
 5. Webpack的优化问题
+
+分为两点：构建优化，打包优化
+
 6. SPA及其优缺点
+
+优点：
+
+良好的交互体验,用户不需要重新刷新页面，获取数据也是通过 Ajax 异步获取，页面显示流畅。
+良好的前后端工作分离模式,单页 Web 应用可以和 RESTful 规约一起使用，通过 REST API 提供接口数据，并使用 Ajax 异步获取，这样有助于分离客户端和服务器端工作。更进一步，可以在客户端也可以分解为静态页面和页面交互两个部分。
+减轻服务器压力,服务器只用出数据就可以，不用管展示逻辑和页面合成，吞吐能力会提高几倍；
+共用一套后端程序代码,不用修改后端程序代码就可以同时用于 Web 界面、手机、平板等多种客户端；
+缺点：
+
+SEO 难度较高,由于所有的内容都在一个页面中动态替换显示，所以在 SEO 上其有着天然的弱势，所以如果你的站点对 SEO 很看重，且要用单页应用，那么就做些静态页面给搜索引擎用吧。
+页面复杂都提高，复杂逻辑程度成倍,由于后端只提供数据而不再管前端的展示逻辑和页面合成，所以这些展示逻辑和页面合成都需要在前端进行编写（前进、后退等），所以会大大提高页面的复杂性和逻辑的难度
+初次加载耗时多,为实现单页 Web 应用功能及显示效果，需要在加载页面的时候将 JavaScript、CSS 统一加载，部分页面可以在需要的时候加载。所以必须对 JavaScript 及 CSS 代码进行合并压缩处理，如果使用第三方库，建议使用一些大公司的 CDN，因此带宽的消耗是必然的
+
 7. SSR实现及优缺点
+
+优点
+
+更利于 SEO，服务端渲染返回给客户端的是已经获取了异步数据并执行 JavaScript 脚本的最终 HTML，网络爬中就可以抓取到完整页面的信息
+更利于首屏渲染，首屏的渲染是 node 发送过来的 html 字符串，并不依赖于 js 文件了，这就会使用户更快的看到页面的内容。尤其是针对大型单页应用，打包后文件体积比较大，普通客户端渲染加载所有所需文件时间较长，首页就会有一个很长的白屏等待时间
+
+缺点
+
+服务端压力较大，本来是通过客户端完成渲染，现在统一到服务端 node 服务去做。尤其是高并发访问的情况，会大量占用服务端 CPU 资源
+开发条件受限，在服务端渲染中，只会执行到 componentDidMount 之前的生命周期钩子，因此项目引用的第三方的库也不可用其它生命周期钩子，这对引用库的选择产生了很大的限制；
+学习成本相对较高，除了对 webpack、React 要熟悉，还需要掌握 node、Koa2 等相关技术。相对于客户端渲染，项目构建、部署过程更加复杂。
+
 8. 设计模式（工厂模式、单例模式、原型模式、***模式、适配器模式、观察者模式等...）
 六、React
 1. React自身特点及选型时考虑
