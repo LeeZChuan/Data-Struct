@@ -143,7 +143,28 @@ NodeList 对象是节点的集合，通常由 querySelect 返回也是一种类�
 
 ## 6. new的原理
 
-当我们执行了一个 new 操作，它内部会执行四个步骤，一是先创建一个空对象，第二是将构造函数的作用域赋值给新对象，也就是将 this 指向新对象，通过 Object 的原型上的 create 方法，第三个是执行构造函数，第四个是返回这个对象，其中若构造函数又返回一个对象那么就返回这个对象，否则返回前面创建的那个对象
+当我们执行了一个 new 操作，它内部会执行四个步骤，
+一是先创建一个空对象，
+第二是将构造函数的作用域赋值给新对象，也就是将 this 指向新对象，通过 Object 的原型上的 create 方法，
+第三个是执行构造函数，
+第四个是返回这个对象，其中若构造函数又返回一个对象那么就返回这个对象，否则返回前面创建的那个对象
+
+四大步骤：
+
+1、创建一个空对象，并且 this 变量引用该对象，// let target = {};
+2、继承了函数的原型。// target.proto = func.prototype;
+3、属性和方法被加入到 this 引用的对象中。并执行了该函数func// func.call(target);
+4、新创建的对象由 this 所引用，并且最后隐式的返回 this ，如果func.call(target)返回的res是个对象或者function 就返回它
+
+function new(func) {
+	let target = {};
+	target.__proto__ = func.prototype;
+	let res = func.call(target);
+	if (typeof(res) == "object" || typeof(res) == "function") {
+		return res;
+	}
+	return target;
+}
 
 ## 7. 如何正确判断this？
 
