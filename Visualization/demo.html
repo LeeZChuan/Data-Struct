@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>计算求和</title>
+</head>
+
+<body>
+    <h1>输入层数，然后计算获取的结果</h1>
+    <div>
+        请输入层数：
+        <input type="text" id="piles" />
+        <button id="btn" onclick="getSumNum();">确定</button>
+    </div>
+    <script>
+        function initMatrix(params) {
+            let sum;
+            if(params==1)
+            {
+                return 1;
+            }else if(params==2){
+                return 5;
+
+            }else {
+                for(let i=0;)
+                return 5*Math.pow(2, params-2)+4+5;
+            }
+            
+        }
+
+
+        function getSumNum() {
+            var plies = document.getElementById("piles").value;
+            initMatrix(plies);
+            console.log(initMatrix(plies));
+        };
+    </script>
+</body>
+
+</html>

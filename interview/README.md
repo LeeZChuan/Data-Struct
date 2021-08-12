@@ -1324,12 +1324,26 @@ SEO 难度较高,由于所有的内容都在一个页面中动态替换显示，
 1. React自身特点及选型时考虑
 2. React与VUE的异同
 3. Virtual DOM
+
+Virtual DOM(VDOM) 是Real DOM的内存表示形式。UI 的展示形式被保存在内存中并与真实的 DOM 同步。这是在调用的渲染函数和在屏幕上显示元素之间发生的一个步骤。整个过程被称为reconciliation。
+
+Real DOM vs Virtual DOM
+
+
+
+* Virtual DOM分为三个简单的步骤。
+
+每当任何底层数据发生更改时，整个 UI 都将以 Virtual DOM 的形式重新渲染。
+然后计算先前 Virtual DOM 对象和新的 Virtual DOM 对象之间的差异。
+一旦计算完成，真实的 DOM 将只更新实际更改的内容。
+
+
 4. React生命周期
 5. Diff算法
 6. 受控组件与非受控组件
 7. 高阶组件
 8. Flux架构模式（涉及MVC/MVVM、Flux）
-9. Redux设计概念、设计原则、方法、redux实现异步流的库
+9.  Redux设计概念、设计原则、方法、redux实现异步流的库
 10. 纯组件（Pure Component）与shouldComponentUpdate关系
 11. Redux中的<Provider/>组件与connect函数
 12. React Fiber架构
