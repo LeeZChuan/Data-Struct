@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>absolute + 自动配置，水平居中</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .wp {
+            position: relative;
+        }
+        .box {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>absolute + 自动配置水平居中</h1>
+    <div class="wp">
+        <div class="left-dot" style=" background: red;" ></div>
+        <div class="top-dot" style=" background: red;" ></div>
+        <div class="box size"></div>
+    </div>
+    
+    <script src="//yanhaijing.com/assets/plugin/tongji/baidu.js"></script>
+</body>
+</html>
