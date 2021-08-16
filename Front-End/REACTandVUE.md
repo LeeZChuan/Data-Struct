@@ -1,10 +1,15 @@
 六 React 和 Vue 比对
 6.1 相同之处
 虚拟 DOM。映射真实 DOM，通过新旧 DOM 的 diff 对比，更好的跟踪渲染页面。
+
 组件化。将应用拆分成一个个功能明确的模块，每个模块之间可以通过合适的方式互相联系。
+
 构建工具。都有自己的构建工具，通过 Webpack + Babel 去搭建脚手架。
+
 Chrome 开发工具。两者都有很好的 Chrome 扩展去帮助查找 Bug。
+
 配套框架。Vue 有 Vue-router 和 Vuex，而 React 有 React-router 和 React-Redux。
+
 6.2 不同之处
 模板 VS JSX。Vue 推荐编写近似常规 HTML 的模板进行渲染，而 React 推荐 JSX 的书写方式。
 监听数据变化的不同。Vue 使用的是可变数据，而 React 更强调数据的不可变。在 Vue 中通过 v-model 绑定的数据，用户改变输入值后对应的值也相应改变。而 React 需要通过 setState 进行设置变化。
