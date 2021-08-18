@@ -108,6 +108,9 @@
   - [1. React自身特点及选型时考虑](#1-react自身特点及选型时考虑)
   - [2. React与VUE的异同](#2-react与vue的异同)
   - [3. Virtual DOM](#3-virtual-dom)
+- [八、需要会手撕的代码部分](#八需要会手撕的代码部分)
+  - [6. 防抖和节流](#6-防抖和节流)
+  - [12. 两栏布局的实现](#12-两栏布局的实现)
 
 
 # 一、JavaScript
@@ -1438,20 +1441,114 @@ Real DOM vs Virtual DOM
 6. Node的进程
 
 
-八、需要会手撕的代码部分
+# 八、需要会手撕的代码部分
 1. Promise（A+规范）、then、all方法
 2. Iterator遍历器实现
 3. Thunk函数实现（结合Generator实现异步）
 4. async实现原理（spawn函数）
 5. class的继承
-6. 防抖和节流
+## 6. 防抖和节流
+
+* 防抖函数
+
+> 当持续触发事件，一定时间内没有再触发事件，事件处理函数才会执行一次，如果设定的时间到来之前，又一次触发了事件，就重新开始延时
+> 触发事件 一段时间内 没有触发 事件执行 肯定是定时器
+> (在设定的时间内 没有触发 事件执行 肯定事定时器)
+> (那么意味着上一次还没有结束的定时器要清除掉 重新开始)
+
+```js
+function debounce(delay,value){
+   let timer
+ clearInterval(timer)
+//我们想清楚的是setTimeout 我们应该储存这个timer的变量
+//timer变量需要一直保存在内存当中
+  timer=setTimeout(function(){
+    console.log(value)
+},delay)
+}
+
+//我需要做的是，首先，输入框的结果只出现一次，是在我键盘抬起不在输入的1秒之后打印
+input.addEventListener('keyup',function(e){
+  debounce(1000,e.target.value)
+})  
+
+//这里需要用到闭包 
+function debounce(delay){
+  let timer
+  return function(value){
+    clearTimeout(timer)
+    timer=setTimeout(function(){
+    // console.log(value)
+    //使用回调函数将数值进行输出
+    callback(value)
+    },delay)
+  }
+}
+//需要在这里进行位置输出，应该需要回调函数
+function callback(value){
+  console.log(value);
+}
+
+var debounceFunc=debounce(1000)
+input.addEventListener('keyup',function(e){
+  debounceFunc (e.target.value)
+}) 
+```
+
+节流函数
+
+* 一段时间内只做一件事情，实际应用，表单的提交：典型的案例就是鼠标不断点击的触发，规定在n秒多次点击只有一次生效
+
+```javascript
+//节流函数实现
+function thro(func,waittime){
+  let timerOut//判断
+  return function(){
+    if(!timerOut){
+      timerOut=setTimeout(function(){
+        func();
+        timerOut=null
+      },waittime)
+    }
+  }
+}
+
+function handle(){
+  console.log(Math.random())
+}
+
+document.getElementById('button').onclick=thro(handle,2000)
+
+```
+
+* 实际应用
+
+> 使用echarts时，改变浏览器宽度的时候，希望重新渲染echarts的图像，可以使用该函数，提升性能。（虽然echarts里面有自带的resize函数）
+> 典型案例就是输入搜索：输入结束n秒后才进行搜索请求，n秒内又输入内容，就重新计时。解决搜索的bug
+
 7. Ajax原生实现
 8. 深拷贝的几种方法与比较
 9. 继承的几种实现与比较
 10. 未知宽高的元素水平垂直居中
 11. 三栏布局的实现
-12. 两栏布局的实现
-13. React高阶组件
+## 12. 两栏布局的实现
+
+两栏布局（左侧宽度固定，右侧自适应）
+
+* 方法一：float+margin-left：左侧宽度固定，然后使用float:left,右侧盒子使用margin-left：为宽度大小
+
+* 方法二：absolute+margin-left：左侧使用绝对定位，设置宽度大小，然后右侧盒子使用margin-left:宽度大小
+* 缺点:1、使用了绝对定位，若是用在某个div中，需要更改父容器的position。2、没有清除浮动的方法，若左侧盒子高于右侧盒子，就会超出父容器的高度。因此只能通过设置父容器的min-height来放置这种情况。
+
+
+* 方法三：float+BFC：为左侧元素设置浮动后，左侧元素会因为浮动盖在右侧元素上，因此要将右侧元素变成BFC，BFC是一个独立的区域，不会让BFC外的元素对其内部造成干扰。当右侧元素变成一个BFC时它的元素边界会发生变化，会紧紧贴合左侧的元素。
+常见的右侧元素设置—-overflow：hidden；
+
+* 方法四：flex布局：
+* 方法五：使用display: table;优点，高度不受限制，随内容多少变化，设定的高度会作为最小高度；内容增多，高度随之增高
+
+
+13.   React高阶组件 
 14. 数组去重
 15. 几种排序算法的实现及其复杂度比较
 16. 前序后序遍历二叉树（非递归）

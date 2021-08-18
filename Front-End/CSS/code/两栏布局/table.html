@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>使用display: table;</title>
+    <style>
+        .content {
+            background: pink;
+            display: table;
+            width: 100%;
+        }
+
+        .left {
+            background: #BCE8F1;
+            display: table-cell;
+            width: 200px;
+            height: 150px;
+        }
+
+        .right {
+            background: #F0AD4E;
+            display: table-cell;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>使用display: table;</h1>
+    <div class="content">
+        <div class="left">固定宽度区</div>
+        <div class="right">自适应区</div>
+    </div>
+</body>
+
+</html>

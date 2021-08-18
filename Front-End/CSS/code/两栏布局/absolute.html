@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>固定区采用绝对定位，自适应区设置margin</title>
+    <style>
+        .content {
+            background: pink;
+            position: relative;
+            height: 150px;
+        }
+
+        .left {
+            background: #BCE8F1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+        }
+
+        .right {
+            background: #F0AD4E;
+            margin-left: 200px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>固定区采用绝对定位，自适应区设置margin</h1>
+    <div class="content">
+        <div class="left">固定宽度区</div>
+        <div class="right">自适应区</div>
+    </div>
+</body>
+
+</html>
