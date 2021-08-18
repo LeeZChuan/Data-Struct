@@ -88,6 +88,11 @@
   - [8. Web服务器及其组成](#8-web服务器及其组成)
   - [9.  HTTP报文首部](#9--http报文首部)
   - [10.  HTTP通用首部字段](#10--http通用首部字段)
+  - [11. HTTP请求首部字段、响应首部字段、实体首部字段](#11-http请求首部字段响应首部字段实体首部字段)
+  - [12. Cookie相关首部字段](#12-cookie相关首部字段)
+  - [13. HTTPS与HTTP区别及实现方式](#13-https与http区别及实现方式)
+  - [14. Cookie与Session](#14-cookie与session)
+  - [15. 基于HTTP的功能追加协议（SPY、WebSocket、HTTP）](#15-基于http的功能追加协议spywebsockethttp)
   - [16. 常见的Web攻击分类](#16-常见的web攻击分类)
   - [17. TCP与UDP区别](#17-tcp与udp区别)
 - [五、前端工程化](#五前端工程化)
@@ -1239,12 +1244,12 @@ sessionStorage 的数据在浏览器关闭后自动删除;
 ## 3. HTTP方法
    GET:通常用来获取资源 
    HEAD：获取资源的元信息
-    POST：提交数据，即上传数据 
-    PUT：修改数据 
-    DELETE：删除数据 
-    CONNECT：建立连接隧道，用于代理服务器 
-    OPTIONS:列出可对资源实行的请求方法，用来跨域请求 
-    TRACE：追踪请求-响应的传输路径
+   POST：提交数据，即上传数据 
+   PUT：修改数据 
+   DELETE：删除数据 
+   CONNECT：建立连接隧道，用于代理服务器 
+   OPTIONS:列出可对资源实行的请求方法，用来跨域请求 
+   TRACE：追踪请求-响应的传输路径
 
 ## 4. GET和POST的区别
 
@@ -1304,13 +1309,12 @@ Web 服务器一般指网站服务器，是指驻留于因特网上某种类型�
 
 ## 10.  HTTP通用首部字段
 
-
-
-11. HTTP请求首部字段、响应首部字段、实体首部字段
-12. Cookie相关首部字段
-13. HTTPS与HTTP区别及实现方式
-14. Cookie与Session
-15. 基于HTTP的功能追加协议（SPY、WebSocket、HTTP）
+## 11. HTTP请求首部字段、响应首部字段、实体首部字段
+## 12. Cookie相关首部字段
+## 13. HTTPS与HTTP区别及实现方式
+http
+## 14. Cookie与Session
+## 15. 基于HTTP的功能追加协议（SPY、WebSocket、HTTP）
 ## 16. 常见的Web攻击分类
 
 1. XSS(Cross Site Scripting)跨站JS脚本攻击：针对接口进行 XSS攻击，即把js脚本或者带恶意js脚本的html标签，作为GET或者POST参数提交到服务器，然后服务器解释并响应
