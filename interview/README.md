@@ -430,11 +430,48 @@ reload 强制从服务器从新加载当前页面，replace 重新加载页面�
 
 跨域之所以出现是因为浏览器为了保证安全而制定的一个同源策略，浏览器之外是不存在跨域的，同源策略是一个域去访问另一个域中的资源是会被禁止，同源要求 ur 协议，主机名，端口都相同
 
-解决跨域一般有四种方式：
-1. 第一种是通过跨域资源共享，这种是在服务端进行解决，
-2. 第二种是使用 jsonp，这种方式的缺点是只能发 get 请求，不能捕获服务端的错误，并且请求过程无法终止，是利用了浏览器对 script 标签没有同源策略的限制来实现的，
-3. 第三种是通过 webscort 来解决跨域，这是因为他是个全双工协议，不是同源策略限制，最后一种是通过代理转发的方式，比如 webpack 的 devserve，nginx 配置 proxy_pass
-4. 还有一种跨域是父子页面的跨域，例如使用 iframe 来进行父子页面之间的通信，这是可以使用，postMessage 来进行通信，也可以用过改域的方式来解决，将 document.domain 改成更高的父域
+浏览器遵循同源政策(scheme(协议)、host(主机)和 port(端口)都相同则为同源)。
+非同源站点有这样一些限制: 不能读取和修改对方的 DOM 不读访问对方的 Cookie、IndexDB 和 LocalStorage 限制 XMLHttpRequest 请求。(后面的话题着重围绕这个) 当浏览器向目标 URI 发 Ajax 请求时，只要当前 URL 和目标 URL 不同源，则产生跨域，被称为跨域请求。 跨域请求的响应一般会被浏览器所拦截，注意，是被浏览器拦截，响应其实是成功到达客户端了。那这个拦截是如何发生呢？ 首先要知道的是，浏览器是多进程的，以 Chrome 为例，进程组成如下：
+
+广义上：
+1.  资源跳转： A链接、重定向、表单提交
+2.  资源嵌入： **link、script、img、frame**等dom标签，还有样式中background:url()、@font-face()等文件外链
+3.  脚本请求： js发起的ajax请求、dom和js对象的跨域操作等
+
+跨域解决方案
+1. 通过jsonp跨域
+
+JSONP 是服务器与客户端跨源通信的常用方法。最大特点就是简单适用，兼容性好（兼容低版本IE），缺点是只支持get请求，不支持post请求。
+
+核心思想：网页通过添加一个<script>元素，向服务器请求 JSON 数据，服务器收到请求后，将数据放在一个指定名字的回调函数的参数位置传回来。
+
+
+2. document.domain + iframe跨域
+3. location.hash + iframe
+4. window.name + iframe跨域
+5. postMessage跨域
+6. 跨域资源共享（CORS）
+
+ORS 是跨域资源分享（Cross-Origin Resource Sharing）的缩写。它是 W3C 标准，属于跨源 AJAX 请求的根本解决方法。
+
+1、普通跨域请求：只需服务器端设置Access-Control-Allow-Origin
+
+2、带cookie跨域请求：前后端都需要进行设置
+
+【前端设置】根据xhr.withCredentials字段判断是否带有cookie
+【服务端设置】服务器端对于CORS的支持，主要是通过设置Access-Control-Allow-Origin来进行的。如果浏览器检测到相应的设置，就可以允许Ajax进行跨域的访问。
+
+7、 nginx代理跨域
+
+在webpack.config.js中利用 WebpackDevServer 配置本地代理，详情配置查看devServer
+
+如下简单配置案例，这样 `http://localhost:8080/api/getUser.php` 的请求就是后端的接口 `http://192.168.25.20:8088/getUser.php`
+
+
+8、 nodejs中间件代理跨域
+9、 WebSocket协议跨域
+
+Websocket 是 HTML5 的一个持久化的协议，它实现了浏览器与服务器的全双工通信，同时也是跨域的一种解决方案。WebSocket 和 HTTP 都是应用层协议，都基于 TCP 协议。但是 WebSocket 是一种双向通信协议，在建立连接之后，WebSocket 的 服务器与 客户端都能主动向对方发送或接收数据。同时，WebSocket 在建立连接时需要借助 HTTP 协议，连接建立好了之后 client 与 server 之间的双向通信就与 HTTP 无关了。
 
 ## 25. 浏览器的回流（Reflow）和重绘（Repaints）
 
@@ -1628,6 +1665,50 @@ document.getElementById('button').onclick=thro(handle,2000)
 16. 前序后序遍历二叉树（非递归）
 17. 二叉树深度遍历（分析时间复杂度）
 18. 跨域的实现（JSONP、CORS）
+
+浏览器遵循同源政策(scheme(协议)、host(主机)和 port(端口)都相同则为同源)。
+非同源站点有这样一些限制: 不能读取和修改对方的 DOM 不读访问对方的 Cookie、IndexDB 和 LocalStorage 限制 XMLHttpRequest 请求。(后面的话题着重围绕这个) 当浏览器向目标 URI 发 Ajax 请求时，只要当前 URL 和目标 URL 不同源，则产生跨域，被称为跨域请求。 跨域请求的响应一般会被浏览器所拦截，注意，是被浏览器拦截，响应其实是成功到达客户端了。那这个拦截是如何发生呢？ 首先要知道的是，浏览器是多进程的，以 Chrome 为例，进程组成如下：
+
+广义上：
+1.  资源跳转： A链接、重定向、表单提交
+2.  资源嵌入： **link、script、img、frame**等dom标签，还有样式中background:url()、@font-face()等文件外链
+3.  脚本请求： js发起的ajax请求、dom和js对象的跨域操作等
+
+跨域解决方案
+1. 通过jsonp跨域
+
+JSONP 是服务器与客户端跨源通信的常用方法。最大特点就是简单适用，兼容性好（兼容低版本IE），缺点是只支持get请求，不支持post请求。
+
+核心思想：网页通过添加一个<script>元素，向服务器请求 JSON 数据，服务器收到请求后，将数据放在一个指定名字的回调函数的参数位置传回来。
+
+
+2. document.domain + iframe跨域
+3. location.hash + iframe
+4. window.name + iframe跨域
+5. postMessage跨域
+6. 跨域资源共享（CORS）
+
+ORS 是跨域资源分享（Cross-Origin Resource Sharing）的缩写。它是 W3C 标准，属于跨源 AJAX 请求的根本解决方法。
+
+1、普通跨域请求：只需服务器端设置Access-Control-Allow-Origin
+
+2、带cookie跨域请求：前后端都需要进行设置
+
+【前端设置】根据xhr.withCredentials字段判断是否带有cookie
+【服务端设置】服务器端对于CORS的支持，主要是通过设置Access-Control-Allow-Origin来进行的。如果浏览器检测到相应的设置，就可以允许Ajax进行跨域的访问。
+
+7、 nginx代理跨域
+
+在webpack.config.js中利用 WebpackDevServer 配置本地代理，详情配置查看devServer
+
+如下简单配置案例，这样 `http://localhost:8080/api/getUser.php` 的请求就是后端的接口 `http://192.168.25.20:8088/getUser.php`
+
+
+8、 nodejs中间件代理跨域
+9、 WebSocket协议跨域
+
+Websocket 是 HTML5 的一个持久化的协议，它实现了浏览器与服务器的全双工通信，同时也是跨域的一种解决方案。WebSocket 和 HTTP 都是应用层协议，都基于 TCP 协议。但是 WebSocket 是一种双向通信协议，在建立连接之后，WebSocket 的 服务器与 客户端都能主动向对方发送或接收数据。同时，WebSocket 在建立连接时需要借助 HTTP 协议，连接建立好了之后 client 与 server 之间的双向通信就与 HTTP 无关了。
+
 九、数据可视化
 1. Canvas和SVG的区别
 2. 在考虑设计可视化图表时，结合Canvas和SVG特性会怎么取舍
