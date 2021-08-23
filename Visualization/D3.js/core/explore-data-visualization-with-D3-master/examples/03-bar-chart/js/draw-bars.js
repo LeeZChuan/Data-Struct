@@ -19,20 +19,20 @@
   + Are there crazy humid days?
 */
 
-// Accessibility win! When the user loads the page, the screen reader says: "Example oh-three - making a bar chart."
+// 柱状图制作
 async function drawBars() {
-  // Access data
+  // 获取数据
   const pathToJSON = './../data/seattle_wa_weather_data.json'
   const dataset = await d3.json(pathToJSON)
 
-  // Create chart dimensions
-  const width = 600 // We will be generating many of these, so let's keep our chart small
+  // 创建图表维度
+  const width = 600 // 我们将生成许多这样的图表，所以让我们保持图表的小型化
 
   let dimensions = {
-    // NOTE: Histograms are easier to read when they are wider than they are tall
+    //注：直方图宽大于高时更容易阅读
     width: width,
     height: width * 0.9,
-    // Leave a larger margin on the top to account for the bar labels which will be positioned above each bar
+    // 在顶部留一个较大的边距，用于放置在每个条上方的条标签
     margin: {
       top: 30,
       right: 10,
@@ -41,17 +41,18 @@ async function drawBars() {
     },
   }
   // Our wrapper encompasses the whole chart; we need to subtract our margins to determine our bounds
+  //我们的包装涵盖了整个图表；我们需要减去我们的利润来确定我们的界限
   dimensions.boundedWidth =
     dimensions.width - dimensions.margin.left - dimensions.margin.right
   dimensions.boundedHeight =
     dimensions.height - dimensions.margin.top - dimensions.margin.bottom
 
   const drawHistogram = metric => {
-    // For our histogram, we are only interested in one metric for the whole chart
+    // 对于柱状图，我们只对整个图表的一个指标感兴趣
     const metricAccessor = d => d[metric]
     const yAccessor = d => d.length
 
-    // Draw canvas
+    // 绘制 canvas
     const wrapper = d3
       .select('#wrapper')
       .append('svg')
@@ -67,12 +68,12 @@ async function drawBars() {
 
     // Accessibility
     wrapper.attr("role", "figure")
-      // Allow the user to tab into our chart
+      // 允许用户在图表中添加选项卡
       .attr("tabindex", "0")  // 0 puts an element in tab flow; -1 takes it out of the tab flow
       // Append a title so that screen readers can announce what the user is looking at
       .append("title")
-        .text(`Histogram looking at the distribution of ${metric} in Seattle over the past year`)
-        // Accessibility win! Now when the bins group is highlighted, the screen reader will announce: "histogram bars. List with 15 items."
+      .text(`Histogram looking at the distribution of ${metric} in Seattle over the past year`)
+    // Accessibility win! Now when the bins group is highlighted, the screen reader will announce: "histogram bars. List with 15 items."
 
     // Create scales
     const xScale = d3
@@ -119,7 +120,7 @@ async function drawBars() {
       .attr("role", "list")
       // Let the user know what the list contains
       .attr("aria-label", "histogram bars")
-      // Accessibility win! Now when the bins group is highlighted, the screen reader will announce: "histogram bars. List with 15 items."
+    // Accessibility win! Now when the bins group is highlighted, the screen reader will announce: "histogram bars. List with 15 items."
 
     const binGroups = binsGroup
       .selectAll('g')
@@ -127,19 +128,15 @@ async function drawBars() {
       // Create a new "g" element for each bin
       .enter()
       .append('g')
-        // Accessibility - Annotate each of our list items
-        .attr("tabindex", "0")
-        .attr("role", "listitem")
-        .attr("aria-label", d => `There were ${
-          yAccessor(d)
-        } days between ${
-          d.x0.toString().slice(0,4)
-        } and ${
-          d.x1.toString().slice(0,4)
-        } ${
-          metric
+      // Accessibility - Annotate each of our list items
+      .attr("tabindex", "0")
+      .attr("role", "listitem")
+      .attr("aria-label", d => `There were ${yAccessor(d)
+        } days between ${d.x0.toString().slice(0, 4)
+        } and ${d.x1.toString().slice(0, 4)
+        } ${metric
         } levels.`)
-      // Accessibility win! Now when a list item is highlighted, the screen reader will say: "There were thirty-three days between point five and one WindSpeed levels"
+    // Accessibility win! Now when a list item is highlighted, the screen reader will say: "There were thirty-three days between point five and one WindSpeed levels"
     // Draw our bars
     const barPadding = 1
     const barRects = binGroups
