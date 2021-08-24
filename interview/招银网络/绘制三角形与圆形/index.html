@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>绘制三角形</title>
+	<style type="text/css">
+		/* css3绘制三角形 */
+		.triangle {
+			width: 0;
+			height: 0;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-top: 100px solid red;
+			/* border-bottom: 100px solid red; */
+		}
+
+		.square {
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+
+		.cricle {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border-radius: 50%;
+		}
+
+		.oval {
+			width: 200px;
+			height: 100px;
+			background: red;
+			border-radius: 100px / 50px;
+		}
+
+		.triangle-topleft {
+			width: 0;
+			height: 0;
+			border-top: 100px solid orchid;
+			border-right: 100px solid transparent;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="test" style="display: flex; justify-content: center;">绘制三角形
+		<div>
+			<div class="triangle"></div>
+			<div class="square"></div>
+			<div class="cricle"></div>
+			<div class="oval"></div>
+			<div class="triangle-topleft"></div>
+		</div>
+	</div>
+</body>
+
+</html>
