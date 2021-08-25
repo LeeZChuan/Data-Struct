@@ -7,7 +7,7 @@ const oldObj = {
 }
 
 //这种写法也可，但是不要忘记obj的类型转换
-const deepClone1=(obj)=>{
+deepClone1=(obj)=>{
     let result;
     if(obj instanceof Date) return new Date(obj)
     if(obj instanceof RegExp) return new RegExp(obj)
