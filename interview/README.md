@@ -38,7 +38,7 @@
   - [3. 变量的解构赋值](#3-变量的解构赋值)
   - [4. 箭头函数及其this问题](#4-箭头函数及其this问题)
   - [5. Symbol概念及其作用](#5-symbol概念及其作用)
-  - [6. Set、Mapweakset和weakmap数据结构](#6-setmapweakset和weakmap数据结构)
+  - [6. Set、Map、weakset和weakmap数据结构](#6-setmapweakset和weakmap数据结构)
   - [7. Proxy](#7-proxy)
   - [8. Reflect对象](#8-reflect对象)
   - [9.  Promise（手撕Promise A+规范、Promise.all、Promise相关API和方法）](#9--promise手撕promise-a规范promiseallpromise相关api和方法)
@@ -138,14 +138,6 @@ class Array1 {
 console.log(111 instanceof Array1);
 ```
 
-手机银行，生活方向，app：vue移动端的开发，后端：java
-
-生活常见，前端十几号人，
-薪资精铁
-月工资，
-
-八点半，五点半，午休双休，晚上加班，
-5000人，2000人，it团队，程序人。
 
 Object.toString.call(),是调用了 Object 上的 toString 方法，之所以任何数据类型都可以调用该方法是因为，JavaScript 中基本数据类型会先转为包装对象，然后所有对象最终的原型指向都是 Object，所以可以调用 toString 方法，调用该方法后会返回一个[object 数据类型]的字符串，这个方法对基本数据类型和复杂数据类型都有效，这种方法的一个缺点是对于自定义对象总是返回[object Object],所以该方法常用来判断内置对象
 
@@ -649,7 +641,7 @@ symbol 不能使用 new 命令，接受一个字符串作为参数，表示对 s
 
 Symbol.for(),接受一个字符串做为参数，然后搜索有没有以该参数作为名称的 Symbol 的值，若有就返回这个 Symbol 值，没有就创建一个，相应的也有 Symbol.keyFor(),参数为一个变量，返回一个已登记的 symbol 类型的 key 值
 
-## 6. Set、Mapweakset和weakmap数据结构
+## 6. Set、Map、weakset和weakmap数据结构
 
 es6 提供的新的数据结构，set 和 map，同时还有 weakSet，weakMap
 
