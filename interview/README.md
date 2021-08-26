@@ -637,7 +637,7 @@ let 和 const 会有暂时性死区，而 var 会有变量提升
 
 ## 5. Symbol概念及其作用
 
-symbol 不能使用 new 命令，接受一个字符串作为参数，表示对 symbol 实例的描述，可在控制台显示转为字符串，symbol 作为属性名，不会被 forin，forof，Objet.key(),Object.getOwnPropertyNames()，遍历到，也不能被 JSON.stringfy 返回，但可以使用 Object.getOwnPropertySymbols 方法返回一个数组，成员是对象所有用作属性名的 Symbol 值
+symbol 不能使用 new 命令，接受一个字符串作为参数，表示对 symbol 实例的描述，可在控制台显示转为字符串，symbol 作为属性名，不会被 forin，forof，Objet.keys(),Object.getOwnPropertyNames()，遍历到，也不能被 JSON.stringfy 返回，但可以使用 Object.getOwnPropertySymbols 方法返回一个数组，成员是对象所有用作属性名的 Symbol 值
 
 Symbol.for(),接受一个字符串做为参数，然后搜索有没有以该参数作为名称的 Symbol 的值，若有就返回这个 Symbol 值，没有就创建一个，相应的也有 Symbol.keyFor(),参数为一个变量，返回一个已登记的 symbol 类型的 key 值
 
