@@ -371,5 +371,80 @@ let myValidator = new ZCV();
 // 将整个模块导入到一个变量，并通过它来访问模块的导出部分
 import * as validator from "./ZipCodeValidator";
 let myValidator = new validator.ZipCodeValidator();
+
+//类和函数声明可以直接被标记为默认导出。 标记为默认导出的类和函数的名字是可以省略的
+/**ZipCodeValidator.ts*/
+export default class ZipCodeValidator {
+    static numberRegexp = /^[0-9]+$/;
+    isAcceptable(s: string) {
+        return s.length === 5 && ZipCodeValidator.numberRegexp.test(s);
+    }
+}
+import validator from "./ZipCodeValidator";
+
+let myValidator = new validator();
+// 或者
+/**StaticZipCodeValidator.ts*/
+const numberRegexp = /^[0-9]+$/;
+
+export default function (s: string) {
+    return s.length === 5 && numberRegexp.test(s);
+}
+
+import validate from "./StaticZipCodeValidator";
+
+let strings = ["Hello", "98052", "101"];
+
+// Use function validate
+strings.forEach(s => {
+  console.log(`"${s}" ${validate(s) ? " matches" : " does not match"}`);
+});
+
+
 ```
+
+##### export = 和 import = require()
+CommonJS和AMD的环境里都有一个exports变量，这个变量包含了一个模块的所有导出内容。
+
+CommonJS和AMD的exports都可以被赋值为一个对象, 这种情况下其作用就类似于 es6 语法里的默认导出，即 export default语法了。虽然作用相似，但是 export default 语法并不能兼容CommonJS和AMD的exports。
+
+为了支持CommonJS和AMD的exports, TypeScript提供了export =语法。
+
+export =语法定义一个模块的导出对象。 这里的对象一词指的是类，接口，命名空间，函数或枚举。
+
+若使用export =导出一个模块，则必须使用TypeScript的特定语法import module = require("module")来导入此模块。
+
+
+##### 生成模块代码
+根据编译时指定的模块目标参数，编译器会生成相应的供Node.js (CommonJS)，Require.js (AMD)，UMD，SystemJS或ECMAScript 2015 native modules (ES6)模块加载系统使用的代码。 想要了解生成代码中 define，require 和 register的意义，请参考相应模块加载器的文档。
+
+下面的例子说明了导入导出语句里使用的名字是怎么转换为相应的模块加载器代码的。
+
+##### 使用其它的JavaScript库
+要想描述非TypeScript编写的类库的类型，我们需要声明类库所暴露出的API。
+
+我们叫它声明因为它不是“外部程序”的具体实现。 它们通常是在 .d.ts文件里定义的。 如果你熟悉C/C++，你可以把它们当做 .h文件。 让我们看一些例子。
+
+外部模块
+在Node.js里大部分工作是通过加载一个或多个模块实现的。 我们可以使用顶级的 export声明来为每个模块都定义一个.d.ts文件，但最好还是写在一个大的.d.ts文件里。 我们使用与构造一个外部命名空间相似的方法，但是这里使用 module关键字并且把名字用引号括起来，方便之后import。 例如：
+
+```ts
+declare module "url" {
+    export interface Url {
+        protocol?: string;
+        hostname?: string;
+        pathname?: string;
+    }
+
+    export function parse(urlStr: string, parseQueryString?, slashesDenoteHost?): Url;
+}
+
+declare module "path" {
+    export function normalize(p: string): string;
+    export function join(...paths: any[]): string;
+    export let sep: string;
+}
+```
+
+
 
