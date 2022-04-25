@@ -6,3 +6,12 @@
    > v-model:只能应用在表单类元素或者是输入类元素，简单来说就是带有value值的元素（如：input、select）
    > v-model:value可以简写为v-model因为v-model默认收集的就是value值
 
+3. 获取el的两种写法
+```js
+const v=new Vue({
+       el:'#root'
+   })
+// 关联root容器，用mount方法
+v.$mount('#root')
+```
+4. 获取data的两种写法
