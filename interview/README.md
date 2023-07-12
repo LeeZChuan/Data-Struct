@@ -574,6 +574,76 @@ function curry(fn, args) {
 ```
 使用函数柯里化可以实现参数复用，提前返回，延迟计算或执行，js 中的 bind 是延迟函数的执行
 
+柯里化的使用场景：
+使用场景之一：减少重复传递不变的部分参数
+```js
+lodash.curry
+
+function simpleURL(protocol, domain, path) {
+    return protocol + "://" + domain + "/" + path;
+}
+上面这个函数是将三个参数生成一个完成的url.调用如下：
+
+var myurl = simpleURL('http', 'mysite', 'home.html');
+var myurl2 = simpleURL('http', 'mysite', 'aboutme.html');
+然后你会发现，前两个参数保持不变，但每次调用都需要传递。所以可以对其优化，仅传递最后一个变化的参数。
+通常我们第一个想法是将函数改成如下：
+
+function simpleURL(path) {
+   return "http://mysite/" + path;
+}
+但是还是有点缺陷，如果这个库函数有被其它人使用呢，这种情况下基本上是不允许直接改库函数的。并且如果后期还需要处理https的请求呢。难道再把第一个参数加回去？这样别人若使用了该库函数也要修改调用代码。
+针对这种情况，使用柯里化函数可以完美解决。
+使用lodash.curry库函数使函数柯里化
+
+// 避免每次调用重复传参
+let myURL1 = _.curry(simpleURL)('https', 'mysite');
+let res1 = myURL1('home.html');    //
+
+console.log(res1);//https://mysite/home.html
+
+let myURL2 = _.curry(simpleURL)('http', 'mysite');
+let res2 = myURL2('aboutme.html');    //
+
+console.log(res2);//http://mysite/aboutme.html
+```
+使用场景2：将柯里化后的callback参数传递给map, filter等函数。
+
+比如我们有这样一段数据：
+```js
+var persons = [{name: 'kevin', age: 11}, {name: 'daisy', age: 24}]
+如果我们要获取所有的 name 值，我们一般会这样实现：
+
+var names = persons.map(function (item) {
+    return item.name;
+});
+我们可以利用柯里化改写成如下：
+
+var getProp = _.curry(function (key, obj) {
+    return obj[key]
+});
+var names = persons.map(getProp('name'))
+我们为了获取 name 属性还要再编写一个 getProp 函数，是不是又麻烦了些？
+
+但是请注意，getProp 函数编写一次后，以后可以多次使用，实际上代码从原本的三行精简成了一行，而且你看代码是不是更加易懂了？
+demo:
+
+var persons = [{name: 'kevin', age: 11}, {name: 'daisy', age: 24}]
+
+let getProp = _.curry(function (key, obj) {
+    return obj[key]
+});
+let names2 = persons.map(getProp('name'))
+console.log(names2); //['kevin', 'daisy']
+
+let ages2 = persons.map(getProp('age'))
+console.log(ages2); //[11,24]
+```
+在这个场景中，将callback柯里化之后，就能实现callback的复用了，而且非常灵活，这样不需要每次map计算都新写一个匿名函数，并在回调里加上特有的逻辑，导致其无法重用。
+
+从上面的例子中还可以看出，无论想要获取抽取出哪个属性值，只要这要写person.map(getProp('propertyname_xxx'))就可以轻松获取了。
+
+总结：柯里化这个概念以及实现本身都非常难懂，平时写代码几乎也很少使用，能使用的场景真的不太多，大多数情况都选择了其它简单的方式实现了。在get到这个技能后，我认为以后可以在项目中适当使用这个方法，尽量减少重复代码。目前只研究了这么些，至于其它的好处和使用场景后期有机会再更新。
 
 ## 31. JS的map()和reduce()方法
 
