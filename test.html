@@ -1,0 +1,195 @@
+<html>
+
+<head>
+    <!-- IverilogDemo -->
+    <title> HelloVue </title>
+    <script src="https://static.nowcoder.com/ajax/libs/vue/2.6.9/vue.min.js"></script>
+
+</head>
+<style>
+    .container {
+        margin: 50px auto;
+    }
+
+    table {
+        border: 1px solid #ddd;
+    }
+
+    th {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    td {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <div class="container" style="max-width:600px">
+            <table class="table" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>商品名称</th>
+                    <th>商品价格</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <th><input type="text" v-model.trim='inputName1' style="width: 100px;"></th>
+                    <th><input type="text" v-model.trim='inputPrice1' style="width: 100px;"></th>
+                    <th><input type="text" v-model.trim='inputNum1' style="width: 100px;"></th>
+                    <th></th>
+                    <th>
+                        <button @click="add()">增加</button>
+                    </th>
+                </tr>
+                <tr v-for='(item,index) in carts.items'>
+                    <td>
+                        <input type="checkbox" v-model="item.isChecked" @click="currentItemChecked(item)">
+                        {{ item.itemName}}
+                    </td>
+                    <td>{{ item.itemPrice}}</td>
+                    <td>
+                        <button class="btn btn-xs" @click="itemCount(item)">-</button>
+                        {{ item.itemNum}}
+                        <button class="btn btn-xs" @click="itemAdd(item)">+</button>
+                    </td>
+                    <td>{{(item.itemPrice*item.itemNum) }}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" @click="itemDelete(item)">删除</button>
+                    </td>
+                <tr>
+                    <td colspan="5">全选：
+                        <input type="checkbox" v-model="carts.isAllChecked" @click="allCheck">
+                        总价{{carts.total}}
+                    </td>
+                </tr>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                inputName1: "",
+                inputPrice1: "",
+                inputNum1: "",
+                obj: {},
+                carts: {
+                    isAllChecked: false,
+                    total: 0,
+                    items: [{
+                        itemName: '商品a',
+                        itemPrice: '10',
+                        itemNum: '1',
+                        isChecked: false
+                    }]
+                }
+            },
+            mounted() {
+                // 在此处补充代码
+
+            },
+            methods: {
+                // 在此处补充代码
+                add: function () {
+                    console.log('增加商品');
+                    let isAdd = true;
+                    // 给商品列表添加商品
+                    this.carts.items.forEach(item => {
+                        console.log(item, 'item');
+                        if (item.itemName == this.inputName1) {
+                            alert(`请勿重复添加！`);
+                            isAdd = false;
+                        }
+                    });
+                    if (isAdd) {
+                        this.carts.items.push({
+                            itemName: this.inputName1,
+                            itemPrice: this.inputPrice1,
+                            itemNum: this.inputNum1,
+                            isChecked: false
+                        })
+                    }
+                },
+
+                itemAdd: function (item,) {
+                    item.itemNum++;
+                },
+                itemCount: function (item) {
+                    if (item.itemNum <= 1) {
+                        alert('不可以再减少');
+                    } else {
+                        item.itemNum--;
+                    }
+
+                },
+
+                itemDelete: function (chooseItem) {
+                    // 删除选中的元素
+                    console.log('删除选中的元素', chooseItem);
+                    const resultArray = [];
+                    this.carts.items.forEach(item => {
+                        if (item.itemName == chooseItem.itemName) {
+                            // 被选中的元素
+                        } else {
+                            resultArray.push(item);
+                        }
+                    })
+                    console.log(resultArray, 'resultArray');
+                    this.carts.items = resultArray;
+                },
+                allCheck: function () {
+                    console.log('点击了所有的全选')
+                    this.carts.isAllChecked = !this.carts.isAllChecked;
+                    if (this.carts.isAllChecked) {
+                        let currentTotal = 0;
+                        // 全选
+                        this.carts.items.forEach(item => {
+                            item.isChecked = this.carts.isAllChecked;
+                            currentTotal = currentTotal + item.itemPrice * item.itemNum;
+                        })
+                        this.carts.total = currentTotal;
+                    } else {
+                        this.carts.items.forEach(item => {
+                            item.isChecked = this.carts.isAllChecked;
+                        });
+                        this.carts.total = 0;
+                    }
+                },
+                currentItemChecked: function (currentItem) {
+                    console.log('当前选中的元素信息,', currentItem);
+                    this.$nextTick(()=>{
+                        let currentTotal = 0;
+                        let currentCheckedNum = 0;
+                        this.carts.items.forEach(item => {
+                            // if(item.)
+                            console.log(item, 'item');
+                            if (item.isChecked) {
+                                currentCheckedNum++;
+                                currentTotal = currentTotal + item.itemPrice * item.itemNum;
+                            }else if(item.itemName == currentItem.itemName && currentItem.isChecked) {
+                                currentCheckedNum++;
+                                currentTotal = currentTotal + item.itemPrice * item.itemNum;
+                            }
+                        });
+                        console.log(currentCheckedNum, 'currentCheckedNum');
+                        if (currentCheckedNum == this.carts.items.length && currentCheckedNum != 0) {
+                            this.carts.isAllChecked = true;
+                        } else {
+                            this.carts.isAllChecked = false;
+                        }
+                        this.carts.total=currentTotal;
+                    });
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>
