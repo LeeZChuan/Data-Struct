@@ -20,72 +20,78 @@
 <body>
   <section id="magnifier"></section>
 
-  
 
-  <script >
+
+  <script>
 
     var magnifier = {
-            init(param) {
-                const el = param.el
-                const food=param.food;
-                if (!el) return
-                this.createElement(el,food)
-                this.initEvent()
-            },
-            createElement(el, food) {
-              const foodUl = document.createElement('ul');
-              console.log(food,'food');
-              for (let foodName of food) {
-                const foodLi = document.createElement('li');
-                foodLi.className = 'food';
-                foodLi.draggable = true;
-                foodLi.innerHTML = foodName;
-                foodUl.appendChild(foodLi);
-              }
-              el.appendChild(foodUl)
-              const plateDiv = document.createElement('div');
-              plateDiv.className = 'plate';
-              plateDiv.innerText = "小明的餐盘";
-              el.appendChild(plateDiv);
-            },
-            initEvent() {
-                const foodNodes = document.querySelectorAll('.food')
-                const plate = document.querySelector('.plate')
-                let dragNode = null
-                let cloneDom = {};
-                // TODO: 当开始拖动食物时触发，原食物不消失
-                console.log(foodNodes,'foodNodes');
-                console.log(plate,'plate');
-                foodNodes.forEach(item=>{
-                    console.log(item,'item');
-                    // 点击
-                    item.addEventListener('click',(a)=>{
-                        console.log(a,'aaaa');
-                    })
-                })
-                // TODO: 食物拖动过程中的处理
-
-                foodNodes.forEach(item=>{
-                    console.log(item,'item');
-                    item.addEventListener('drag',(a)=>{
-                        // 拖动
-                        console.log(a,'a');
-                    });
-                })
-               
-                // TODO: 鼠标左键释放后，食物落入餐盘中
-                
-            }
+      init(param) {
+        const el = param.el
+        const food = param.food;
+        if (!el) return
+        this.createElement(el, food)
+        this.initEvent()
+      },
+      createElement(el, food) {
+        const foodUl = document.createElement('ul');
+        console.log(food, 'food');
+        for (let foodName of food) {
+          const foodLi = document.createElement('li');
+          foodLi.className = 'food';
+          foodLi.draggable = true;
+          foodLi.innerHTML = foodName;
+          foodUl.appendChild(foodLi);
         }
-        let magnifierPoint=document.getElementById('magnifier')
-        console.log(magnifierPoint,'magnifierPoint');
-        magnifier.init({
-            // TODO: 请获取id=magnifier的节点
-            el: magnifierPoint,
-			food: ['猪排', '牛排', '拍黄瓜', '小青菜']
+        el.appendChild(foodUl)
+        const plateDiv = document.createElement('div');
+        plateDiv.className = 'plate';
+        plateDiv.innerText = "小明的餐盘";
+        el.appendChild(plateDiv);
+      },
+      initEvent() {
+        const foodNodes = document.querySelectorAll('.food')
+        const plate = document.querySelector('.plate')
+        let dragNode = null
+        let cloneDom = {};
+        // TODO: 当开始拖动食物时触发，原食物不消失
+        console.log(foodNodes, 'foodNodes');
+        console.log(plate, 'plate');
+        // TODO: 食物拖动过程中的处理
+        foodNodes.forEach(item => {
+          item.addEventListener('dragstart', (event) => {
+            // 拖动开始
+            event.dataTransfer.setData('text/plain', item.textContent);
+          });
         })
-    </script>
- 
+
+        // TODO: 鼠标左键释放后，食物落入餐盘中
+
+        plate.addEventListener('dragover', (event) => {
+          // 拖动结束
+          // console.log(event,'event_拖动结束');
+          event.preventDefault();
+        });
+        plate.addEventListener('drop', (event) => {
+          // 拖动结束
+          console.log(event, 'event_拖动释放');
+          event.preventDefault();
+          const draggedElementText = event.dataTransfer.getData('text/plain');
+          const newItem = document.createElement('div');
+          newItem.textContent = draggedElementText;
+          plate.appendChild(newItem);
+        });
+
+      }
+    }
+    let magnifierPoint = document.getElementById('magnifier')
+    console.log(magnifierPoint, 'magnifierPoint');
+    magnifier.init({
+      // TODO: 请获取id=magnifier的节点
+      el: magnifierPoint,
+      food: ['猪排', '牛排', '拍黄瓜', '小青菜']
+    })
+  </script>
+
 </body>
 
 </html>
