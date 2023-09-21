@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <!-- IverilogDemo -->
+  <title> Hello </title>
+  <script src="https://static.nowcoder.com/ajax/libs/vue/2.6.9/vue.min.js"></script>
+</head>
+<style>
+  /* 在此处补充代码 */
+  #example {
+    width: 500px;
+  }
+
+  .box {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+
+  .image {
+    /* height: 100px;
+    width: 50px; */
+    margin: 10px;
+  }
+
+  .lazy {
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+    /* display: block; */
+    margin-bottom: 20px;
+  }
+</style>
+
+<body>
+  <div id="example">
+    <div class="box">
+      <!-- 在此处补充代码 -->
+      <div class="image" v-for="item in content" :key="item.num">
+        <img class="lazy" :src="item.defaultUrl" :data-src="item.src">
+      </div>
+    </div>
+    <script>
+      // 在此处补充代码
+      var vm = new Vue({
+        el: '#example',
+        data: {
+          content: [{ src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img1.jpg', num: '45002' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img2.jpg', num: '368724' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img3.jpg', num: '96487' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img4.jpg', num: '86944' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img5.jpg', num: '43761' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img6.jpg', num: '64937' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img7.jpg', num: '34978' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img8.jpg', num: '64913' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img9.jpg', num: '42567' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img10.jpg', num: '4697' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img11.jpg', num: '64874' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img12.jpg', num: '36972' },
+          { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img13.jpg', num: '67355' },],
+          defaultUrl: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/loading.jpg'
+        },
+        created() {
+
+        },
+        mounted() {
+          // 创建实例
+          const observer = new IntersectionObserver(this.throttle(this.handleIntersection,1000),{
+            root:null,
+            rootMargin:'0px',
+            threshold:0.1,
+          })
+          // 图片懒加载的元素
+          const lazyImages = document.querySelectorAll('.lazy');
+          console.log(lazyImages, 'lazyImages');
+          lazyImages.forEach(image => {
+            observer.observe(image);
+          })
+        },
+        methods: {
+          handleIntersection: function (enteries) {
+            enteries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.classList.remove('.lazy');
+              }
+            })
+
+          },
+          // 节流函数
+          throttle:function(func,time){
+            let timer;
+            return function(...args){
+              if(!timer){
+                timer=setTimeout(()=>{
+                  func.apply(this,args);
+                  timer=null;
+                },time)
+              }
+            }
+            
+          }
+        }
+      })
+    </script>
+</body>
+
+</html>
