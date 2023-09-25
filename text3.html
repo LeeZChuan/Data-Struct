@@ -33,14 +33,26 @@
     /* display: block; */
     margin-bottom: 20px;
   }
+  .loading{
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+    /* display: block; */
+    margin-bottom: 20px;
+  }
 </style>
 
 <body>
   <div id="example">
-    <div class="box">
+    <div class="box" v-scroll="loadMoreImages">
       <!-- 在此处补充代码 -->
-      <div class="image" v-for="item in content" :key="item.num">
+      <!-- <div class="image" v-for="item in content" :key="item.num">
         <img class="lazy" :src="item.defaultUrl" :data-src="item.src">
+      </div> -->
+
+      <div class="image" v-for="item in content" :key="item.num">
+        <img class="lazy" :src="item.src" :data-src="item.src" :data-loading="defaultUrl" @load="imageLoaded">
+        <img class="loading" :src="defaultUrl" v-if="isLoading">
       </div>
     </div>
     <script>
@@ -61,17 +73,18 @@
           { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img11.jpg', num: '64874' },
           { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img12.jpg', num: '36972' },
           { src: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/img13.jpg', num: '67355' },],
-          defaultUrl: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/loading.jpg'
+          defaultUrl: 'https://static.nowcoder.com/ajax/img/vue-Lazyloading/img/loading.jpg',
+          isLoading: false, // 控制加载中状态
         },
         created() {
 
         },
         mounted() {
           // 创建实例
-          const observer = new IntersectionObserver(this.throttle(this.handleIntersection,1000),{
-            root:null,
-            rootMargin:'0px',
-            threshold:0.1,
+          const observer = new IntersectionObserver(this.throttle(this.handleIntersection, 1000), {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1,
           })
           // 图片懒加载的元素
           const lazyImages = document.querySelectorAll('.lazy');
@@ -81,6 +94,46 @@
           })
         },
         methods: {
+          loadMoreImages() {
+            // 当用户滚动到页面底部时加载更多图片
+            if (this.isLoading) {
+              return; // 防止多次触发加载
+            }
+
+            const lazyImages = document.querySelectorAll('.lazy');
+            const lastLazyImage = lazyImages[lazyImages.length - 1];
+            if (lastLazyImage) {
+              const rect = lastLazyImage.getBoundingClientRect();
+              if (rect.bottom <= window.innerHeight) {
+                // 用户已滚动到页面底部
+                this.isLoading = true; // 设置加载中状态
+                this.loadNextBatchOfImages();
+              }
+            }
+          },
+
+          loadNextBatchOfImages() {
+            // 在这里加载更多图片的数据并添加到content数组中
+            // 模拟加载更多图片
+            const newImages = [
+              // { src: '新图片1的URL', num: '新图片1的编号' },
+              // { src: '新图片2的URL', num: '新图片2的编号' },
+              // 添加更多新图片...
+            ];
+
+            // 将新图片添加到content数组中
+            this.content = this.content.concat(newImages);
+            // 设置加载完成后的状态
+            this.isLoading = false;
+          },
+          imageLoaded(event) {
+            console.log(event,'event');
+            // 图片加载完成时触发
+            const img = event.target;
+            const loadingUrl = img.getAttribute('data-loading');
+            console.log(img.parentElement.querySelector('.loading'),'img.parentElement.querySelector()');
+            // img.parentElement.querySelector('.loading').style.display = 'none';
+          },
           handleIntersection: function (enteries) {
             enteries.forEach(entry => {
               if (entry.isIntersecting) {
@@ -92,17 +145,17 @@
 
           },
           // 节流函数
-          throttle:function(func,time){
+          throttle: function (func, time) {
             let timer;
-            return function(...args){
-              if(!timer){
-                timer=setTimeout(()=>{
-                  func.apply(this,args);
-                  timer=null;
-                },time)
+            return function (...args) {
+              if (!timer) {
+                timer = setTimeout(() => {
+                  func.apply(this, args);
+                  timer = null;
+                }, time)
               }
             }
-            
+
           }
         }
       })

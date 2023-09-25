@@ -162,30 +162,37 @@
                         this.carts.total = 0;
                     }
                 },
-                currentItemChecked: function (currentItem) {
-                    console.log('当前选中的元素信息,', currentItem);
-                    this.$nextTick(()=>{
-                        let currentTotal = 0;
-                        let currentCheckedNum = 0;
-                        this.carts.items.forEach(item => {
-                            // if(item.)
-                            console.log(item, 'item');
-                            if (item.isChecked) {
-                                currentCheckedNum++;
-                                currentTotal = currentTotal + item.itemPrice * item.itemNum;
-                            }else if(item.itemName == currentItem.itemName && currentItem.isChecked) {
-                                currentCheckedNum++;
-                                currentTotal = currentTotal + item.itemPrice * item.itemNum;
-                            }
-                        });
-                        console.log(currentCheckedNum, 'currentCheckedNum');
-                        if (currentCheckedNum == this.carts.items.length && currentCheckedNum != 0) {
-                            this.carts.isAllChecked = true;
-                        } else {
-                            this.carts.isAllChecked = false;
-                        }
-                        this.carts.total=currentTotal;
+                currentItemChecked: function (item) {
+                    item.isChecked = !item.isChecked; // 操作数据
+                    this.$nextTick(() => {
+                        // 这里执行与数据更新相关的操作
+                        this.calculateTotal(); // 假设这里是更新总计的函数
                     });
+
+                },
+                calculateTotal: function () {
+                    let currentTotal = 0;
+                    let currentCheckedNum = 0;
+                    this.carts.items.forEach(item => {
+                        // if(item.)
+                        console.log(item, 'item');
+                        if (item.isChecked) {
+                            console.log('走了几素颜');
+                            currentCheckedNum++;
+                            currentTotal = currentTotal + item.itemPrice * item.itemNum;
+                        }
+                    });
+                    console.log(currentCheckedNum,'233123===');
+                    if (currentCheckedNum == this.carts.items.length && currentCheckedNum != 0) {
+                        // this.carts.isAllChecked = true;
+                        this.$set(this.carts, 'isAllChecked', true);
+                    } else {
+                        // this.carts.isAllChecked = false;
+                        this.$set(this.carts, 'isAllChecked', false);
+                    }
+                    console.log(currentTotal, 'currentTotal');
+                    this.$set(this.carts, 'total', currentTotal);
+                    console.log(this.carts, 'this.carts11');
                 }
             },
         })
