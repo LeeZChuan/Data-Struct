@@ -68,15 +68,14 @@
 
         plate.addEventListener('dragover', (event) => {
           // 拖动结束
-          // console.log(event,'event_拖动结束');
           event.preventDefault();
         });
         plate.addEventListener('drop', (event) => {
           // 拖动结束
-          console.log(event, 'event_拖动释放');
           event.preventDefault();
           const draggedElementText = event.dataTransfer.getData('text/plain');
-          const newItem = document.createElement('div');
+          const newItem = document.createElement('li');
+          newItem.style='border: 1px dashed #FFC0CB;margin: 10px 0;width: 100px;'
           newItem.textContent = draggedElementText;
           plate.appendChild(newItem);
         });

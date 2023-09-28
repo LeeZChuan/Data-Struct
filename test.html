@@ -98,11 +98,9 @@
             methods: {
                 // 在此处补充代码
                 add: function () {
-                    console.log('增加商品');
                     let isAdd = true;
                     // 给商品列表添加商品
                     this.carts.items.forEach(item => {
-                        console.log(item, 'item');
                         if (item.itemName == this.inputName1) {
                             alert(`请勿重复添加！`);
                             isAdd = false;
@@ -132,17 +130,11 @@
 
                 itemDelete: function (chooseItem) {
                     // 删除选中的元素
-                    console.log('删除选中的元素', chooseItem);
-                    const resultArray = [];
-                    this.carts.items.forEach(item => {
-                        if (item.itemName == chooseItem.itemName) {
-                            // 被选中的元素
-                        } else {
-                            resultArray.push(item);
-                        }
-                    })
-                    console.log(resultArray, 'resultArray');
+                    // 这里使用filter进行数组的剔除
+                    const resultArray=this.carts.items.filter(item=>item.itemName !== chooseItem.itemName);
                     this.carts.items = resultArray;
+                    // 也可以使用map储存我们当前的下标也就是index与唯一标识name
+                    // 然后使用splice方法进行数组的剔除
                 },
                 allCheck: function () {
                     console.log('点击了所有的全选')
@@ -174,25 +166,17 @@
                     let currentTotal = 0;
                     let currentCheckedNum = 0;
                     this.carts.items.forEach(item => {
-                        // if(item.)
-                        console.log(item, 'item');
                         if (item.isChecked) {
-                            console.log('走了几素颜');
                             currentCheckedNum++;
                             currentTotal = currentTotal + item.itemPrice * item.itemNum;
                         }
                     });
-                    console.log(currentCheckedNum,'233123===');
                     if (currentCheckedNum == this.carts.items.length && currentCheckedNum != 0) {
-                        // this.carts.isAllChecked = true;
                         this.$set(this.carts, 'isAllChecked', true);
                     } else {
-                        // this.carts.isAllChecked = false;
                         this.$set(this.carts, 'isAllChecked', false);
                     }
-                    console.log(currentTotal, 'currentTotal');
                     this.$set(this.carts, 'total', currentTotal);
-                    console.log(this.carts, 'this.carts11');
                 }
             },
         })
