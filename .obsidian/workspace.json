@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9ed3e70fec91b5f9",
+        "id": "435495dc59f9ed6c",
         "type": "tabs",
         "children": [
           {
-            "id": "d4877f5b2a893d40",
+            "id": "246b08b9647fd03d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "LeetCode/REAMDE.md",
-                "mode": "source",
-                "source": false
+                "file": "Front-End/计算机系统设计/英文版计算机八股文.pdf"
               }
             }
           }
@@ -69,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f769487c7a0da91",
@@ -85,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LeetCode/REAMDE.md",
+                "file": "Front-End/计算机系统设计/英文版计算机八股文.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LeetCode/REAMDE.md",
+                "file": "Front-End/计算机系统设计/英文版计算机八股文.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LeetCode/REAMDE.md"
+                "file": "Front-End/计算机系统设计/英文版计算机八股文.pdf"
               }
             }
           }
@@ -146,14 +145,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4877f5b2a893d40",
+  "active": "246b08b9647fd03d",
   "lastOpenFiles": [
     "Front-End/计算机系统设计/学习笔记.md",
+    "Front-End/计算机系统设计/英文版计算机八股文.pdf",
+    "Pasted image 20231227135608.png",
+    "LeetCode/REAMDE.md",
     "Front-End/工作前端工作笔记/nodejs.md",
     "Front-End/工作前端工作笔记/学习笔记.md",
     "README.md",
     "Front-End/README.md",
-    "Front-End/计算机系统设计/英文版计算机八股文.pdf",
     "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
     "Front-End/计算机基础/设计模式研读.md",
     "Front-End/服务器/远程服务器搭建.md",
@@ -173,7 +174,6 @@
     "img/Internet/计算机协议.jpg",
     "img/Internet/交换过程.jpg",
     "img/Internet/1-11.jpg",
-    "img/devops.png",
-    "img/微信公众号.jpg"
+    "img/devops.png"
   ]
 }
