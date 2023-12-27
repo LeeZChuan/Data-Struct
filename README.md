@@ -1,4 +1,4 @@
-# :cat: 代码学习笔记
+# :cat: 代码学习笔记-基于Obsidian进行管理编辑
   
 ![intro](/img/intro.png)
 
