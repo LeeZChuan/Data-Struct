@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "435495dc59f9ed6c",
+        "id": "73bfa5a3c58db644",
         "type": "tabs",
         "children": [
           {
-            "id": "246b08b9647fd03d",
+            "id": "dd263e7810936e7d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Front-End/计算机系统设计/英文版计算机八股文.pdf"
+                "file": "Front-End/计算机系统设计/学习笔记.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -84,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/计算机系统设计/英文版计算机八股文.pdf",
+                "file": "Front-End/计算机系统设计/学习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/计算机系统设计/英文版计算机八股文.pdf",
+                "file": "Front-End/计算机系统设计/学习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/计算机系统设计/英文版计算机八股文.pdf"
+                "file": "Front-End/计算机系统设计/学习笔记.md"
               }
             }
           }
@@ -145,10 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "246b08b9647fd03d",
+  "active": "dd263e7810936e7d",
   "lastOpenFiles": [
     "Front-End/计算机系统设计/学习笔记.md",
+    "Front-End/计算机系统设计/img/Pasted image 20231227111559.png",
+    "Front-End/计算机系统设计/img/Pasted image 20231227135608.png",
+    "Front-End/计算机系统设计/img",
     "Front-End/计算机系统设计/英文版计算机八股文.pdf",
+    "Front-End/计算机系统设计/Pasted image 20231227135608.png",
     "Pasted image 20231227135608.png",
     "LeetCode/REAMDE.md",
     "Front-End/工作前端工作笔记/nodejs.md",
@@ -171,9 +177,6 @@
     "Front-End/CSS/css.md",
     "Front-End/CSS/css居中.md",
     "img/Internet/因特网协议.jpg",
-    "img/Internet/计算机协议.jpg",
-    "img/Internet/交换过程.jpg",
-    "img/Internet/1-11.jpg",
-    "img/devops.png"
+    "img/Internet/计算机协议.jpg"
   ]
 }
