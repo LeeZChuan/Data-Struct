@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "73bfa5a3c58db644",
+        "id": "8785b76f2b2a1a92",
         "type": "tabs",
         "children": [
           {
-            "id": "dd263e7810936e7d",
+            "id": "c91bc414707c5eaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/计算机系统设计/学习笔记.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1f769487c7a0da91",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/计算机系统设计/学习笔记.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/计算机系统设计/学习笔记.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/计算机系统设计/学习笔记.md"
+                "file": "README.md"
               }
             }
           }
@@ -147,23 +146,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd263e7810936e7d",
+  "active": "c91bc414707c5eaa",
   "lastOpenFiles": [
+    "().md",
+    "README.md",
+    "Visualization/README.md",
+    "Visualization/Echarts/README.md",
+    "Visualization/Echarts/pieChart.md",
+    "Visualization/Echarts/connect.md",
+    "LeetCode/REAMDE.md",
+    "Internet/interview.md",
+    "Internet/CS_Inter.md",
+    "Front-End/WebPack/README.md",
+    "Front-End/react-vue.md",
+    "Front-End/TypeScript/ts的类创建学习.md",
+    "Front-End/TypeScript/Readme.md",
+    "Front-End/ECMAScript/ES6.md",
+    "Front-End/CSS/css居中.md",
+    "Front-End/CSS/css.md",
+    "Front-End/工作前端工作笔记/学习笔记.md",
+    "Front-End/服务器/远程服务器搭建.md",
     "Front-End/计算机系统设计/学习笔记.md",
+    "Front-End/计算机系统设计/英文版计算机八股文.pdf",
+    "Front-End/工作前端工作笔记/nodejs.md",
     "Front-End/计算机系统设计/img/Pasted image 20231227111559.png",
     "Front-End/计算机系统设计/img/Pasted image 20231227135608.png",
     "Front-End/计算机系统设计/img",
-    "Front-End/计算机系统设计/英文版计算机八股文.pdf",
     "Front-End/计算机系统设计/Pasted image 20231227135608.png",
     "Pasted image 20231227135608.png",
-    "LeetCode/REAMDE.md",
-    "Front-End/工作前端工作笔记/nodejs.md",
-    "Front-End/工作前端工作笔记/学习笔记.md",
-    "README.md",
     "Front-End/README.md",
     "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
     "Front-End/计算机基础/设计模式研读.md",
-    "Front-End/服务器/远程服务器搭建.md",
     "Front-End/服务器/Pasted image 20231227111559.png",
     "Front-End/服务器/img/a373bb8b773fb2d612b8151e6821a015.png",
     "Front-End/服务器/img/b6996b8dbf6d1f1bb35d9db35ed296b5_720.png",
@@ -173,9 +186,6 @@
     "Front-End/计算机系统设计",
     "Front-End/计算机基础",
     "Front-End/服务器",
-    "Front-End/REACTandVUE.md",
-    "Front-End/CSS/css.md",
-    "Front-End/CSS/css居中.md",
     "img/Internet/因特网协议.jpg",
     "img/Internet/计算机协议.jpg"
   ]

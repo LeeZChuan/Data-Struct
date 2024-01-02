@@ -7,7 +7,7 @@
 > 标识了 ✅ 的学习方向是完成了的，没有标识的是还没有开始或者还未完成的
 
 * [✅Git]()
-* [数据结构和算法](DS/README.md)
+* [✅数据结构和算法](DS/README.md)
 * [SOLID]()
 * [KISS]()
 * [YAGNI]()
@@ -29,7 +29,7 @@
 <!-- > 标识了 ✅ 的学习方向是完成了的，没有标识的是还没有开始或者还未完成的 -->
 
 * [✅计算机网络](Internet/CS_Inter.md)
-* [HTML]()
+* [✅HTML](Front-End/html/css.md)
 * [✅CSS](Front-End/CSS/css.md)
 * [JavaScript](Front-End/JavaScript/README.md)
 * [React](Front-End/JSX/index.md)
