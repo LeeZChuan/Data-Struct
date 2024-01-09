@@ -11,11 +11,9 @@
             "id": "c91bc414707c5eaa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "文学笔记/诗句.md",
-                "mode": "source",
-                "source": false
+                "file": "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "文学笔记/诗句.md",
+                "file": "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文学笔记/诗句.md",
+                "file": "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文学笔记/诗句.md"
+                "file": "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf"
               }
             }
           }
@@ -148,12 +146,15 @@
   },
   "active": "c91bc414707c5eaa",
   "lastOpenFiles": [
-    "DS/README.md",
+    "Front-End/计算机基础/设计模式研读.md",
+    "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
+    "Front-End/工作前端工作笔记/学习笔记.md",
+    "Front-End/工作前端工作笔记/nodejs.md",
     "文学笔记/诗句.md",
+    "DS/README.md",
     "文学笔记",
     "DS/Sorting/2-Merge sort/README.md",
     "Front-End/服务器/远程服务器搭建.md",
-    "Front-End/工作前端工作笔记/学习笔记.md",
     "README.md",
     "().md",
     "Visualization/README.md",
@@ -172,15 +173,12 @@
     "Front-End/CSS/css.md",
     "Front-End/计算机系统设计/学习笔记.md",
     "Front-End/计算机系统设计/英文版计算机八股文.pdf",
-    "Front-End/工作前端工作笔记/nodejs.md",
     "Front-End/计算机系统设计/img/Pasted image 20231227111559.png",
     "Front-End/计算机系统设计/img/Pasted image 20231227135608.png",
     "Front-End/计算机系统设计/img",
     "Front-End/计算机系统设计/Pasted image 20231227135608.png",
     "Pasted image 20231227135608.png",
     "Front-End/README.md",
-    "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
-    "Front-End/计算机基础/设计模式研读.md",
     "Front-End/服务器/Pasted image 20231227111559.png",
     "Front-End/服务器/img/a373bb8b773fb2d612b8151e6821a015.png",
     "Front-End/服务器/img/b6996b8dbf6d1f1bb35d9db35ed296b5_720.png",
