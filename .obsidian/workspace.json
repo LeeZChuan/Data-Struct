@@ -11,9 +11,11 @@
             "id": "c91bc414707c5eaa",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf"
+                "file": "Front-End/服务器/远程服务器搭建.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
+                "file": "Front-End/服务器/远程服务器搭建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
+                "file": "Front-End/服务器/远程服务器搭建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf"
+                "file": "Front-End/服务器/远程服务器搭建.md"
               }
             }
           }
@@ -146,9 +148,9 @@
   },
   "active": "c91bc414707c5eaa",
   "lastOpenFiles": [
+    "Front-End/工作前端工作笔记/学习笔记.md",
     "Front-End/计算机基础/设计模式研读.md",
     "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
-    "Front-End/工作前端工作笔记/学习笔记.md",
     "Front-End/工作前端工作笔记/nodejs.md",
     "文学笔记/诗句.md",
     "DS/README.md",
