@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "a1f26dcae32a4f8d",
+    "id": "832f12ed955ba901",
     "type": "split",
     "children": [
       {
-        "id": "8785b76f2b2a1a92",
+        "id": "162818dcaba3f86e",
         "type": "tabs",
         "children": [
           {
-            "id": "c91bc414707c5eaa",
+            "id": "ffe3727f945b0bc2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-End/服务器/远程服务器搭建.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4be2181d2c0105c9",
+    "id": "843c85765e2fe4e8",
     "type": "split",
     "children": [
       {
-        "id": "e3a3b180aaf19cb2",
+        "id": "a1c355092675bb96",
         "type": "tabs",
         "children": [
           {
-            "id": "6cdcf05c613f399f",
+            "id": "4c1ee771f9377533",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "cd8dcdc55154da70",
+            "id": "a21f7e3325b00217",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "a78e28e6862cb51b",
+            "id": "4a85bc0edd8e17bf",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +68,19 @@
     "width": 300
   },
   "right": {
-    "id": "1f769487c7a0da91",
+    "id": "d477e1f952bf1ab6",
     "type": "split",
     "children": [
       {
-        "id": "42b191781478f14a",
+        "id": "5560a8d44159f498",
         "type": "tabs",
         "children": [
           {
-            "id": "4c3e5f9dca3710e5",
+            "id": "6799a1e37dff9904",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/服务器/远程服务器搭建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "adcabd1ab752e597",
+            "id": "9827b6f7ade1ad6c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/服务器/远程服务器搭建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "6b55d2ced779ef92",
+            "id": "e917d4a0c28308aa",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,13 +114,11 @@
             }
           },
           {
-            "id": "2cfde5c9465fb372",
+            "id": "46725a213b2cae62",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Front-End/服务器/远程服务器搭建.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,51 +138,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c91bc414707c5eaa",
+  "active": "4c1ee771f9377533",
   "lastOpenFiles": [
-    "Front-End/工作前端工作笔记/学习笔记.md",
-    "Front-End/计算机基础/设计模式研读.md",
-    "Front-End/计算机基础/JavaScript设计模式与开发实践.pdf",
-    "Front-End/工作前端工作笔记/nodejs.md",
+    "interview/code/牛客网/text4.html",
+    "interview/code/牛客网/text3.html",
+    "interview/code/牛客网/text2.html",
+    "interview/code/牛客网/test.html",
+    "interview/code/牛客网",
     "文学笔记/诗句.md",
-    "DS/README.md",
     "文学笔记",
-    "DS/Sorting/2-Merge sort/README.md",
-    "Front-End/服务器/远程服务器搭建.md",
-    "README.md",
-    "().md",
-    "Visualization/README.md",
-    "Visualization/Echarts/README.md",
-    "Visualization/Echarts/pieChart.md",
-    "Visualization/Echarts/connect.md",
-    "LeetCode/REAMDE.md",
-    "Internet/interview.md",
-    "Internet/CS_Inter.md",
-    "Front-End/WebPack/README.md",
-    "Front-End/react-vue.md",
-    "Front-End/TypeScript/ts的类创建学习.md",
-    "Front-End/TypeScript/Readme.md",
-    "Front-End/ECMAScript/ES6.md",
-    "Front-End/CSS/css居中.md",
-    "Front-End/CSS/css.md",
-    "Front-End/计算机系统设计/学习笔记.md",
-    "Front-End/计算机系统设计/英文版计算机八股文.pdf",
-    "Front-End/计算机系统设计/img/Pasted image 20231227111559.png",
-    "Front-End/计算机系统设计/img/Pasted image 20231227135608.png",
-    "Front-End/计算机系统设计/img",
-    "Front-End/计算机系统设计/Pasted image 20231227135608.png",
-    "Pasted image 20231227135608.png",
-    "Front-End/README.md",
-    "Front-End/服务器/Pasted image 20231227111559.png",
-    "Front-End/服务器/img/a373bb8b773fb2d612b8151e6821a015.png",
-    "Front-End/服务器/img/b6996b8dbf6d1f1bb35d9db35ed296b5_720.png",
-    "Front-End/服务器/img/394e02166d7a2691ec7ab491d84f4fdf_720.png",
-    "Front-End/服务器/img",
-    "Front-End/工作前端工作笔记",
-    "Front-End/计算机系统设计",
-    "Front-End/计算机基础",
-    "Front-End/服务器",
-    "img/Internet/因特网协议.jpg",
-    "img/Internet/计算机协议.jpg"
+    "text4.html",
+    "text3.html",
+    "text2.html",
+    "test.html",
+    "interview/company/有赞/codeing/计算题/3.闭包/index.js",
+    "interview/company/字节跳动/pic/加密算法.jpg",
+    "interview/company/字节跳动/pic/ca证书.jpg",
+    "interview/company/字节跳动/pic/ca机构.jpg",
+    "interview/company/有赞/有赞.md",
+    "interview/company/字节跳动/算法汇总.md",
+    "interview/company/字节跳动/interview.md",
+    "interview/pic/xcx.png",
+    "interview/pic/16.8.png",
+    "interview/pic/16.3.webp",
+    "interview/README.md",
+    "interview/2023面试总结.md",
+    "interview/2023面试前准备.md",
+    "interview/2021面试总结2.md",
+    "interview/2021面试总结1.md",
+    "img/JavaScript/强制缓存.jpg",
+    "img/JavaScript/vue-lifecycle.png",
+    "img/JavaScript/react-lifecycles.png",
+    "img/JavaScript/react-life.jpg",
+    "Visualization/D3.js/cubism-es-master/node_modules/safer-buffer/Readme.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/safer-buffer/Porting-Buffer.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/rw/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/iconv-lite/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/iconv-lite/Changelog.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-transition/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-timer/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-time-format/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-time/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-selection/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-scale/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-interpolate/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-format/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-fetch/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-ease/README.md",
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-dsv/README.md"
   ]
 }
