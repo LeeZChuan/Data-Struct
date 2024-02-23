@@ -11,8 +11,12 @@
             "id": "ffe3727f945b0bc2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Front-End/服务器/如何将本地文件copy到远程服务器.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Front-End/服务器/如何将本地文件copy到远程服务器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Front-End/服务器/如何将本地文件copy到远程服务器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Front-End/服务器/如何将本地文件copy到远程服务器.md"
+              }
             }
           }
         ]
@@ -138,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c1ee771f9377533",
+  "active": "ffe3727f945b0bc2",
   "lastOpenFiles": [
+    "Front-End/服务器/远程服务器搭建.md",
+    "Front-End/服务器/如何将本地文件copy到远程服务器.md",
     "interview/code/牛客网/text4.html",
     "interview/code/牛客网/text3.html",
     "interview/code/牛客网/text2.html",
@@ -151,7 +161,6 @@
     "text3.html",
     "text2.html",
     "test.html",
-    "interview/company/有赞/codeing/计算题/3.闭包/index.js",
     "interview/company/字节跳动/pic/加密算法.jpg",
     "interview/company/字节跳动/pic/ca证书.jpg",
     "interview/company/字节跳动/pic/ca机构.jpg",
@@ -184,7 +193,6 @@
     "Visualization/D3.js/cubism-es-master/node_modules/d3-interpolate/README.md",
     "Visualization/D3.js/cubism-es-master/node_modules/d3-format/README.md",
     "Visualization/D3.js/cubism-es-master/node_modules/d3-fetch/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-ease/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-dsv/README.md"
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-ease/README.md"
   ]
 }
