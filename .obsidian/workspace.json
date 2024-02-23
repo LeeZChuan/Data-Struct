@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "162818dcaba3f86e",
+        "id": "65c655a8545f2fc0",
         "type": "tabs",
         "children": [
           {
-            "id": "ffe3727f945b0bc2",
+            "id": "01fb3214cbfd096a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-End/服务器/如何将本地文件copy到远程服务器.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/服务器/如何将本地文件copy到远程服务器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/服务器/如何将本地文件copy到远程服务器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Front-End/服务器/如何将本地文件copy到远程服务器.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,10 +138,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ffe3727f945b0bc2",
+  "active": "01fb3214cbfd096a",
   "lastOpenFiles": [
-    "Front-End/服务器/远程服务器搭建.md",
     "Front-End/服务器/如何将本地文件copy到远程服务器.md",
+    "Front-End/服务器/远程服务器搭建.md",
     "interview/code/牛客网/text4.html",
     "interview/code/牛客网/text3.html",
     "interview/code/牛客网/text2.html",
