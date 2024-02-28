@@ -1,6 +1,6 @@
-# ½Ó¿Ú
-## Ö»¶ÁÊôÐÔ
-Ò»Ð©¶ÔÏóÊôÐÔÖ»ÄÜÔÚ¶ÔÏó¸Õ¸Õ´´½¨µÄÊ±ºòÐÞ¸ÄÆäÖµ¡£ Äã¿ÉÒÔÔÚÊôÐÔÃûÇ°ÓÃ readonlyÀ´Ö¸¶¨Ö»¶ÁÊôÐÔ£»
+# æŽ¥å£
+## åªè¯»å±žæ€§
+ä¸€äº›å¯¹è±¡å±žæ€§åªèƒ½åœ¨å¯¹è±¡åˆšåˆšåˆ›å»ºçš„æ—¶å€™ä¿®æ”¹å…¶å€¼ã€‚ ä½ å¯ä»¥åœ¨å±žæ€§åå‰ç”¨ readonlyæ¥æŒ‡å®šåªè¯»å±žæ€§ï¼›
 ```ts
 let a: number[] = [1, 2, 3, 4];
 let ro: ReadonlyArray<number> = a;
@@ -10,18 +10,18 @@ ro.length = 100; // error!
 a = ro; // error!
 ```
 
-ÉÏÃæ´úÂëµÄ×îºóÒ»ÐÐ£¬¿ÉÒÔ¿´µ½¾ÍËã°ÑÕû¸öReadonlyArray¸³Öµµ½Ò»¸öÆÕÍ¨Êý×éÒ²ÊÇ²»¿ÉÒÔµÄ¡£ µ«ÊÇÄã¿ÉÒÔÓÃÀàÐÍ¶ÏÑÔÖØÐ´£º
+ä¸Šé¢ä»£ç çš„æœ€åŽä¸€è¡Œï¼Œå¯ä»¥çœ‹åˆ°å°±ç®—æŠŠæ•´ä¸ªReadonlyArrayèµ‹å€¼åˆ°ä¸€ä¸ªæ™®é€šæ•°ç»„ä¹Ÿæ˜¯ä¸å¯ä»¥çš„ã€‚ ä½†æ˜¯ä½ å¯ä»¥ç”¨ç±»åž‹æ–­è¨€é‡å†™ï¼š
 ```ts
 a = ro as number[];
 ```
 
-# ÀàÐÍ¶ÏÑÔ
+# ç±»åž‹æ–­è¨€
 
-ÓÐÊ±ºòÄã»áÓöµ½ÕâÑùµÄÇé¿ö£¬Äã»á±ÈTypeScript¸üÁË½âÄ³¸öÖµµÄÏêÏ¸ÐÅÏ¢¡£ Í¨³£Õâ»á·¢ÉúÔÚÄãÇå³þµØÖªµÀÒ»¸öÊµÌå¾ßÓÐ±ÈËüÏÖÓÐÀàÐÍ¸üÈ·ÇÐµÄÀàÐÍ¡£
+æœ‰æ—¶å€™ä½ ä¼šé‡åˆ°è¿™æ ·çš„æƒ…å†µï¼Œä½ ä¼šæ¯”TypeScriptæ›´äº†è§£æŸä¸ªå€¼çš„è¯¦ç»†ä¿¡æ¯ã€‚ é€šå¸¸è¿™ä¼šå‘ç”Ÿåœ¨ä½ æ¸…æ¥šåœ°çŸ¥é“ä¸€ä¸ªå®žä½“å…·æœ‰æ¯”å®ƒçŽ°æœ‰ç±»åž‹æ›´ç¡®åˆ‡çš„ç±»åž‹ã€‚
 
-Í¨¹ý*ÀàÐÍ¶ÏÑÔ*ÕâÖÖ·½Ê½¿ÉÒÔ¸æËß±àÒëÆ÷£¬¡°ÏàÐÅÎÒ£¬ÎÒÖªµÀ×Ô¼ºÔÚ¸ÉÊ²Ã´¡±¡£ ÀàÐÍ¶ÏÑÔºÃ±ÈÆäËüÓïÑÔÀïµÄÀàÐÍ×ª»»£¬µ«ÊÇ²»½øÐÐÌØÊâµÄÊý¾Ý¼ì²éºÍ½â¹¹¡£ ËüÃ»ÓÐÔËÐÐÊ±µÄÓ°Ïì£¬Ö»ÊÇÔÚ±àÒë½×¶ÎÆð×÷ÓÃ¡£ TypeScript»á¼ÙÉèÄã£¬³ÌÐòÔ±£¬ÒÑ¾­½øÐÐÁË±ØÐëµÄ¼ì²é¡£
+é€šè¿‡*ç±»åž‹æ–­è¨€*è¿™ç§æ–¹å¼å¯ä»¥å‘Šè¯‰ç¼–è¯‘å™¨ï¼Œâ€œç›¸ä¿¡æˆ‘ï¼Œæˆ‘çŸ¥é“è‡ªå·±åœ¨å¹²ä»€ä¹ˆâ€ã€‚ ç±»åž‹æ–­è¨€å¥½æ¯”å…¶å®ƒè¯­è¨€é‡Œçš„ç±»åž‹è½¬æ¢ï¼Œä½†æ˜¯ä¸è¿›è¡Œç‰¹æ®Šçš„æ•°æ®æ£€æŸ¥å’Œè§£æž„ã€‚ å®ƒæ²¡æœ‰è¿è¡Œæ—¶çš„å½±å“ï¼Œåªæ˜¯åœ¨ç¼–è¯‘é˜¶æ®µèµ·ä½œç”¨ã€‚ TypeScriptä¼šå‡è®¾ä½ ï¼Œç¨‹åºå‘˜ï¼Œå·²ç»è¿›è¡Œäº†å¿…é¡»çš„æ£€æŸ¥ã€‚
 
-* ÀàÐÍ¶ÏÑÔÓÐÁ½ÖÖÐÎÊ½¡£ ÆäÒ»ÊÇ¡°¼âÀ¨ºÅ¡±Óï·¨£º
+* ç±»åž‹æ–­è¨€æœ‰ä¸¤ç§å½¢å¼ã€‚ å…¶ä¸€æ˜¯â€œå°–æ‹¬å·â€è¯­æ³•ï¼š
 
 ```ts
 let someValue: any = "this is a string"; 
@@ -29,7 +29,7 @@ let someValue: any = "this is a string";
 let strLength: number = (<string>someValue).length;
 ```
 
-* ÁíÒ»¸öÎª`as`Óï·¨£º
+* å¦ä¸€ä¸ªä¸º`as`è¯­æ³•ï¼š
 
 ```ts
 let someValue: any = "this is a string";
@@ -37,22 +37,22 @@ let someValue: any = "this is a string";
 let strLength: number = (someValue as string).length;
 ```
 
-Á½ÖÖÐÎÊ½ÊÇµÈ¼ÛµÄ¡£ ÖÁÓÚÊ¹ÓÃÄÄ¸ö´ó¶àÊýÇé¿öÏÂÊÇÆ¾¸öÈËÏ²ºÃ£»È»¶ø£¬µ±ÄãÔÚTypeScriptÀïÊ¹ÓÃJSXÊ±£¬Ö»ÓÐ `as`Óï·¨¶ÏÑÔÊÇ±»ÔÊÐíµÄ¡£
+ä¸¤ç§å½¢å¼æ˜¯ç­‰ä»·çš„ã€‚ è‡³äºŽä½¿ç”¨å“ªä¸ªå¤§å¤šæ•°æƒ…å†µä¸‹æ˜¯å‡­ä¸ªäººå–œå¥½ï¼›ç„¶è€Œï¼Œå½“ä½ åœ¨TypeScripté‡Œä½¿ç”¨JSXæ—¶ï¼Œåªæœ‰ `as`è¯­æ³•æ–­è¨€æ˜¯è¢«å…è®¸çš„ã€‚
 
 
 
-## È«ÐÂº¯ÊýÀàÐÍ
+## å…¨æ–°å‡½æ•°ç±»åž‹
 
-ÎªÁËÊ¹ÓÃ½Ó¿Ú±íÊ¾º¯ÊýÀàÐÍ£¬ÎÒÃÇÐèÒª¸ø½Ó¿Ú¶¨ÒåÒ»¸öµ÷ÓÃÇ©Ãû¡£ 
-Ëü¾ÍÏñÊÇÒ»¸öÖ»ÓÐ²ÎÊýÁÐ±íºÍ·µ»ØÖµÀàÐÍµÄº¯Êý¶¨Òå¡£²ÎÊýÁÐ±íÀïµÄÃ¿¸ö²ÎÊý¶¼ÐèÒªÃû×ÖºÍÀàÐÍ¡£
+ä¸ºäº†ä½¿ç”¨æŽ¥å£è¡¨ç¤ºå‡½æ•°ç±»åž‹ï¼Œæˆ‘ä»¬éœ€è¦ç»™æŽ¥å£å®šä¹‰ä¸€ä¸ªè°ƒç”¨ç­¾åã€‚ 
+å®ƒå°±åƒæ˜¯ä¸€ä¸ªåªæœ‰å‚æ•°åˆ—è¡¨å’Œè¿”å›žå€¼ç±»åž‹çš„å‡½æ•°å®šä¹‰ã€‚å‚æ•°åˆ—è¡¨é‡Œçš„æ¯ä¸ªå‚æ•°éƒ½éœ€è¦åå­—å’Œç±»åž‹ã€‚
 
 ```ts
 interface SearchFunc {
   (source: string, subString: string): boolean;
 }
 
-ÕâÑù¶¨Òåºó£¬ÎÒÃÇ¿ÉÒÔÏñÊ¹ÓÃÆäËü½Ó¿ÚÒ»ÑùÊ¹ÓÃÕâ¸öº¯ÊýÀàÐÍµÄ½Ó¿Ú¡£ 
-ÏÂÀýÕ¹Ê¾ÁËÈçºÎ´´½¨Ò»¸öº¯ÊýÀàÐÍµÄ±äÁ¿£¬²¢½«Ò»¸öÍ¬ÀàÐÍµÄº¯Êý¸³Öµ¸øÕâ¸ö±äÁ¿¡£
+è¿™æ ·å®šä¹‰åŽï¼Œæˆ‘ä»¬å¯ä»¥åƒä½¿ç”¨å…¶å®ƒæŽ¥å£ä¸€æ ·ä½¿ç”¨è¿™ä¸ªå‡½æ•°ç±»åž‹çš„æŽ¥å£ã€‚ 
+ä¸‹ä¾‹å±•ç¤ºäº†å¦‚ä½•åˆ›å»ºä¸€ä¸ªå‡½æ•°ç±»åž‹çš„å˜é‡ï¼Œå¹¶å°†ä¸€ä¸ªåŒç±»åž‹çš„å‡½æ•°èµ‹å€¼ç»™è¿™ä¸ªå˜é‡ã€‚
 let mySearch: SearchFunc;
 mySearch = function(source: string, subString: string) {
   let result = source.search(subString);
@@ -60,10 +60,10 @@ mySearch = function(source: string, subString: string) {
 }
 ```
 
-## ¿ÉË÷ÒýµÄÀàÐÍ
-ÓëÊ¹ÓÃ½Ó¿ÚÃèÊöº¯ÊýÀàÐÍ²î²»¶à£¬ÎÒÃÇÒ²¿ÉÒÔÃèÊöÄÇÐ©ÄÜ¹»¡°Í¨¹ýË÷ÒýµÃµ½¡±µÄÀàÐÍ£¬
-±ÈÈça[10]»òageMap["daniel"]¡£ ¿ÉË÷ÒýÀàÐÍ¾ßÓÐÒ»¸ö Ë÷ÒýÇ©Ãû£¬ËüÃèÊöÁË¶ÔÏóË÷ÒýµÄÀàÐÍ£¬
-»¹ÓÐÏàÓ¦µÄË÷Òý·µ»ØÖµÀàÐÍ¡£ ÈÃÎÒÃÇ¿´Ò»¸öÀý×Ó£º
+## å¯ç´¢å¼•çš„ç±»åž‹
+ä¸Žä½¿ç”¨æŽ¥å£æè¿°å‡½æ•°ç±»åž‹å·®ä¸å¤šï¼Œæˆ‘ä»¬ä¹Ÿå¯ä»¥æè¿°é‚£äº›èƒ½å¤Ÿâ€œé€šè¿‡ç´¢å¼•å¾—åˆ°â€çš„ç±»åž‹ï¼Œ
+æ¯”å¦‚a[10]æˆ–ageMap["daniel"]ã€‚ å¯ç´¢å¼•ç±»åž‹å…·æœ‰ä¸€ä¸ª ç´¢å¼•ç­¾åï¼Œå®ƒæè¿°äº†å¯¹è±¡ç´¢å¼•çš„ç±»åž‹ï¼Œ
+è¿˜æœ‰ç›¸åº”çš„ç´¢å¼•è¿”å›žå€¼ç±»åž‹ã€‚ è®©æˆ‘ä»¬çœ‹ä¸€ä¸ªä¾‹å­ï¼š
 
 ```ts
 interface StringArray {
@@ -75,13 +75,13 @@ myArray = ["Bob", "Fred"];
 
 let myStr: string = myArray[0];
 
-//TypeScriptÖ§³ÖÁ½ÖÖË÷ÒýÇ©Ãû£º×Ö·û´®ºÍÊý×Ö
+//TypeScriptæ”¯æŒä¸¤ç§ç´¢å¼•ç­¾åï¼šå­—ç¬¦ä¸²å’Œæ•°å­—
 ```
 
-## Àà-ÀàÐÍ
-### ÊµÏÖ½Ó¿Ú
-### ¼Ì³Ð½Ó¿Ú
-ºÍÀàÒ»Ñù£¬½Ó¿ÚÒ²¿ÉÒÔÏà»¥¼Ì³Ð¡£ ÕâÈÃÎÒÃÇÄÜ¹»´ÓÒ»¸ö½Ó¿ÚÀï¸´ÖÆ³ÉÔ±µ½ÁíÒ»¸ö½Ó¿ÚÀï£¬¿ÉÒÔ¸üÁé»îµØ½«½Ó¿Ú·Ö¸îµ½¿ÉÖØÓÃµÄÄ£¿éÀï¡£
+## ç±»-ç±»åž‹
+### å®žçŽ°æŽ¥å£
+### ç»§æ‰¿æŽ¥å£
+å’Œç±»ä¸€æ ·ï¼ŒæŽ¥å£ä¹Ÿå¯ä»¥ç›¸äº’ç»§æ‰¿ã€‚ è¿™è®©æˆ‘ä»¬èƒ½å¤Ÿä»Žä¸€ä¸ªæŽ¥å£é‡Œå¤åˆ¶æˆå‘˜åˆ°å¦ä¸€ä¸ªæŽ¥å£é‡Œï¼Œå¯ä»¥æ›´çµæ´»åœ°å°†æŽ¥å£åˆ†å‰²åˆ°å¯é‡ç”¨çš„æ¨¡å—é‡Œã€‚
 ```ts
 interface Shape {
     color: string;
@@ -96,10 +96,10 @@ square.color = "blue";
 square.sideLength = 10;
 ```
 
-½Ó¿Ú¼Ì³ÐÀà
-µ±½Ó¿Ú¼Ì³ÐÁËÒ»¸öÀàÀàÐÍÊ±£¬Ëü»á¼Ì³ÐÀàµÄ³ÉÔ±µ«²»°üÀ¨ÆäÊµÏÖ¡£ ¾ÍºÃÏñ½Ó¿ÚÉùÃ÷ÁËËùÓÐÀàÖÐ´æÔÚµÄ³ÉÔ±£¬µ«²¢Ã»ÓÐÌá¹©¾ßÌåÊµÏÖÒ»Ñù¡£ ½Ó¿ÚÍ¬Ñù»á¼Ì³Ðµ½ÀàµÄprivateºÍprotected³ÉÔ±¡£ ÕâÒâÎ¶×Åµ±Äã´´½¨ÁËÒ»¸ö½Ó¿Ú¼Ì³ÐÁËÒ»¸öÓµÓÐË½ÓÐ»òÊÜ±£»¤µÄ³ÉÔ±µÄÀàÊ±£¬Õâ¸ö½Ó¿ÚÀàÐÍÖ»ÄÜ±»Õâ¸öÀà»òÆä×ÓÀàËùÊµÏÖ£¨implement£©¡£
+æŽ¥å£ç»§æ‰¿ç±»
+å½“æŽ¥å£ç»§æ‰¿äº†ä¸€ä¸ªç±»ç±»åž‹æ—¶ï¼Œå®ƒä¼šç»§æ‰¿ç±»çš„æˆå‘˜ä½†ä¸åŒ…æ‹¬å…¶å®žçŽ°ã€‚ å°±å¥½åƒæŽ¥å£å£°æ˜Žäº†æ‰€æœ‰ç±»ä¸­å­˜åœ¨çš„æˆå‘˜ï¼Œä½†å¹¶æ²¡æœ‰æä¾›å…·ä½“å®žçŽ°ä¸€æ ·ã€‚ æŽ¥å£åŒæ ·ä¼šç»§æ‰¿åˆ°ç±»çš„privateå’Œprotectedæˆå‘˜ã€‚ è¿™æ„å‘³ç€å½“ä½ åˆ›å»ºäº†ä¸€ä¸ªæŽ¥å£ç»§æ‰¿äº†ä¸€ä¸ªæ‹¥æœ‰ç§æœ‰æˆ–å—ä¿æŠ¤çš„æˆå‘˜çš„ç±»æ—¶ï¼Œè¿™ä¸ªæŽ¥å£ç±»åž‹åªèƒ½è¢«è¿™ä¸ªç±»æˆ–å…¶å­ç±»æ‰€å®žçŽ°ï¼ˆimplementï¼‰ã€‚
 
-µ±ÄãÓÐÒ»¸öÅÓ´óµÄ¼Ì³Ð½á¹¹Ê±ÕâºÜÓÐÓÃ£¬µ«ÒªÖ¸³öµÄÊÇÄãµÄ´úÂëÖ»ÔÚ×ÓÀàÓµÓÐÌØ¶¨ÊôÐÔÊ±Æð×÷ÓÃ¡£ Õâ¸ö×ÓÀà³ýÁË¼Ì³ÐÖÁ»ùÀàÍâÓë»ùÀàÃ»ÓÐÈÎºÎ¹ØÏµ¡£
+å½“ä½ æœ‰ä¸€ä¸ªåºžå¤§çš„ç»§æ‰¿ç»“æž„æ—¶è¿™å¾ˆæœ‰ç”¨ï¼Œä½†è¦æŒ‡å‡ºçš„æ˜¯ä½ çš„ä»£ç åªåœ¨å­ç±»æ‹¥æœ‰ç‰¹å®šå±žæ€§æ—¶èµ·ä½œç”¨ã€‚ è¿™ä¸ªå­ç±»é™¤äº†ç»§æ‰¿è‡³åŸºç±»å¤–ä¸ŽåŸºç±»æ²¡æœ‰ä»»ä½•å…³ç³»ã€‚
 
 ```ts
 class Control {
@@ -118,7 +118,7 @@ class TextBox extends Control {
     select() { }
 }
 
-// ´íÎó£º¡°Image¡±ÀàÐÍÈ±ÉÙ¡°state¡±ÊôÐÔ¡£
+// é”™è¯¯ï¼šâ€œImageâ€ç±»åž‹ç¼ºå°‘â€œstateâ€å±žæ€§ã€‚
 class Image implements SelectableControl {
     select() { }
 }
@@ -128,10 +128,10 @@ class Location {
 }
 ```
 
-## ¹«¹²£¬Ë½ÓÐÓëÊÜ±£»¤µÄÐÞÊÎ·û
-###### Ä¬ÈÏÎª public
-###### private:µ±³ÉÔ±±»±ê¼Ç³É privateÊ±£¬Ëü¾Í²»ÄÜÔÚÉùÃ÷ËüµÄÀàµÄÍâ²¿·ÃÎÊ¡£
-###### protected:protectedÐÞÊÎ·ûÓë privateÐÞÊÎ·ûµÄÐÐÎªºÜÏàËÆ£¬µ«ÓÐÒ»µã²»Í¬£¬ protected³ÉÔ±ÔÚÅÉÉúÀàÖÐÈÔÈ»¿ÉÒÔ·ÃÎÊ¡£
+## å…¬å…±ï¼Œç§æœ‰ä¸Žå—ä¿æŠ¤çš„ä¿®é¥°ç¬¦
+###### é»˜è®¤ä¸º public
+###### private:å½“æˆå‘˜è¢«æ ‡è®°æˆ privateæ—¶ï¼Œå®ƒå°±ä¸èƒ½åœ¨å£°æ˜Žå®ƒçš„ç±»çš„å¤–éƒ¨è®¿é—®ã€‚
+###### protected:protectedä¿®é¥°ç¬¦ä¸Ž privateä¿®é¥°ç¬¦çš„è¡Œä¸ºå¾ˆç›¸ä¼¼ï¼Œä½†æœ‰ä¸€ç‚¹ä¸åŒï¼Œ protectedæˆå‘˜åœ¨æ´¾ç”Ÿç±»ä¸­ä»ç„¶å¯ä»¥è®¿é—®ã€‚
 
 
 
@@ -156,17 +156,17 @@ class Employee extends Person {
 
 let howard = new Employee("Howard", "Sales");
 console.log(howard.getElevatorPitch());
-console.log(howard.name); // ´íÎó
+console.log(howard.name); // é”™è¯¯
 ```
-×¢Òâ£¬ÎÒÃÇ²»ÄÜÔÚ PersonÀàÍâÊ¹ÓÃ name£¬µ«ÊÇÎÒÃÇÈÔÈ»¿ÉÒÔÍ¨¹ý EmployeeÀàµÄÊµÀý·½·¨·ÃÎÊ£¬ÒòÎª EmployeeÊÇÓÉ PersonÅÉÉú¶øÀ´µÄ¡£
+æ³¨æ„ï¼Œæˆ‘ä»¬ä¸èƒ½åœ¨ Personç±»å¤–ä½¿ç”¨ nameï¼Œä½†æ˜¯æˆ‘ä»¬ä»ç„¶å¯ä»¥é€šè¿‡ Employeeç±»çš„å®žä¾‹æ–¹æ³•è®¿é—®ï¼Œå› ä¸º Employeeæ˜¯ç”± Personæ´¾ç”Ÿè€Œæ¥çš„ã€‚
 
-### readonlyÐÞÊÎ·û
-Äã¿ÉÒÔÊ¹ÓÃ readonly¹Ø¼ü×Ö½«ÊôÐÔÉèÖÃÎªÖ»¶ÁµÄ¡£ Ö»¶ÁÊôÐÔ±ØÐëÔÚÉùÃ÷Ê±»ò¹¹Ôìº¯ÊýÀï±»³õÊ¼»¯¡£
+### readonlyä¿®é¥°ç¬¦
+ä½ å¯ä»¥ä½¿ç”¨ readonlyå…³é”®å­—å°†å±žæ€§è®¾ç½®ä¸ºåªè¯»çš„ã€‚ åªè¯»å±žæ€§å¿…é¡»åœ¨å£°æ˜Žæ—¶æˆ–æž„é€ å‡½æ•°é‡Œè¢«åˆå§‹åŒ–ã€‚
 
-## ´æÈ¡Æ÷
-TypeScriptÖ§³ÖÍ¨¹ýgetters/settersÀ´½ØÈ¡¶Ô¶ÔÏó³ÉÔ±µÄ·ÃÎÊ¡£ ËüÄÜ°ïÖúÄãÓÐÐ§µÄ¿ØÖÆ¶Ô¶ÔÏó³ÉÔ±µÄ·ÃÎÊ¡£
+## å­˜å–å™¨
+TypeScriptæ”¯æŒé€šè¿‡getters/settersæ¥æˆªå–å¯¹å¯¹è±¡æˆå‘˜çš„è®¿é—®ã€‚ å®ƒèƒ½å¸®åŠ©ä½ æœ‰æ•ˆçš„æŽ§åˆ¶å¯¹å¯¹è±¡æˆå‘˜çš„è®¿é—®ã€‚
 
-ÏÂÃæÀ´¿´ÈçºÎ°ÑÒ»¸ö¼òµ¥µÄÀà¸ÄÐ´³ÉÊ¹ÓÃ getºÍ set¡£ Ê×ÏÈ£¬ÎÒÃÇ´ÓÒ»¸öÃ»ÓÐÊ¹ÓÃ´æÈ¡Æ÷µÄÀý×Ó¿ªÊ¼¡£
+ä¸‹é¢æ¥çœ‹å¦‚ä½•æŠŠä¸€ä¸ªç®€å•çš„ç±»æ”¹å†™æˆä½¿ç”¨ getå’Œ setã€‚ é¦–å…ˆï¼Œæˆ‘ä»¬ä»Žä¸€ä¸ªæ²¡æœ‰ä½¿ç”¨å­˜å–å™¨çš„ä¾‹å­å¼€å§‹ã€‚
 ```ts
 class Employee {
     fullName: string;
@@ -178,9 +178,9 @@ if (employee.fullName) {
     console.log(employee.fullName);
 }
 ```
-ÎÒÃÇ¿ÉÒÔËæÒâµÄÉèÖÃ fullName£¬ÕâÊÇ·Ç³£·½±ãµÄ£¬µ«ÊÇÕâÒ²¿ÉÄÜ»á´øÀ´Âé·³¡£
+æˆ‘ä»¬å¯ä»¥éšæ„çš„è®¾ç½® fullNameï¼Œè¿™æ˜¯éžå¸¸æ–¹ä¾¿çš„ï¼Œä½†æ˜¯è¿™ä¹Ÿå¯èƒ½ä¼šå¸¦æ¥éº»çƒ¦ã€‚
 
-ÏÂÃæÕâ¸ö°æ±¾Àï£¬ÎÒÃÇÏÈ¼ì²éÓÃ»§ÃÜÂëÊÇ·ñÕýÈ·£¬È»ºóÔÙÔÊÐíÆäÐÞ¸ÄÔ±¹¤ÐÅÏ¢¡£ ÎÒÃÇ°Ñ¶Ô fullNameµÄÖ±½Ó·ÃÎÊ¸Ä³ÉÁË¿ÉÒÔ¼ì²éÃÜÂëµÄ set·½·¨¡£ ÎÒÃÇÒ²¼ÓÁËÒ»¸ö get·½·¨£¬ÈÃÉÏÃæµÄÀý×ÓÈÔÈ»¿ÉÒÔ¹¤×÷¡£
+ä¸‹é¢è¿™ä¸ªç‰ˆæœ¬é‡Œï¼Œæˆ‘ä»¬å…ˆæ£€æŸ¥ç”¨æˆ·å¯†ç æ˜¯å¦æ­£ç¡®ï¼Œç„¶åŽå†å…è®¸å…¶ä¿®æ”¹å‘˜å·¥ä¿¡æ¯ã€‚ æˆ‘ä»¬æŠŠå¯¹ fullNameçš„ç›´æŽ¥è®¿é—®æ”¹æˆäº†å¯ä»¥æ£€æŸ¥å¯†ç çš„ setæ–¹æ³•ã€‚ æˆ‘ä»¬ä¹ŸåŠ äº†ä¸€ä¸ª getæ–¹æ³•ï¼Œè®©ä¸Šé¢çš„ä¾‹å­ä»ç„¶å¯ä»¥å·¥ä½œã€‚
 ```ts
 let passcode = "secret passcode";
 
@@ -208,32 +208,32 @@ if (employee.fullName) {
 }
 ```
 
-## thisºÍ¼ýÍ·º¯Êý
+## thiså’Œç®­å¤´å‡½æ•°
 
 
-## ·ºÐÍ
-ÎÒÃÇÐèÒªÒ»ÖÖ·½·¨Ê¹·µ»ØÖµµÄÀàÐÍÓë´«Èë²ÎÊýµÄÀàÐÍÊÇÏàÍ¬µÄ¡£ ÕâÀï£¬ÎÒÃÇÊ¹ÓÃÁË ÀàÐÍ±äÁ¿£¬ËüÊÇÒ»ÖÖÌØÊâµÄ±äÁ¿£¬Ö»ÓÃÓÚ±íÊ¾ÀàÐÍ¶ø²»ÊÇÖµ¡£
+## æ³›åž‹
+æˆ‘ä»¬éœ€è¦ä¸€ç§æ–¹æ³•ä½¿è¿”å›žå€¼çš„ç±»åž‹ä¸Žä¼ å…¥å‚æ•°çš„ç±»åž‹æ˜¯ç›¸åŒçš„ã€‚ è¿™é‡Œï¼Œæˆ‘ä»¬ä½¿ç”¨äº† ç±»åž‹å˜é‡ï¼Œå®ƒæ˜¯ä¸€ç§ç‰¹æ®Šçš„å˜é‡ï¼Œåªç”¨äºŽè¡¨ç¤ºç±»åž‹è€Œä¸æ˜¯å€¼ã€‚
 ```ts
 function identity<T>(arg: T): T {
     return arg;
 }
 ```
-Ê¹ÓÃ·ºÐÍ±äÁ¿
-Ê¹ÓÃ·ºÐÍ´´½¨ÏñidentityÕâÑùµÄ·ºÐÍº¯ÊýÊ±£¬±àÒëÆ÷ÒªÇóÄãÔÚº¯ÊýÌå±ØÐëÕýÈ·µÄÊ¹ÓÃÕâ¸öÍ¨ÓÃµÄÀàÐÍ¡£
-»»¾ä»°Ëµ£¬Äã±ØÐë°ÑÕâÐ©²ÎÊýµ±×öÊÇÈÎÒâ»òËùÓÐÀàÐÍ¡£
-### ·ºÐÍ¶à¶àÀí½â
+ä½¿ç”¨æ³›åž‹å˜é‡
+ä½¿ç”¨æ³›åž‹åˆ›å»ºåƒidentityè¿™æ ·çš„æ³›åž‹å‡½æ•°æ—¶ï¼Œç¼–è¯‘å™¨è¦æ±‚ä½ åœ¨å‡½æ•°ä½“å¿…é¡»æ­£ç¡®çš„ä½¿ç”¨è¿™ä¸ªé€šç”¨çš„ç±»åž‹ã€‚
+æ¢å¥è¯è¯´ï¼Œä½ å¿…é¡»æŠŠè¿™äº›å‚æ•°å½“åšæ˜¯ä»»æ„æˆ–æ‰€æœ‰ç±»åž‹ã€‚
+### æ³›åž‹å¤šå¤šç†è§£
 
-## Ã¶¾Ù
+## æžšä¸¾
 
-Ê¹ÓÃÃ¶¾ÙÎÒÃÇ¿ÉÒÔ¶¨ÒåÒ»Ð©´øÃû×ÖµÄ³£Á¿¡£ Ê¹ÓÃÃ¶¾Ù¿ÉÒÔÇåÎúµØ±í´ïÒâÍ¼»ò´´½¨Ò»×éÓÐÇø±ðµÄÓÃÀý¡£ TypeScriptÖ§³ÖÊý×ÖµÄºÍ»ùÓÚ×Ö·û´®µÄÃ¶¾Ù¡£
+ä½¿ç”¨æžšä¸¾æˆ‘ä»¬å¯ä»¥å®šä¹‰ä¸€äº›å¸¦åå­—çš„å¸¸é‡ã€‚ ä½¿ç”¨æžšä¸¾å¯ä»¥æ¸…æ™°åœ°è¡¨è¾¾æ„å›¾æˆ–åˆ›å»ºä¸€ç»„æœ‰åŒºåˆ«çš„ç”¨ä¾‹ã€‚ TypeScriptæ”¯æŒæ•°å­—çš„å’ŒåŸºäºŽå­—ç¬¦ä¸²çš„æžšä¸¾ã€‚
 
-## ¸ß¼¶ÀàÐÍÐèÒªÔÙÑ§Ï°Ò»ÏÂ
+## é«˜çº§ç±»åž‹éœ€è¦å†å­¦ä¹ ä¸€ä¸‹
 
-##### ÁªºÏÀàÐÍ£¨Union Types£©
+##### è”åˆç±»åž‹ï¼ˆUnion Typesï¼‰
 
-ÁªºÏÀàÐÍ±íÊ¾Ò»¸öÖµ¿ÉÒÔÊÇ¼¸ÖÖÀàÐÍÖ®Ò»¡£ ÎÒÃÇÓÃÊúÏß£¨ `|`£©·Ö¸ôÃ¿¸öÀàÐÍ£¬ËùÒÔ `number | string | boolean`±íÊ¾Ò»¸öÖµ¿ÉÒÔÊÇ `number`£¬ `string`£¬»ò `boolean`¡£
+è”åˆç±»åž‹è¡¨ç¤ºä¸€ä¸ªå€¼å¯ä»¥æ˜¯å‡ ç§ç±»åž‹ä¹‹ä¸€ã€‚ æˆ‘ä»¬ç”¨ç«–çº¿ï¼ˆ `|`ï¼‰åˆ†éš”æ¯ä¸ªç±»åž‹ï¼Œæ‰€ä»¥ `number | string | boolean`è¡¨ç¤ºä¸€ä¸ªå€¼å¯ä»¥æ˜¯ `number`ï¼Œ `string`ï¼Œæˆ– `boolean`ã€‚
 
-Èç¹ûÒ»¸öÖµÊÇÁªºÏÀàÐÍ£¬ÎÒÃÇÖ»ÄÜ·ÃÎÊ´ËÁªºÏÀàÐÍµÄËùÓÐÀàÐÍÀï¹²ÓÐµÄ³ÉÔ±¡£
+å¦‚æžœä¸€ä¸ªå€¼æ˜¯è”åˆç±»åž‹ï¼Œæˆ‘ä»¬åªèƒ½è®¿é—®æ­¤è”åˆç±»åž‹çš„æ‰€æœ‰ç±»åž‹é‡Œå…±æœ‰çš„æˆå‘˜ã€‚
 
 ```ts
 interface Bird {
@@ -257,15 +257,15 @@ pet.swim();    // errors
 
 ### Symbols
 
-SymbolsÊÇ²»¿É¸Ä±äÇÒÎ¨Ò»µÄ¡£
+Symbolsæ˜¯ä¸å¯æ”¹å˜ä¸”å”¯ä¸€çš„ã€‚
 
 ```ts
 let sym2 = Symbol("key");
 let sym3 = Symbol("key");
 
-sym2 === sym3; // false, symbolsÊÇÎ¨Ò»µÄ
+sym2 === sym3; // false, symbolsæ˜¯å”¯ä¸€çš„
 ```
-Ïñ×Ö·û´®Ò»Ñù£¬symbolsÒ²¿ÉÒÔ±»ÓÃ×ö¶ÔÏóÊôÐÔµÄ¼ü¡£
+åƒå­—ç¬¦ä¸²ä¸€æ ·ï¼Œsymbolsä¹Ÿå¯ä»¥è¢«ç”¨åšå¯¹è±¡å±žæ€§çš„é”®ã€‚
 ```ts
 let sym = Symbol();
 
@@ -275,7 +275,7 @@ let obj = {
 
 console.log(obj[sym]); // "value"
 ```
-SymbolsÒ²¿ÉÒÔÓë¼ÆËã³öµÄÊôÐÔÃûÉùÃ÷Ïà½áºÏÀ´ÉùÃ÷¶ÔÏóµÄÊôÐÔºÍÀà³ÉÔ±¡£
+Symbolsä¹Ÿå¯ä»¥ä¸Žè®¡ç®—å‡ºçš„å±žæ€§åå£°æ˜Žç›¸ç»“åˆæ¥å£°æ˜Žå¯¹è±¡çš„å±žæ€§å’Œç±»æˆå‘˜ã€‚
 ```ts
 const getClassNameSymbol = Symbol();
 
@@ -288,10 +288,10 @@ class C {
 let c = new C();
 let className = c[getClassNameSymbol](); // "C"
 ```
-## µü´úÆ÷ºÍÉú³ÉÆ÷
-### ¿Éµü´úÐÔ
-#### for..of Óï¾ä
-for..of»á±éÀú¿Éµü´úµÄ¶ÔÏó£¬µ÷ÓÃ¶ÔÏóÉÏµÄSymbol.iterator·½·¨¡£ ÏÂÃæÊÇÔÚÊý×éÉÏÊ¹ÓÃ for..ofµÄ¼òµ¥Àý×Ó£º
+## è¿­ä»£å™¨å’Œç”Ÿæˆå™¨
+### å¯è¿­ä»£æ€§
+#### for..of è¯­å¥
+for..ofä¼šéåŽ†å¯è¿­ä»£çš„å¯¹è±¡ï¼Œè°ƒç”¨å¯¹è±¡ä¸Šçš„Symbol.iteratoræ–¹æ³•ã€‚ ä¸‹é¢æ˜¯åœ¨æ•°ç»„ä¸Šä½¿ç”¨ for..ofçš„ç®€å•ä¾‹å­ï¼š
 ```ts
 let someArray = [1, "string", false];
 
@@ -299,10 +299,10 @@ for (let entry of someArray) {
     console.log(entry); // 1, "string", false
 }
 ```
-#### for..of vs. for..in Óï¾ä
-for..ofºÍfor..in¾ù¿Éµü´úÒ»¸öÁÐ±í£»µ«ÊÇÓÃÓÚµü´úµÄÖµÈ´²»Í¬£¬for..inµü´úµÄÊÇ¶ÔÏóµÄ ¼ü µÄÁÐ±í£¬¶øfor..ofÔòµü´ú¶ÔÏóµÄ¼ü¶ÔÓ¦µÄÖµ¡£
+#### for..of vs. for..in è¯­å¥
+for..ofå’Œfor..inå‡å¯è¿­ä»£ä¸€ä¸ªåˆ—è¡¨ï¼›ä½†æ˜¯ç”¨äºŽè¿­ä»£çš„å€¼å´ä¸åŒï¼Œfor..inè¿­ä»£çš„æ˜¯å¯¹è±¡çš„ é”® çš„åˆ—è¡¨ï¼Œè€Œfor..ofåˆ™è¿­ä»£å¯¹è±¡çš„é”®å¯¹åº”çš„å€¼ã€‚
 
-ÏÂÃæµÄÀý×ÓÕ¹Ê¾ÁËÁ½ÕßÖ®¼äµÄÇø±ð£º
+ä¸‹é¢çš„ä¾‹å­å±•ç¤ºäº†ä¸¤è€…ä¹‹é—´çš„åŒºåˆ«ï¼š
 ```ts
 let list = [4, 5, 6];
 
@@ -314,17 +314,17 @@ for (let i of list) {
     console.log(i); // "4", "5", "6"
 }
 ```
-ÁíÒ»¸öÇø±ðÊÇfor..in¿ÉÒÔ²Ù×÷ÈÎºÎ¶ÔÏó£»ËüÌá¹©ÁË²é¿´¶ÔÏóÊôÐÔµÄÒ»ÖÖ·½·¨¡£ µ«ÊÇ for..of¹Ø×¢ÓÚµü´ú¶ÔÏóµÄÖµ¡£ÄÚÖÃ¶ÔÏóMapºÍSetÒÑ¾­ÊµÏÖÁËSymbol.iterator·½·¨£¬ÈÃÎÒÃÇ¿ÉÒÔ·ÃÎÊËüÃÇ±£´æµÄÖµ¡£
+å¦ä¸€ä¸ªåŒºåˆ«æ˜¯for..inå¯ä»¥æ“ä½œä»»ä½•å¯¹è±¡ï¼›å®ƒæä¾›äº†æŸ¥çœ‹å¯¹è±¡å±žæ€§çš„ä¸€ç§æ–¹æ³•ã€‚ ä½†æ˜¯ for..ofå…³æ³¨äºŽè¿­ä»£å¯¹è±¡çš„å€¼ã€‚å†…ç½®å¯¹è±¡Mapå’ŒSetå·²ç»å®žçŽ°äº†Symbol.iteratoræ–¹æ³•ï¼Œè®©æˆ‘ä»¬å¯ä»¥è®¿é—®å®ƒä»¬ä¿å­˜çš„å€¼ã€‚
 
-## Ä£¿é-ÖØÒª
-### µ¼³ö
-#### µ¼³öÉùÃ÷
-ÈÎºÎÉùÃ÷£¨±ÈÈç±äÁ¿£¬º¯Êý£¬Àà£¬ÀàÐÍ±ðÃû»ò½Ó¿Ú£©¶¼ÄÜ¹»Í¨¹ýÌí¼Óexport¹Ø¼ü×ÖÀ´µ¼³ö¡£
+## æ¨¡å—-é‡è¦
+### å¯¼å‡º
+#### å¯¼å‡ºå£°æ˜Ž
+ä»»ä½•å£°æ˜Žï¼ˆæ¯”å¦‚å˜é‡ï¼Œå‡½æ•°ï¼Œç±»ï¼Œç±»åž‹åˆ«åæˆ–æŽ¥å£ï¼‰éƒ½èƒ½å¤Ÿé€šè¿‡æ·»åŠ exportå…³é”®å­—æ¥å¯¼å‡ºã€‚
 ```ts
 export interface StringValidator {
     isAcceptable(s: string): boolean;
 }
-//»òÕß
+//æˆ–è€…
 export const numberRegexp = /^[0-9]+$/;
 
 export class ZipCodeValidator implements StringValidator {
@@ -333,7 +333,7 @@ export class ZipCodeValidator implements StringValidator {
     }
 }
 ```
-µ¼³öÓï¾äºÜ±ãÀû£¬ÒòÎªÎÒÃÇ¿ÉÄÜÐèÒª¶Ôµ¼³öµÄ²¿·ÖÖØÃüÃû£¬ËùÒÔÉÏÃæµÄÀý×Ó¿ÉÒÔÕâÑù¸ÄÐ´£º
+å¯¼å‡ºè¯­å¥å¾ˆä¾¿åˆ©ï¼Œå› ä¸ºæˆ‘ä»¬å¯èƒ½éœ€è¦å¯¹å¯¼å‡ºçš„éƒ¨åˆ†é‡å‘½åï¼Œæ‰€ä»¥ä¸Šé¢çš„ä¾‹å­å¯ä»¥è¿™æ ·æ”¹å†™ï¼š
 ```ts
 class ZipCodeValidator implements StringValidator {
     isAcceptable(s: string) {
@@ -343,7 +343,7 @@ class ZipCodeValidator implements StringValidator {
 export { ZipCodeValidator };
 export { ZipCodeValidator as mainValidator };
 ```
-ÎÒÃÇ¾­³£»áÈ¥À©Õ¹ÆäËüÄ£¿é£¬²¢ÇÒÖ»µ¼³öÄÇ¸öÄ£¿éµÄ²¿·ÖÄÚÈÝ¡£ ÖØÐÂµ¼³ö¹¦ÄÜ²¢²»»áÔÚµ±Ç°Ä£¿éµ¼ÈëÄÇ¸öÄ£¿é»ò¶¨ÒåÒ»¸öÐÂµÄ¾Ö²¿±äÁ¿¡£
+æˆ‘ä»¬ç»å¸¸ä¼šåŽ»æ‰©å±•å…¶å®ƒæ¨¡å—ï¼Œå¹¶ä¸”åªå¯¼å‡ºé‚£ä¸ªæ¨¡å—çš„éƒ¨åˆ†å†…å®¹ã€‚ é‡æ–°å¯¼å‡ºåŠŸèƒ½å¹¶ä¸ä¼šåœ¨å½“å‰æ¨¡å—å¯¼å…¥é‚£ä¸ªæ¨¡å—æˆ–å®šä¹‰ä¸€ä¸ªæ–°çš„å±€éƒ¨å˜é‡ã€‚
 ```ts
 export class ParseIntBasedZipCodeValidator {
     isAcceptable(s: string) {
@@ -351,28 +351,28 @@ export class ParseIntBasedZipCodeValidator {
     }
 }
 
-// µ¼³öÔ­ÏÈµÄÑéÖ¤Æ÷µ«×öÁËÖØÃüÃû
+// å¯¼å‡ºåŽŸå…ˆçš„éªŒè¯å™¨ä½†åšäº†é‡å‘½å
 export {ZipCodeValidator as RegExpBasedZipCodeValidator} from "./ZipCodeValidator";
 ```
-»òÕßÒ»¸öÄ£¿é¿ÉÒÔ°ü¹ü¶à¸öÄ£¿é£¬²¢°ÑËûÃÇµ¼³öµÄÄÚÈÝÁªºÏÔÚÒ»ÆðÍ¨¹ýÓï·¨£ºexport * from "module"¡£
+æˆ–è€…ä¸€ä¸ªæ¨¡å—å¯ä»¥åŒ…è£¹å¤šä¸ªæ¨¡å—ï¼Œå¹¶æŠŠä»–ä»¬å¯¼å‡ºçš„å†…å®¹è”åˆåœ¨ä¸€èµ·é€šè¿‡è¯­æ³•ï¼šexport * from "module"ã€‚
 
-### µ¼Èë
-Ä£¿éµÄµ¼Èë²Ù×÷Óëµ¼³öÒ»Ñù¼òµ¥¡£ ¿ÉÒÔÊ¹ÓÃÒÔÏÂ importÐÎÊ½Ö®Ò»À´µ¼ÈëÆäËüÄ£¿éÖÐµÄµ¼³öÄÚÈÝ¡£
+### å¯¼å…¥
+æ¨¡å—çš„å¯¼å…¥æ“ä½œä¸Žå¯¼å‡ºä¸€æ ·ç®€å•ã€‚ å¯ä»¥ä½¿ç”¨ä»¥ä¸‹ importå½¢å¼ä¹‹ä¸€æ¥å¯¼å…¥å…¶å®ƒæ¨¡å—ä¸­çš„å¯¼å‡ºå†…å®¹ã€‚
 
-> µ¼ÈëÒ»¸öÄ£¿éÖÐµÄÄ³¸öµ¼³öÄÚÈÝ
+> å¯¼å…¥ä¸€ä¸ªæ¨¡å—ä¸­çš„æŸä¸ªå¯¼å‡ºå†…å®¹
 ```ts
 import { ZipCodeValidator } from "./ZipCodeValidator";
 let myValidator = new ZipCodeValidator();
 
-// ¿ÉÒÔ¶Ôµ¼ÈëÄÚÈÝÖØÃüÃû
+// å¯ä»¥å¯¹å¯¼å…¥å†…å®¹é‡å‘½å
 import { ZipCodeValidator as ZCV } from "./ZipCodeValidator";
 let myValidator = new ZCV();
 
-// ½«Õû¸öÄ£¿éµ¼Èëµ½Ò»¸ö±äÁ¿£¬²¢Í¨¹ýËüÀ´·ÃÎÊÄ£¿éµÄµ¼³ö²¿·Ö
+// å°†æ•´ä¸ªæ¨¡å—å¯¼å…¥åˆ°ä¸€ä¸ªå˜é‡ï¼Œå¹¶é€šè¿‡å®ƒæ¥è®¿é—®æ¨¡å—çš„å¯¼å‡ºéƒ¨åˆ†
 import * as validator from "./ZipCodeValidator";
 let myValidator = new validator.ZipCodeValidator();
 
-//ÀàºÍº¯ÊýÉùÃ÷¿ÉÒÔÖ±½Ó±»±ê¼ÇÎªÄ¬ÈÏµ¼³ö¡£ ±ê¼ÇÎªÄ¬ÈÏµ¼³öµÄÀàºÍº¯ÊýµÄÃû×ÖÊÇ¿ÉÒÔÊ¡ÂÔµÄ
+//ç±»å’Œå‡½æ•°å£°æ˜Žå¯ä»¥ç›´æŽ¥è¢«æ ‡è®°ä¸ºé»˜è®¤å¯¼å‡ºã€‚ æ ‡è®°ä¸ºé»˜è®¤å¯¼å‡ºçš„ç±»å’Œå‡½æ•°çš„åå­—æ˜¯å¯ä»¥çœç•¥çš„
 /**ZipCodeValidator.ts*/
 export default class ZipCodeValidator {
     static numberRegexp = /^[0-9]+$/;
@@ -383,7 +383,7 @@ export default class ZipCodeValidator {
 import validator from "./ZipCodeValidator";
 
 let myValidator = new validator();
-// »òÕß
+// æˆ–è€…
 /**StaticZipCodeValidator.ts*/
 const numberRegexp = /^[0-9]+$/;
 
@@ -403,30 +403,30 @@ strings.forEach(s => {
 
 ```
 
-##### export = ºÍ import = require()
-CommonJSºÍAMDµÄ»·¾³Àï¶¼ÓÐÒ»¸öexports±äÁ¿£¬Õâ¸ö±äÁ¿°üº¬ÁËÒ»¸öÄ£¿éµÄËùÓÐµ¼³öÄÚÈÝ¡£
+##### export = å’Œ import = require()
+CommonJSå’ŒAMDçš„çŽ¯å¢ƒé‡Œéƒ½æœ‰ä¸€ä¸ªexportså˜é‡ï¼Œè¿™ä¸ªå˜é‡åŒ…å«äº†ä¸€ä¸ªæ¨¡å—çš„æ‰€æœ‰å¯¼å‡ºå†…å®¹ã€‚
 
-CommonJSºÍAMDµÄexports¶¼¿ÉÒÔ±»¸³ÖµÎªÒ»¸ö¶ÔÏó, ÕâÖÖÇé¿öÏÂÆä×÷ÓÃ¾ÍÀàËÆÓÚ es6 Óï·¨ÀïµÄÄ¬ÈÏµ¼³ö£¬¼´ export defaultÓï·¨ÁË¡£ËäÈ»×÷ÓÃÏàËÆ£¬µ«ÊÇ export default Óï·¨²¢²»ÄÜ¼æÈÝCommonJSºÍAMDµÄexports¡£
+CommonJSå’ŒAMDçš„exportséƒ½å¯ä»¥è¢«èµ‹å€¼ä¸ºä¸€ä¸ªå¯¹è±¡, è¿™ç§æƒ…å†µä¸‹å…¶ä½œç”¨å°±ç±»ä¼¼äºŽ es6 è¯­æ³•é‡Œçš„é»˜è®¤å¯¼å‡ºï¼Œå³ export defaultè¯­æ³•äº†ã€‚è™½ç„¶ä½œç”¨ç›¸ä¼¼ï¼Œä½†æ˜¯ export default è¯­æ³•å¹¶ä¸èƒ½å…¼å®¹CommonJSå’ŒAMDçš„exportsã€‚
 
-ÎªÁËÖ§³ÖCommonJSºÍAMDµÄexports, TypeScriptÌá¹©ÁËexport =Óï·¨¡£
+ä¸ºäº†æ”¯æŒCommonJSå’ŒAMDçš„exports, TypeScriptæä¾›äº†export =è¯­æ³•ã€‚
 
-export =Óï·¨¶¨ÒåÒ»¸öÄ£¿éµÄµ¼³ö¶ÔÏó¡£ ÕâÀïµÄ¶ÔÏóÒ»´ÊÖ¸µÄÊÇÀà£¬½Ó¿Ú£¬ÃüÃû¿Õ¼ä£¬º¯Êý»òÃ¶¾Ù¡£
+export =è¯­æ³•å®šä¹‰ä¸€ä¸ªæ¨¡å—çš„å¯¼å‡ºå¯¹è±¡ã€‚ è¿™é‡Œçš„å¯¹è±¡ä¸€è¯æŒ‡çš„æ˜¯ç±»ï¼ŒæŽ¥å£ï¼Œå‘½åç©ºé—´ï¼Œå‡½æ•°æˆ–æžšä¸¾ã€‚
 
-ÈôÊ¹ÓÃexport =µ¼³öÒ»¸öÄ£¿é£¬Ôò±ØÐëÊ¹ÓÃTypeScriptµÄÌØ¶¨Óï·¨import module = require("module")À´µ¼Èë´ËÄ£¿é¡£
+è‹¥ä½¿ç”¨export =å¯¼å‡ºä¸€ä¸ªæ¨¡å—ï¼Œåˆ™å¿…é¡»ä½¿ç”¨TypeScriptçš„ç‰¹å®šè¯­æ³•import module = require("module")æ¥å¯¼å…¥æ­¤æ¨¡å—ã€‚
 
 
-##### Éú³ÉÄ£¿é´úÂë
-¸ù¾Ý±àÒëÊ±Ö¸¶¨µÄÄ£¿éÄ¿±ê²ÎÊý£¬±àÒëÆ÷»áÉú³ÉÏàÓ¦µÄ¹©Node.js (CommonJS)£¬Require.js (AMD)£¬UMD£¬SystemJS»òECMAScript 2015 native modules (ES6)Ä£¿é¼ÓÔØÏµÍ³Ê¹ÓÃµÄ´úÂë¡£ ÏëÒªÁË½âÉú³É´úÂëÖÐ define£¬require ºÍ registerµÄÒâÒå£¬Çë²Î¿¼ÏàÓ¦Ä£¿é¼ÓÔØÆ÷µÄÎÄµµ¡£
+##### ç”Ÿæˆæ¨¡å—ä»£ç 
+æ ¹æ®ç¼–è¯‘æ—¶æŒ‡å®šçš„æ¨¡å—ç›®æ ‡å‚æ•°ï¼Œç¼–è¯‘å™¨ä¼šç”Ÿæˆç›¸åº”çš„ä¾›Node.js (CommonJS)ï¼ŒRequire.js (AMD)ï¼ŒUMDï¼ŒSystemJSæˆ–ECMAScript 2015 native modules (ES6)æ¨¡å—åŠ è½½ç³»ç»Ÿä½¿ç”¨çš„ä»£ç ã€‚ æƒ³è¦äº†è§£ç”Ÿæˆä»£ç ä¸­ defineï¼Œrequire å’Œ registerçš„æ„ä¹‰ï¼Œè¯·å‚è€ƒç›¸åº”æ¨¡å—åŠ è½½å™¨çš„æ–‡æ¡£ã€‚
 
-ÏÂÃæµÄÀý×ÓËµÃ÷ÁËµ¼Èëµ¼³öÓï¾äÀïÊ¹ÓÃµÄÃû×ÖÊÇÔõÃ´×ª»»ÎªÏàÓ¦µÄÄ£¿é¼ÓÔØÆ÷´úÂëµÄ¡£
+ä¸‹é¢çš„ä¾‹å­è¯´æ˜Žäº†å¯¼å…¥å¯¼å‡ºè¯­å¥é‡Œä½¿ç”¨çš„åå­—æ˜¯æ€Žä¹ˆè½¬æ¢ä¸ºç›¸åº”çš„æ¨¡å—åŠ è½½å™¨ä»£ç çš„ã€‚
 
-##### Ê¹ÓÃÆäËüµÄJavaScript¿â
-ÒªÏëÃèÊö·ÇTypeScript±àÐ´µÄÀà¿âµÄÀàÐÍ£¬ÎÒÃÇÐèÒªÉùÃ÷Àà¿âËù±©Â¶³öµÄAPI¡£
+##### ä½¿ç”¨å…¶å®ƒçš„JavaScriptåº“
+è¦æƒ³æè¿°éžTypeScriptç¼–å†™çš„ç±»åº“çš„ç±»åž‹ï¼Œæˆ‘ä»¬éœ€è¦å£°æ˜Žç±»åº“æ‰€æš´éœ²å‡ºçš„APIã€‚
 
-ÎÒÃÇ½ÐËüÉùÃ÷ÒòÎªËü²»ÊÇ¡°Íâ²¿³ÌÐò¡±µÄ¾ßÌåÊµÏÖ¡£ ËüÃÇÍ¨³£ÊÇÔÚ .d.tsÎÄ¼þÀï¶¨ÒåµÄ¡£ Èç¹ûÄãÊìÏ¤C/C++£¬Äã¿ÉÒÔ°ÑËüÃÇµ±×ö .hÎÄ¼þ¡£ ÈÃÎÒÃÇ¿´Ò»Ð©Àý×Ó¡£
+æˆ‘ä»¬å«å®ƒå£°æ˜Žå› ä¸ºå®ƒä¸æ˜¯â€œå¤–éƒ¨ç¨‹åºâ€çš„å…·ä½“å®žçŽ°ã€‚ å®ƒä»¬é€šå¸¸æ˜¯åœ¨ .d.tsæ–‡ä»¶é‡Œå®šä¹‰çš„ã€‚ å¦‚æžœä½ ç†Ÿæ‚‰C/C++ï¼Œä½ å¯ä»¥æŠŠå®ƒä»¬å½“åš .hæ–‡ä»¶ã€‚ è®©æˆ‘ä»¬çœ‹ä¸€äº›ä¾‹å­ã€‚
 
-Íâ²¿Ä£¿é
-ÔÚNode.jsÀï´ó²¿·Ö¹¤×÷ÊÇÍ¨¹ý¼ÓÔØÒ»¸ö»ò¶à¸öÄ£¿éÊµÏÖµÄ¡£ ÎÒÃÇ¿ÉÒÔÊ¹ÓÃ¶¥¼¶µÄ exportÉùÃ÷À´ÎªÃ¿¸öÄ£¿é¶¼¶¨ÒåÒ»¸ö.d.tsÎÄ¼þ£¬µ«×îºÃ»¹ÊÇÐ´ÔÚÒ»¸ö´óµÄ.d.tsÎÄ¼þÀï¡£ ÎÒÃÇÊ¹ÓÃÓë¹¹ÔìÒ»¸öÍâ²¿ÃüÃû¿Õ¼äÏàËÆµÄ·½·¨£¬µ«ÊÇÕâÀïÊ¹ÓÃ module¹Ø¼ü×Ö²¢ÇÒ°ÑÃû×ÖÓÃÒýºÅÀ¨ÆðÀ´£¬·½±ãÖ®ºóimport¡£ ÀýÈç£º
+å¤–éƒ¨æ¨¡å—
+åœ¨Node.jsé‡Œå¤§éƒ¨åˆ†å·¥ä½œæ˜¯é€šè¿‡åŠ è½½ä¸€ä¸ªæˆ–å¤šä¸ªæ¨¡å—å®žçŽ°çš„ã€‚ æˆ‘ä»¬å¯ä»¥ä½¿ç”¨é¡¶çº§çš„ exportå£°æ˜Žæ¥ä¸ºæ¯ä¸ªæ¨¡å—éƒ½å®šä¹‰ä¸€ä¸ª.d.tsæ–‡ä»¶ï¼Œä½†æœ€å¥½è¿˜æ˜¯å†™åœ¨ä¸€ä¸ªå¤§çš„.d.tsæ–‡ä»¶é‡Œã€‚ æˆ‘ä»¬ä½¿ç”¨ä¸Žæž„é€ ä¸€ä¸ªå¤–éƒ¨å‘½åç©ºé—´ç›¸ä¼¼çš„æ–¹æ³•ï¼Œä½†æ˜¯è¿™é‡Œä½¿ç”¨ moduleå…³é”®å­—å¹¶ä¸”æŠŠåå­—ç”¨å¼•å·æ‹¬èµ·æ¥ï¼Œæ–¹ä¾¿ä¹‹åŽimportã€‚ ä¾‹å¦‚ï¼š
 
 ```ts
 declare module "url" {
