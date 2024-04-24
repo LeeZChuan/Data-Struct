@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/TypeScript/Readme.md",
+                "file": "Front-End/TypeScript/ts学习笔记.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3920002af5dee763",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front-End/工作前端工作笔记/前端埋点方案记录.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/TypeScript/Readme.md",
+                "file": "Front-End/工作前端工作笔记/前端埋点方案记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/TypeScript/Readme.md",
+                "file": "Front-End/工作前端工作笔记/前端埋点方案记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/TypeScript/Readme.md"
+                "file": "Front-End/工作前端工作笔记/前端埋点方案记录.md"
               }
             }
           }
@@ -146,11 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "01fb3214cbfd096a",
+  "active": "3920002af5dee763",
   "lastOpenFiles": [
     "Front-End/TypeScript/ts学习笔记.md",
-    "Front-End/TypeScript/ts的类创建学习.md",
+    "Front-End/工作前端工作笔记/前端埋点方案记录.md",
+    "Front-End/工作前端工作笔记/学习笔记.md",
     "Front-End/TypeScript/Readme.md",
+    "Front-End/TypeScript/ts的类创建学习.md",
     "Front-End/服务器/如何将本地文件copy到远程服务器.md",
     "Front-End/服务器/远程服务器搭建.md",
     "interview/code/牛客网/text4.html",
@@ -191,8 +206,6 @@
     "Visualization/D3.js/cubism-es-master/node_modules/d3-timer/README.md",
     "Visualization/D3.js/cubism-es-master/node_modules/d3-time-format/README.md",
     "Visualization/D3.js/cubism-es-master/node_modules/d3-time/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-selection/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-scale/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-interpolate/README.md"
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-selection/README.md"
   ]
 }
