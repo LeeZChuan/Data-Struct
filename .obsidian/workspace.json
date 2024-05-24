@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "65c655a8545f2fc0",
+        "id": "885f0a825a23bcb7",
         "type": "tabs",
         "children": [
           {
-            "id": "01fb3214cbfd096a",
+            "id": "8f8317c5ea43963b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-End/TypeScript/ts学习笔记.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3920002af5dee763",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-End/工作前端工作笔记/前端埋点方案记录.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/工作前端工作笔记/前端埋点方案记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/工作前端工作笔记/前端埋点方案记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Front-End/工作前端工作笔记/前端埋点方案记录.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,15 +138,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3920002af5dee763",
+  "active": "8f8317c5ea43963b",
   "lastOpenFiles": [
-    "Front-End/TypeScript/ts学习笔记.md",
-    "Front-End/工作前端工作笔记/前端埋点方案记录.md",
+    "Front-End/服务器/远程服务器搭建.md",
     "Front-End/工作前端工作笔记/学习笔记.md",
+    "Front-End/工作前端工作笔记/前端埋点方案记录.md",
+    "Front-End/工作前端工作笔记/重构-研读.md",
+    "Front-End/计算机基础/设计模式研读.md",
+    "Front-End/TypeScript/ts学习笔记.md",
+    "Front-End/服务器/如何将本地文件copy到远程服务器.md",
+    "Front-End/工作前端工作笔记/nodejs.md",
     "Front-End/TypeScript/Readme.md",
     "Front-End/TypeScript/ts的类创建学习.md",
-    "Front-End/服务器/如何将本地文件copy到远程服务器.md",
-    "Front-End/服务器/远程服务器搭建.md",
     "interview/code/牛客网/text4.html",
     "interview/code/牛客网/text3.html",
     "interview/code/牛客网/text2.html",
@@ -203,9 +185,6 @@
     "Visualization/D3.js/cubism-es-master/node_modules/iconv-lite/README.md",
     "Visualization/D3.js/cubism-es-master/node_modules/iconv-lite/Changelog.md",
     "Visualization/D3.js/cubism-es-master/node_modules/d3-transition/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-timer/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-time-format/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-time/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/d3-selection/README.md"
+    "Visualization/D3.js/cubism-es-master/node_modules/d3-timer/README.md"
   ]
 }
