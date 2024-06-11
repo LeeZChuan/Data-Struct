@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "885f0a825a23bcb7",
+        "id": "bd21da1fd4e96609",
         "type": "tabs",
         "children": [
           {
-            "id": "8f8317c5ea43963b",
+            "id": "2a18f167322b2a88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/工作前端工作笔记/app与h5交互遇到的问题汇总.md",
+                "file": "Front-End/node.js/模块/v8.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/工作前端工作笔记/app与h5交互遇到的问题汇总.md",
+                "file": "Front-End/node.js/模块/v8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/工作前端工作笔记/app与h5交互遇到的问题汇总.md",
+                "file": "Front-End/node.js/模块/v8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/工作前端工作笔记/app与h5交互遇到的问题汇总.md"
+                "file": "Front-End/node.js/模块/v8.md"
               }
             }
           }
@@ -146,53 +146,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f8317c5ea43963b",
+  "active": "2a18f167322b2a88",
   "lastOpenFiles": [
+    "Front-End/node.js/模块/url.md",
+    "Front-End/node.js/模块/v8.md",
+    "Front-End/node.js/模块/util.md",
+    "Front-End/node.js/模块/Untitled",
+    "Front-End/node.js/模块/url.png",
+    "Front-End/node.js/模块/string_decoder.md",
+    "Front-End/node.js/模块/stream.readable.md",
+    "Front-End/node.js/模块/stream.md",
+    "Front-End/node.js/模块/readline.md",
+    "Front-End/node.js/模块/querystring.md",
+    "Front-End/node.js/模块/process.md",
+    "Front-End/node.js/模块/path.md",
+    "Front-End/node.js/模块/net.md",
+    "Front-End/node.js/模块/https.md",
+    "Front-End/node.js/模块/http.server.md",
+    "Front-End/node.js/模块/http.res.md",
+    "Front-End/node.js/模块/http.req.md",
+    "Front-End/node.js/模块/http.md",
+    "Front-End/node.js/模块/http.client.md",
+    "Front-End/node.js/模块/events.md",
+    "Front-End/node.js/模块/dns.md",
+    "Front-End/node.js/模块/dgram.md",
+    "Front-End/node.js/模块/crypto.md",
+    "Front-End/node.js/模块/crypto.md5.md",
+    "Front-End/node.js/模块/fs.md",
+    "Front-End/node.js/模块/debug.md",
+    "Front-End/node.js/模块/console.md",
+    "Front-End/node.js/模块/cluster.md",
+    "模块",
+    "Front-End/node.js/模块",
+    "Front-End/node.js",
     "img/WX20240530-095730@2x.png",
-    "Front-End/工作前端工作笔记/学习笔记.md",
-    "Front-End/工作前端工作笔记/app与h5交互遇到的问题汇总.md",
-    "Front-End/工作前端工作笔记/nodejs.md",
-    "Front-End/工作前端工作笔记/重构-研读.md",
-    "Front-End/工作前端工作笔记/前端埋点方案记录.md",
-    "Front-End/服务器/远程服务器搭建.md",
-    "Front-End/计算机基础/设计模式研读.md",
-    "Front-End/TypeScript/ts学习笔记.md",
-    "Front-End/服务器/如何将本地文件copy到远程服务器.md",
-    "Front-End/TypeScript/Readme.md",
-    "Front-End/TypeScript/ts的类创建学习.md",
     "interview/code/牛客网/text4.html",
     "interview/code/牛客网/text3.html",
     "interview/code/牛客网/text2.html",
     "interview/code/牛客网/test.html",
     "interview/code/牛客网",
-    "文学笔记/诗句.md",
     "文学笔记",
-    "text4.html",
-    "text3.html",
-    "text2.html",
-    "test.html",
     "interview/company/字节跳动/pic/加密算法.jpg",
     "interview/company/字节跳动/pic/ca证书.jpg",
     "interview/company/字节跳动/pic/ca机构.jpg",
-    "interview/company/有赞/有赞.md",
-    "interview/company/字节跳动/算法汇总.md",
-    "interview/company/字节跳动/interview.md",
     "interview/pic/xcx.png",
     "interview/pic/16.8.png",
     "interview/pic/16.3.webp",
-    "interview/README.md",
-    "interview/2023面试总结.md",
-    "interview/2023面试前准备.md",
-    "interview/2021面试总结2.md",
-    "interview/2021面试总结1.md",
     "img/JavaScript/强制缓存.jpg",
-    "img/JavaScript/vue-lifecycle.png",
-    "img/JavaScript/react-lifecycles.png",
-    "img/JavaScript/react-life.jpg",
-    "Visualization/D3.js/cubism-es-master/node_modules/safer-buffer/Readme.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/safer-buffer/Porting-Buffer.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/rw/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/iconv-lite/README.md",
-    "Visualization/D3.js/cubism-es-master/node_modules/iconv-lite/Changelog.md"
+    "img/JavaScript/vue-lifecycle.png"
   ]
 }
