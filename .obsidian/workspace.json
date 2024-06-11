@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "bd21da1fd4e96609",
+        "id": "ad26a1d804760dae",
         "type": "tabs",
         "children": [
           {
-            "id": "2a18f167322b2a88",
+            "id": "acda86d3db13e069",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-End/node.js/模块/v8.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/node.js/模块/v8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/node.js/模块/v8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/node.js/模块/v8.md"
+                "file": "Front-End/node.js/模块/buffer.md"
               }
             }
           }
@@ -146,36 +140,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a18f167322b2a88",
+  "active": "4c1ee771f9377533",
   "lastOpenFiles": [
-    "Front-End/node.js/模块/url.md",
+    "Front-End/node.js/进阶/stream.md",
+    "Front-End/node.js/进阶/node8-napi.md",
+    "Front-End/node.js/进阶/express-session-deep-in.md",
+    "Front-End/node.js/进阶/debugLog.md",
+    "Front-End/node.js/进阶/debug-log.md",
+    "Front-End/node.js/进阶/cookie-parser-deep-in.md",
+    "Front-End/node.js/进阶/cluster.md",
+    "Front-End/node.js/进阶/https.md",
+    "Front-End/node.js/进阶/express+session实现简易身份认证.md",
+    "Front-End/node.js/进阶/crypto-theory.md",
+    "Front-End/node.js/进阶/buffer.md",
+    "Front-End/node.js/进阶/body-parser.md",
+    "Front-End/node.js/进阶/asymmetric-enc-dec.md",
+    "Front-End/node.js/进阶/log4js.md",
+    "Front-End/node.js/进阶/crypto-diffie-hellman.md",
+    "Front-End/node.js/进阶/cookie.md",
+    "Front-End/node.js/进阶/charset-enc-dec.md",
+    "Front-End/node.js/进阶/文件上传-multer.md",
+    "Front-End/node.js/进阶/图片地址转成datauri.md",
+    "Front-End/node.js/进阶/日志模块morgan.md",
+    "Front-End/node.js/模块/zlib.md",
     "Front-End/node.js/模块/v8.md",
     "Front-End/node.js/模块/util.md",
-    "Front-End/node.js/模块/Untitled",
     "Front-End/node.js/模块/url.png",
+    "Front-End/node.js/模块/url.md",
     "Front-End/node.js/模块/string_decoder.md",
     "Front-End/node.js/模块/stream.readable.md",
-    "Front-End/node.js/模块/stream.md",
-    "Front-End/node.js/模块/readline.md",
-    "Front-End/node.js/模块/querystring.md",
-    "Front-End/node.js/模块/process.md",
-    "Front-End/node.js/模块/path.md",
-    "Front-End/node.js/模块/net.md",
-    "Front-End/node.js/模块/https.md",
-    "Front-End/node.js/模块/http.server.md",
-    "Front-End/node.js/模块/http.res.md",
-    "Front-End/node.js/模块/http.req.md",
-    "Front-End/node.js/模块/http.md",
-    "Front-End/node.js/模块/http.client.md",
-    "Front-End/node.js/模块/events.md",
-    "Front-End/node.js/模块/dns.md",
-    "Front-End/node.js/模块/dgram.md",
-    "Front-End/node.js/模块/crypto.md",
-    "Front-End/node.js/模块/crypto.md5.md",
-    "Front-End/node.js/模块/fs.md",
-    "Front-End/node.js/模块/debug.md",
-    "Front-End/node.js/模块/console.md",
-    "Front-End/node.js/模块/cluster.md",
+    "进阶",
+    "Front-End/node.js/进阶",
+    "Front-End/node.js/模块/Untitled",
     "模块",
     "Front-End/node.js/模块",
     "Front-End/node.js",
@@ -184,8 +180,6 @@
     "interview/code/牛客网/text3.html",
     "interview/code/牛客网/text2.html",
     "interview/code/牛客网/test.html",
-    "interview/code/牛客网",
-    "文学笔记",
     "interview/company/字节跳动/pic/加密算法.jpg",
     "interview/company/字节跳动/pic/ca证书.jpg",
     "interview/company/字节跳动/pic/ca机构.jpg",
