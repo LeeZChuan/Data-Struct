@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ad26a1d804760dae",
+        "id": "bf9aaafd18889e46",
         "type": "tabs",
         "children": [
           {
-            "id": "acda86d3db13e069",
+            "id": "e188e0fad65dc44f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -118,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Front-End/node.js/模块/buffer.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -140,8 +138,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c1ee771f9377533",
+  "active": "e188e0fad65dc44f",
   "lastOpenFiles": [
+    "Front-End/小程序.md",
+    "Front-End/node.js/进阶/文件上传-multer.md",
+    "Front-End/node.js/进阶/asymmetric-enc-dec.md",
+    "Front-End/node.js/进阶/图片地址转成datauri.md",
+    "Front-End/node.js/进阶/日志模块morgan.md",
+    "小程序.md",
+    "Front-End/node.js/模块/buffer.md",
     "Front-End/node.js/进阶/stream.md",
     "Front-End/node.js/进阶/node8-napi.md",
     "Front-End/node.js/进阶/express-session-deep-in.md",
@@ -154,21 +159,14 @@
     "Front-End/node.js/进阶/crypto-theory.md",
     "Front-End/node.js/进阶/buffer.md",
     "Front-End/node.js/进阶/body-parser.md",
-    "Front-End/node.js/进阶/asymmetric-enc-dec.md",
     "Front-End/node.js/进阶/log4js.md",
     "Front-End/node.js/进阶/crypto-diffie-hellman.md",
     "Front-End/node.js/进阶/cookie.md",
     "Front-End/node.js/进阶/charset-enc-dec.md",
-    "Front-End/node.js/进阶/文件上传-multer.md",
-    "Front-End/node.js/进阶/图片地址转成datauri.md",
-    "Front-End/node.js/进阶/日志模块morgan.md",
     "Front-End/node.js/模块/zlib.md",
     "Front-End/node.js/模块/v8.md",
     "Front-End/node.js/模块/util.md",
     "Front-End/node.js/模块/url.png",
-    "Front-End/node.js/模块/url.md",
-    "Front-End/node.js/模块/string_decoder.md",
-    "Front-End/node.js/模块/stream.readable.md",
     "进阶",
     "Front-End/node.js/进阶",
     "Front-End/node.js/模块/Untitled",

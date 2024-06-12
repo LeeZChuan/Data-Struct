@@ -1,11 +1,3 @@
-## 关于作者
-
-程序猿小卡，前腾讯IMWEB团队成员，阿里云栖社区专家认证博主。欢迎加入 Express前端交流群(197339705)。
-
-正在填坑：[《Nodejs学习笔记》](https://chyingp.gitbooks.io/nodejs/) / [《Express学习笔记》](https://www.gitbook.com/book/chyingp/express/details) 
-
-社区链接：[云栖社区](https://yq.aliyun.com/users/1970729537231450?spm=5176.100240.searchblog.12.xDc8pM&do=login) / [github](https://github.com/chyingp) / [新浪微博](http://weibo.com/chyingp?is_all=1) / [知乎](https://www.zhihu.com/people/chen-ying-ping-57) / [Segmentfault](https://segmentfault.com/u/chyingp) / [博客园](http://chyingp.cnblogs.com/)  / [站酷](http://www.zcool.com.cn/u/346408)
-
 ## 概览
 
 图片上传是web开发中经常用到的功能，node社区在这方面也有了相对完善的支持。
