@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "bf9aaafd18889e46",
+        "id": "5e46365b45cc8847",
         "type": "tabs",
         "children": [
           {
-            "id": "e188e0fad65dc44f",
+            "id": "cf97d143a47e1fd8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "interview/2023面试总结.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "interview/2023面试总结.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "interview/2023面试总结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "interview/2023面试总结.md"
+              }
             }
           }
         ]
@@ -138,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e188e0fad65dc44f",
+  "active": "cf97d143a47e1fd8",
   "lastOpenFiles": [
+    "interview/2023面试总结.md",
+    "interview/2023面试前准备.md",
     "Front-End/小程序.md",
     "Front-End/node.js/进阶/文件上传-multer.md",
     "Front-End/node.js/进阶/asymmetric-enc-dec.md",
@@ -164,8 +174,6 @@
     "Front-End/node.js/进阶/cookie.md",
     "Front-End/node.js/进阶/charset-enc-dec.md",
     "Front-End/node.js/模块/zlib.md",
-    "Front-End/node.js/模块/v8.md",
-    "Front-End/node.js/模块/util.md",
     "Front-End/node.js/模块/url.png",
     "进阶",
     "Front-End/node.js/进阶",
