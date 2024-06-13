@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "interview/2023面试总结.md",
+                "file": "Front-End/node.js/模块/http.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "interview/2023面试总结.md",
+                "file": "Front-End/node.js/模块/http.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "interview/2023面试总结.md",
+                "file": "Front-End/node.js/模块/http.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "interview/2023面试总结.md"
+                "file": "Front-End/node.js/模块/http.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "cf97d143a47e1fd8",
   "lastOpenFiles": [
+    "Front-End/node.js/目录.md",
+    "Front-End/node.js/模块/dns.md",
     "interview/2023面试总结.md",
     "interview/2023面试前准备.md",
     "Front-End/小程序.md",
@@ -172,8 +174,6 @@
     "Front-End/node.js/进阶/log4js.md",
     "Front-End/node.js/进阶/crypto-diffie-hellman.md",
     "Front-End/node.js/进阶/cookie.md",
-    "Front-End/node.js/进阶/charset-enc-dec.md",
-    "Front-End/node.js/模块/zlib.md",
     "Front-End/node.js/模块/url.png",
     "进阶",
     "Front-End/node.js/进阶",
