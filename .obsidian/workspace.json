@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5e46365b45cc8847",
+        "id": "617fb53c66f4ec20",
         "type": "tabs",
         "children": [
           {
-            "id": "cf97d143a47e1fd8",
+            "id": "59a03ffb81db9e64",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/node.js/模块/http.md",
+                "file": "Front-End/计算机基础/面向对象编程（Object Oriented Analysis and Design with Applications.）.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d477e1f952bf1ab6",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/node.js/模块/http.md",
+                "file": "Front-End/计算机基础/面向对象编程（Object Oriented Analysis and Design with Applications.）.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/node.js/模块/http.md",
+                "file": "Front-End/计算机基础/面向对象编程（Object Oriented Analysis and Design with Applications.）.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/node.js/模块/http.md"
+                "file": "Front-End/计算机基础/面向对象编程（Object Oriented Analysis and Design with Applications.）.md"
               }
             }
           }
@@ -146,8 +147,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cf97d143a47e1fd8",
+  "active": "59a03ffb81db9e64",
   "lastOpenFiles": [
+    "Front-End/计算机基础/面向对象编程（Object Oriented Analysis and Design with Applications.）.md",
+    "Front-End/计算机基础/img/Pasted image 20240625100036.png",
+    "Front-End/计算机基础/img/Pasted image 20240625094957.png",
+    "Front-End/计算机基础/img/Pasted image 20240625094903.png",
+    "Front-End/计算机基础/img/Pasted image 20240625094318.png",
+    "Front-End/计算机基础/img",
+    "Pasted image 20240625100036.png",
+    "Front-End/node.js/模块/http.md",
+    "Pasted image 20240625094957.png",
+    "Pasted image 20240625094903.png",
+    "Pasted image 20240625094318.png",
+    "Pasted image 20240625094315.png",
+    "Front-End/计算机基础/圖形語法-The Grammar of Graphics (Leland Wilkinson, D. Wills, D. Rope, A. Norton etc.).md",
+    "Front-End/计算机基础/设计模式研读.md",
+    "Front-End/工作前端工作笔记/前端埋点方案记录.md",
+    "Front-End/工作前端工作笔记/学习笔记.md",
+    "Front-End/工作前端工作笔记/重构-研读.md",
     "Front-End/node.js/目录.md",
     "Front-End/node.js/模块/dns.md",
     "interview/2023面试总结.md",
@@ -166,14 +184,6 @@
     "Front-End/node.js/进阶/debug-log.md",
     "Front-End/node.js/进阶/cookie-parser-deep-in.md",
     "Front-End/node.js/进阶/cluster.md",
-    "Front-End/node.js/进阶/https.md",
-    "Front-End/node.js/进阶/express+session实现简易身份认证.md",
-    "Front-End/node.js/进阶/crypto-theory.md",
-    "Front-End/node.js/进阶/buffer.md",
-    "Front-End/node.js/进阶/body-parser.md",
-    "Front-End/node.js/进阶/log4js.md",
-    "Front-End/node.js/进阶/crypto-diffie-hellman.md",
-    "Front-End/node.js/进阶/cookie.md",
     "Front-End/node.js/模块/url.png",
     "进阶",
     "Front-End/node.js/进阶",
@@ -181,18 +191,8 @@
     "模块",
     "Front-End/node.js/模块",
     "Front-End/node.js",
-    "img/WX20240530-095730@2x.png",
     "interview/code/牛客网/text4.html",
     "interview/code/牛客网/text3.html",
-    "interview/code/牛客网/text2.html",
-    "interview/code/牛客网/test.html",
-    "interview/company/字节跳动/pic/加密算法.jpg",
-    "interview/company/字节跳动/pic/ca证书.jpg",
-    "interview/company/字节跳动/pic/ca机构.jpg",
-    "interview/pic/xcx.png",
-    "interview/pic/16.8.png",
-    "interview/pic/16.3.webp",
-    "img/JavaScript/强制缓存.jpg",
-    "img/JavaScript/vue-lifecycle.png"
+    "interview/code/牛客网/text2.html"
   ]
 }
