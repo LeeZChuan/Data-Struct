@@ -88,3 +88,12 @@
 
 ■ 面向对象的分析和设计是引导我们进行面向对象分解的方法；面向对象设计使用符号和过程来构建复杂的软件系统，并提供了一组丰富的模型，我们可以利用这些模型推断所考虑系统的不同方面。
 
+
+
+Object-oriented Indeed, it is founded in the best ideas from prior technologies.
+面向对象，事实上，它建立在先前技术的最佳理念之上。
+
+
+### 什么是OOP？
+
+*Object-oriented programming is a method of implementation in which programs are organized as cooperative collections of objects, each of which represents an instance of some class, and whose classes are all members of a hierarchy of classes united via inheritance relationships.（面向对象编程是一种实现方法，其中程序被组织为对象的协作集合，每个对象代表某个类的一个实例，并且其类都是通过继承关系联合起来的类层次结构的成员。）*
