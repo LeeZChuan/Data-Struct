@@ -97,3 +97,19 @@ Object-oriented Indeed, it is founded in the best ideas from prior technologies.
 ### 什么是OOP？
 
 *Object-oriented programming is a method of implementation in which programs are organized as cooperative collections of objects, each of which represents an instance of some class, and whose classes are all members of a hierarchy of classes united via inheritance relationships.（面向对象编程是一种实现方法，其中程序被组织为对象的协作集合，每个对象代表某个类的一个实例，并且其类都是通过继承关系联合起来的类层次结构的成员。）*
+
+
+### 什么是OOD？
+
+**Object-oriented design is a method of design encompassing the process of objectoriented decomposition and a notation for depicting both logical and physical as well as static and dynamic models of the system under design.（面向对象设计是一种设计方法，包括面向对象分解的过程以及描述设计系统的逻辑和物理以及静态和动态模型的符号。）**
+
+
+For all things object-oriented, the conceptual framework is the object model. There are four major elements of this model:
+对于所有面向对象的东西，概念框架就是对象模型。
+该模型有四个主要元素：
+
+1.Abstraction 2. Encapsulation 3. Modularity 4. Hierarchy
+1. 抽象
+2. 封装
+3. 模块化
+4. 层次结构
