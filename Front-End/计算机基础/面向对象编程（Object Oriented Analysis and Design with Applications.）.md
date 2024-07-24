@@ -1,7 +1,7 @@
 ### 五个要点：
 
 
-1. Hierarchic Structure（复杂结构）
+1. Hierarchic Structure（复杂/层次结构）
 ![[Pasted image 20240625094318.png]]
 
 2. Relative Primitives（相对原函数）
@@ -154,7 +154,8 @@ https://docs.pingcode.com/ask/167223.html
 
 #### Examples of Hierarchy: Multiple Inheritance（多继承）
 
-ts：如何实现多继承：
+ts：如何实现多继承（自己编写一个mixin类，然后调用，这不是本次分享的重点）：
+
 https://juejin.cn/post/7001720162164408327
 https://blog.csdn.net/weixin_44364444/article/details/104212895
 
@@ -200,7 +201,7 @@ As Tesler points out, there are a number of important benefits to be derived fro
 
 **In the course of one day, the same person may play the role of mother, doctor, gardener, and movie critic（在一天的时间里，同一个人可能扮演母亲、医生、园丁和电影评论家的角色）**
 
-***这恰恰能够体验使用对象在代码开发中的灵活性与复用性***
+***ps:这恰恰能够表现出使用面向对象在代码开发中的灵活性与复用性***
 
 ### 对象之间的关系有，链接、聚合
 
