@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/HTTP/WebSocket长连接如何实现.md",
+                "file": "Front-End/HTTP/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/HTTP/WebSocket长连接如何实现.md",
+                "file": "Front-End/HTTP/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/HTTP/WebSocket长连接如何实现.md",
+                "file": "Front-End/HTTP/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/HTTP/WebSocket长连接如何实现.md"
+                "file": "Front-End/HTTP/index.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "758b2936d291fcaa",
   "lastOpenFiles": [
-    "Front-End/HTTP/SSE长连接如何实现.md",
     "Front-End/HTTP/WebSocket长连接如何实现.md",
+    "Front-End/HTTP/SSE长连接如何实现.md",
     "Front-End/工作前端工作笔记/前端埋点方案记录.md",
     "Front-End/工作前端工作笔记/重构-研读.md",
     "Front-End/工作前端工作笔记/学习笔记.md",
