@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/HTTP/index.md",
+                "file": "Front-End/服务器/关于前端项目服务部署的一些相关知识.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/HTTP/index.md",
+                "file": "Front-End/服务器/关于前端项目服务部署的一些相关知识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/HTTP/index.md",
+                "file": "Front-End/服务器/关于前端项目服务部署的一些相关知识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/HTTP/index.md"
+                "file": "Front-End/服务器/关于前端项目服务部署的一些相关知识.md"
               }
             }
           }
@@ -148,8 +148,13 @@
   },
   "active": "758b2936d291fcaa",
   "lastOpenFiles": [
-    "Front-End/HTTP/WebSocket长连接如何实现.md",
+    "Pasted image 20240731140822.png",
+    "Front-End/服务器/如何将本地文件copy到远程服务器.md",
     "Front-End/HTTP/SSE长连接如何实现.md",
+    "Front-End/服务器/关于前端项目服务部署的一些相关知识.md",
+    "Front-End/服务器/远程服务器搭建.md",
+    "Front-End/HTTP/index.md",
+    "Front-End/HTTP/WebSocket长连接如何实现.md",
     "Front-End/工作前端工作笔记/前端埋点方案记录.md",
     "Front-End/工作前端工作笔记/重构-研读.md",
     "Front-End/工作前端工作笔记/学习笔记.md",
@@ -158,8 +163,6 @@
     "Front-End/HTTP/img",
     "Front-End/HTTP/24bbc0bf01d3806dc7de8fa16e3ab254.png",
     "24bbc0bf01d3806dc7de8fa16e3ab254.png",
-    "Front-End/服务器/远程服务器搭建.md",
-    "Front-End/服务器/如何将本地文件copy到远程服务器.md",
     "Back-End/Java/后端管理系统开发.md",
     "86ce0bff8a2f3f6224a397b7e3202142.jpg",
     "1dac6da73bea3b3576ba344abd0ab0e9.jpeg",
@@ -184,9 +187,6 @@
     "Front-End/node.js/进阶/asymmetric-enc-dec.md",
     "Front-End/node.js/进阶/图片地址转成datauri.md",
     "Front-End/node.js/进阶/日志模块morgan.md",
-    "小程序.md",
-    "Front-End/node.js/模块/buffer.md",
-    "Front-End/node.js/进阶/stream.md",
     "进阶",
     "Front-End/node.js/进阶",
     "Front-End/node.js/模块/Untitled",
