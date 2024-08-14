@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Visualization/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Visualization/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Visualization/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Visualization/README.md"
               }
             }
           }
@@ -150,13 +150,14 @@
   "lastOpenFiles": [
     "().md",
     "Visualization/README.md",
+    "Internet/CS_Inter.md",
+    "Internet/interview.md",
+    "README.md",
     "Front-End/react-vue.md",
     "Front-End/README.md",
     "Other/软考知识点-案例分析.md",
     "Other/远程访问主机方案.md",
-    "Internet/CS_Inter.md",
     "Other",
-    "Internet/interview.md",
     "文学笔记/FY计划.md",
     "Front-End/服务器/关于前端项目服务部署的一些相关知识.md",
     "Front-End/服务器/img/Pasted image 20240806202546.png",
@@ -187,7 +188,6 @@
     "Front-End/计算机基础/img/Pasted image 20240626132209.png",
     "Front-End/计算机基础/img/Pasted image 20240626134427.png",
     "Front-End/计算机基础/img",
-    "Front-End/Nodejs/模块/http.md",
     "进阶",
     "Front-End/Nodejs/进阶",
     "Front-End/node.js/模块/Untitled",
