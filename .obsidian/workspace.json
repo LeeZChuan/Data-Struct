@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Other/远程访问主机方案.md",
+                "file": "Other/软考知识点-案例分析.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d477e1f952bf1ab6",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Other/远程访问主机方案.md",
+                "file": "Other/软考知识点-案例分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Other/远程访问主机方案.md",
+                "file": "Other/软考知识点-案例分析.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Other/远程访问主机方案.md"
+                "file": "Other/软考知识点-案例分析.md"
               }
             }
           }
@@ -148,8 +149,9 @@
   },
   "active": "348bcdcdf7f5a574",
   "lastOpenFiles": [
-    "Internet/CS_Inter.md",
     "Other/远程访问主机方案.md",
+    "Other/软考知识点-案例分析.md",
+    "Internet/CS_Inter.md",
     "Other",
     "Internet/interview.md",
     "文学笔记/FY计划.md",
@@ -187,7 +189,6 @@
     "Front-End/node.js/目录.md",
     "Front-End/node.js/模块/dns.md",
     "interview/2023面试总结.md",
-    "interview/2023面试前准备.md",
     "进阶",
     "Front-End/node.js/进阶",
     "Front-End/node.js/模块/Untitled",
