@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Visualization/README.md",
+                "file": "Front-End/服务器/远程服务器搭建.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#部署前端项目-Nginx：安装",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Visualization/README.md",
+                "file": "Front-End/服务器/远程服务器搭建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Visualization/README.md",
+                "file": "Front-End/服务器/远程服务器搭建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Visualization/README.md"
+                "file": "Front-End/服务器/远程服务器搭建.md"
               }
             }
           }
@@ -146,10 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f8442c16f982076",
+  "active": "a21f7e3325b00217",
   "lastOpenFiles": [
-    "().md",
+    "Front-End/服务器/如何将本地文件copy到远程服务器.md",
+    "Front-End/服务器/关于前端项目服务部署的一些相关知识.md",
     "Visualization/README.md",
+    "().md",
     "Internet/CS_Inter.md",
     "Internet/interview.md",
     "README.md",
@@ -159,11 +162,9 @@
     "Other/远程访问主机方案.md",
     "Other",
     "文学笔记/FY计划.md",
-    "Front-End/服务器/关于前端项目服务部署的一些相关知识.md",
     "Front-End/服务器/img/Pasted image 20240806202546.png",
     "Pasted image 20240806202546.png",
     "Front-End/服务器/远程服务器搭建.md",
-    "Front-End/服务器/如何将本地文件copy到远程服务器.md",
     "Front-End/工作前端工作笔记/重构-研读.md",
     "Front-End/工作前端工作笔记/app与h5交互遇到的问题汇总.md",
     "Front-End/工作前端工作笔记/vscode小知识.md",
