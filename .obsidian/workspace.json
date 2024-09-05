@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/服务器/远程服务器搭建.md",
+                "file": "Front-End/工作前端工作笔记/前端设计整理文档.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#部署前端项目-Nginx：安装",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-End/服务器/远程服务器搭建.md",
+                "file": "Front-End/工作前端工作笔记/前端设计整理文档.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-End/服务器/远程服务器搭建.md",
+                "file": "Front-End/工作前端工作笔记/前端设计整理文档.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-End/服务器/远程服务器搭建.md"
+                "file": "Front-End/工作前端工作笔记/前端设计整理文档.md"
               }
             }
           }
@@ -149,6 +148,9 @@
   },
   "active": "1f8442c16f982076",
   "lastOpenFiles": [
+    "Front-End/工作前端工作笔记/前端埋点方案记录.md",
+    "Untitled.canvas",
+    "Front-End/服务器/远程服务器搭建.md",
     "文学笔记/1.json",
     "Front-End/服务器/如何将本地文件copy到远程服务器.md",
     "Front-End/服务器/关于前端项目服务部署的一些相关知识.md",
@@ -165,12 +167,10 @@
     "文学笔记/FY计划.md",
     "Front-End/服务器/img/Pasted image 20240806202546.png",
     "Pasted image 20240806202546.png",
-    "Front-End/服务器/远程服务器搭建.md",
     "Front-End/工作前端工作笔记/重构-研读.md",
     "Front-End/工作前端工作笔记/app与h5交互遇到的问题汇总.md",
     "Front-End/工作前端工作笔记/vscode小知识.md",
     "Front-End/工作前端工作笔记/学习笔记.md",
-    "Front-End/工作前端工作笔记/前端埋点方案记录.md",
     "Front-End/服务器/img/Pasted image 20240731140822.png",
     "Front-End/HTTP/SSE长连接如何实现.md",
     "Front-End/HTTP/index.md",
@@ -183,7 +183,6 @@
     "Back-End/Java/后端管理系统开发.md",
     "86ce0bff8a2f3f6224a397b7e3202142.jpg",
     "1dac6da73bea3b3576ba344abd0ab0e9.jpeg",
-    "Untitled.canvas",
     "vuerouter路由滚动逻辑实现：.md",
     "Front-End/计算机基础/设计模式研读.md",
     "Front-End/计算机基础/img/Pasted image 20240626132209.png",
@@ -194,7 +193,6 @@
     "Front-End/node.js/模块/Untitled",
     "模块",
     "Front-End/Nodejs/模块",
-    "Front-End/Nodejs",
-    "Interview/code/牛客网/text4.html"
+    "Front-End/Nodejs"
   ]
 }
