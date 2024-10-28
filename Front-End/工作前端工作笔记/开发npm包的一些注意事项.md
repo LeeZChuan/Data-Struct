@@ -663,3 +663,26 @@ npm publish --registry http://localhost:4873
 - 及时更新的文档
 
 实际上要学习如何编写一个npm包，最好的做法是直接参考社区各种包的工程源码，了解他们的最佳实践。
+
+
+
+## npm版本升级
+
+```
+npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
+// newversion：指定更新的版本号
+// major：大版本并且不向下兼容时，使用 major
+// minor：有新功能且向下兼容时，使用 minor
+// patch：修复一些问题、优化等，使用 patch
+// 以 A：2.3.1 为例
+npm version premajor // 版本号会成为 3.0.0-0，即 3.0.0 的预发版本
+npm version preminor // 版本号为成为 2.4.0-0，即 2.4.0 的预发版本
+npm version prepatch // 版本号成为 2.3.2-0，即 2.3.2 的预发版本
+/**
+* 版本号会成为 2.3.2-0。
+* 执行此命令时，如果没有预发布版本号，则增加 Z，增加预发布号为 0
+* 如果有预发步号，增加预发步号
+*/
+npm version prerelease
+
+```
