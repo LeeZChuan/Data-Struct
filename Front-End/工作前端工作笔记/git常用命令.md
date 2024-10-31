@@ -6,6 +6,10 @@
 5. **git config --global --unset http.proxy**  移除代理
 6. **git config --global --unset https.proxy   这将从全局配置中移除代理设置。
 7. git branch | grep -v "main" | xargs git branch -D **删除所有其他本地分支**
+8. git config --global https.proxy http://127.0.0.1:1080  配置全局代理
+
+9. git config --global https.proxy https://127.0.0.1:1080 配置全局代理
+
 
 
 ## git常用命令
