@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/工作前端工作笔记/如何在gitlab上发布npm包并如何安装内网依赖.md",
+                "file": "Front-End/工作前端工作笔记/fetch封装实例.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "如何在gitlab上发布npm包并如何安装内网依赖"
+              "title": "fetch封装实例"
             }
           }
         ]
@@ -162,14 +162,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c1ee771f9377533",
+  "active": "1f8442c16f982076",
   "lastOpenFiles": [
+    "Front-End/工作前端工作笔记/如何在gitlab上发布npm包并如何安装内网依赖.md",
+    "Front-End/工作前端工作笔记/fetch封装实例.md",
     "img/c0a5bb76ccb0eb25dd41a7c435a85dec_720.png",
     "img/5F72DAF283406A8B36FA769F3636FF84.png",
     "c0a5bb76ccb0eb25dd41a7c435a85dec_720.png",
     "5F72DAF283406A8B36FA769F3636FF84.png",
     "Front-End/工作前端工作笔记/开发npm包的一些注意事项.md",
-    "Front-End/工作前端工作笔记/如何在gitlab上发布npm包并如何安装内网依赖.md",
     "Front-End/工作前端工作笔记/git常用命令.md",
     "Front-End/工作前端工作笔记/vscode小知识.md",
     "Front-End/工作前端工作笔记/MD文档api.md",
@@ -203,7 +204,6 @@
     "Front-End/HTTP/img",
     "Front-End/HTTP/24bbc0bf01d3806dc7de8fa16e3ab254.png",
     "24bbc0bf01d3806dc7de8fa16e3ab254.png",
-    "86ce0bff8a2f3f6224a397b7e3202142.jpg",
     "Front-End/计算机基础/img",
     "进阶",
     "Front-End/Nodejs/进阶",
