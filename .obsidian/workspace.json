@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/工作前端工作笔记/fetch封装实例.md",
+                "file": "Front-End/工作前端工作笔记/axios封装.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fetch封装实例"
+              "title": "axios封装"
             }
           }
         ]
@@ -164,8 +164,9 @@
   },
   "active": "1f8442c16f982076",
   "lastOpenFiles": [
-    "Front-End/工作前端工作笔记/如何在gitlab上发布npm包并如何安装内网依赖.md",
     "Front-End/工作前端工作笔记/fetch封装实例.md",
+    "Front-End/工作前端工作笔记/axios封装.md",
+    "Front-End/工作前端工作笔记/如何在gitlab上发布npm包并如何安装内网依赖.md",
     "img/c0a5bb76ccb0eb25dd41a7c435a85dec_720.png",
     "img/5F72DAF283406A8B36FA769F3636FF84.png",
     "c0a5bb76ccb0eb25dd41a7c435a85dec_720.png",
@@ -195,7 +196,6 @@
     "Visualization/README.md",
     "().md",
     "Internet/CS_Inter.md",
-    "Internet/interview.md",
     "Other",
     "Front-End/服务器/img/Pasted image 20240806202546.png",
     "Pasted image 20240806202546.png",

@@ -1,3 +1,6 @@
+针对相对通用的使用场景对原生底层的fetch进行了封装，满足目前的常规业务场景
+
+
 ```ts
 // 基于fetch封装的http请求（优化前）
 import { stringifyQuery } from 'vue-router';
