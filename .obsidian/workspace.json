@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-End/工作前端工作笔记/axios封装.md",
+                "file": "Front-End/工作前端工作笔记/git常用命令.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "axios封装"
+              "title": "git常用命令"
+            }
+          },
+          {
+            "id": "19ed9beb41a714bd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,10 +175,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f8442c16f982076",
+  "active": "19ed9beb41a714bd",
   "lastOpenFiles": [
-    "Front-End/工作前端工作笔记/fetch封装实例.md",
     "Front-End/工作前端工作笔记/axios封装.md",
+    "Front-End/工作前端工作笔记/fetch封装实例.md",
     "Front-End/工作前端工作笔记/如何在gitlab上发布npm包并如何安装内网依赖.md",
     "img/c0a5bb76ccb0eb25dd41a7c435a85dec_720.png",
     "img/5F72DAF283406A8B36FA769F3636FF84.png",
