@@ -25,12 +25,12 @@
             "id": "19ed9beb41a714bd",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "image",
               "state": {
-                "currentVersion": "1.7.7"
+                "file": "Front-End/React/3_react生命周期(新).png"
               },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.7"
+              "icon": "lucide-image",
+              "title": "3_react生命周期(新)"
             }
           }
         ],
@@ -177,6 +177,7 @@
   },
   "active": "19ed9beb41a714bd",
   "lastOpenFiles": [
+    "Front-End/React/2_react生命周期(旧).png",
     "Front-End/工作前端工作笔记/axios封装.md",
     "Front-End/工作前端工作笔记/fetch封装实例.md",
     "Front-End/工作前端工作笔记/如何在gitlab上发布npm包并如何安装内网依赖.md",
@@ -208,7 +209,6 @@
     "文学笔记/1.json",
     "Visualization/README.md",
     "().md",
-    "Internet/CS_Inter.md",
     "Other",
     "Front-End/服务器/img/Pasted image 20240806202546.png",
     "Pasted image 20240806202546.png",

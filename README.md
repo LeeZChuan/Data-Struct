@@ -1,4 +1,6 @@
 # :cat: 代码学习笔记-基于Obsidian进行管理编辑
+
+> 请使用Obsidian打开此仓库体验会更好
   
 ![intro](/img/intro.png)
 
@@ -11,9 +13,9 @@
 * [SOLID]()
 * [KISS]()
 * [YAGNI]()
-* [设计原则]()
+* [✅设计原则]()
 * [SSH]()
-* [HTTP/HTTPS 协议]()
+* [✅HTTP/HTTPS 协议](Front-End/http/index.md)
 * [设计模式]()
 * [Leetcode]()
 * [✅Zrender](Visualization/Zrender/README.md)
@@ -28,9 +30,9 @@
 先是对于前端学习路线，我们需要做到一下几点：
 <!-- > 标识了 ✅ 的学习方向是完成了的，没有标识的是还没有开始或者还未完成的 -->
 
-* [✅计算机网络](Internet/CS_Inter.md)
+* [✅计算机网络](Internet/index.md)
 * [✅HTML](Front-End/html/css.md)
-* [✅CSS](Front-End/CSS/css.md)
+* [✅CSS](Front-End/CSS/index.md)
 * [JavaScript](Front-End/JavaScript/README.md)
 * [React](Front-End/JSX/index.md)
 * [Webpack](Front-End)
