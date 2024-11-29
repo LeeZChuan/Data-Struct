@@ -5,28 +5,35 @@
 * 选择1 Fetch API,
 * 选择2 axios请求
 
-### axios：ajax i/o system
+### 方案1: axios
 
-可以使用httpbin.org这个网站进行网络请求设计
+- [axios](https://github.com/axios/axios)
 
-* 按照以往的类组件写法，一般会将网络请求放在componentDidMount()
+基于Vue3框架，一般官方配置就是axios
+
+具体封装可以参考：[axios封装](axios封装.md)
 
 
-   await async来实现axios的数据读取使用try catch方法
 
-```javascript
-try{
-    const =result =await axios.get("xxx",{
-        params:{
-            name:xxx,
-            age:xxx
-        }
-    })
-    console.log(result);
-}caatch(err){
-    console.log(err);
-}
-```
-## 浏览器跨域问题
+> 核心就是引入axios后：import axios from 'axios';
+> 创建axiosInstance实例，配置baseURL, timeout等
+> 基于axiosInstance实例，封装请求方法，如get, post, put, delete等
 
-    跨域，是指浏览器不能执行其他网站的脚本。他是由于浏览器的同源策略造成的，是浏览器对javascript实施的安全限制“
+
+
+### 方案2: Fetch API
+
+* [Fetch API](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)
+* [Fetch API 教程](https://www.ruanyifeng.com/blog/2020/12/fetch-tutorial.html)
+
+
+在现如今开源的react框架下，大多数使用fetch作为网络请求
+
+具体封装可以参考：[fetch封装](fetch封装.md)(原生封装)
+
+* 目前有很多网络请求框架:
+
+- [cross-fetch](https://github.com/lquixada/cross-fetch) 1.7k star
+- [unfetch](https://github.com/developit/unfetch) 5.7k star
+- [whatwg-fetch](https://github.com/JakeChampion/fetch) 25.8k star
+- [fetch-event-source](https://github.com/Azure/fetch-event-source) 1.8k star

@@ -2,18 +2,9 @@
 > 使用方法：
 ```ts
 import { get, post } from './http';
-/**
- * 事件分析平台与策略选股
- * 查询用户的配置
- * @param personId 用户id
- */
 
-export const queryPageConfig = (params: { personId: string }) => {
-  return get('/stock/analyse/platform/queryPageConfig', params);
-};
 
 /**
- * 事件分析平台与策略选股
  * 保存用户的配置
  * @param analysePageRatio	事件分析平台首页页面比例
  * @param conditionPageRatio	策略选股页面比例、
